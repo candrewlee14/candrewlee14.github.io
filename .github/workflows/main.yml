@@ -25,8 +25,8 @@ jobs:
       - name: Build
         run: |
           npm run build # The build command of your project
-          echo $(pwd)
-          ls .
+          cd build
+          touch .nojekyll # We do this because svelte has special underscore directories
     
       - name: Push
         uses: s0/git-publish-subdir-action@develop
