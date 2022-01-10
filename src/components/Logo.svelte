@@ -8,13 +8,13 @@
 
 <div>
     {#if !lockedIn}
-    <Typewriter scramble={700} scrambleSlowdown={true} delay={50}>
+    <Typewriter scramble={800} scrambleSlowdown={true} >
         <span class={lockedIn ? "locked" : "unlocked"}>AND</span>
     </Typewriter>
-    <Typewriter scramble={700} scrambleSlowdown={true} delay={100}>
+    <Typewriter scramble={800} scrambleSlowdown={true} >
         <span class={lockedIn ? "locked" : "unlocked"}>REW</span>
     </Typewriter>
-    <Typewriter scramble={900} scrambleSlowdown={true} delay={150} on:done={() => {
+    <Typewriter scramble={1000} scrambleSlowdown={true} on:done={() => {
         lockedIn = true; 
         setTimeout(() => {
             fadeIn = true
@@ -38,13 +38,27 @@
         font: 1rem;
         line-height: 1rem;
         transition: color 2s;
+        @apply uppercase;
     }
     div {
         border: 3px solid;
         border-radius: 3px;
         min-width: 62px;
         min-height: 62px;
-        @apply p-1 m-6 drop-shadow-md hover_drop-shadow-xl;
+        @apply p-1 m-10 drop-shadow-sm;
+    }
+    div:after {
+        top: 3px;
+        left: 3px;
+        height: calc(100% + 6px);
+        width: calc(100% + 6px);
+        content: " ";
+        position: absolute;
+        border: 3px solid;
+        border-radius: 7px;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        z-index: 100;
     }
     .locked {
         @apply text-black;

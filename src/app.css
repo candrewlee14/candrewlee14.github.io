@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Press+Start+2P&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +16,19 @@ html, body, #svelte {
     margin: 0;
 }
 
+h1, h2, h3, h4 {
+    font-family: "Raleway";
+}
+h1 {
+    @apply text-2xl;
+}
+h2 {
+    @apply text-xl;
+}
+h3 {
+    @apply text-lg;
+}
 p {
-    @apply text-blue-400;
+    font-family: "Raleway";
+    @apply font-light;
 }
