@@ -5,30 +5,38 @@
 @tailwind utilities;
 
 @layer base {
-  h1, h2, h3, h4 {
-    @apply font-bold;
-  }
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply font-bold;
+	}
 }
 
-html, body, #svelte {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+html,
+body,
+#svelte {
+	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
-h1, h2, h3, h4 {
-    font-family: "Raleway";
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Raleway';
 }
 h1 {
-    @apply text-2xl;
+	@apply text-2xl;
 }
 h2 {
-    @apply text-xl;
+	@apply text-xl;
 }
 h3 {
-    @apply text-lg;
+	@apply text-lg;
 }
 p {
-    font-family: "Raleway";
-    @apply font-light;
+	font-family: 'Raleway';
+	@apply font-light;
 }
