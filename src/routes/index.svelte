@@ -1,12 +1,14 @@
 <div class="w-full h-full flex justify-center pb-6">
 	<div class="w-3/4 h-full flex flex-col items-center mt-6">
 		<h1 class="text-center">Hello! 👋</h1>
-		<h1 class="text-center">My name is Andrew Lee</h1>
+		<h1 class="text-center">
+			My name is <div class="andrew-container"><div class="andrew">Andrew Lee</div></div>
+		</h1>
 		<div class="flex flex-row flex-wrap justify-center mt-6">
 			<div class="flex flex-col items-center mb-8" style="min-width: 300px;">
-				<div id="image" />
+				<img src="/AndrewHeadshot.png" alt="my face" id="image" />
 			</div>
-			<div class="max-w-xl" style="min-width: 250px;">
+			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
 					I'm currently working on detecting river trash at <a
 						class="vpi"
@@ -24,18 +26,18 @@
 		</div>
 		<div>
 			<h2 class="text-center my-4">Podcasts I'm Listening To 🔊</h2>
-			<ul>
-				<li>Huberman Lab Podcast - Andrew Huberman</li>
-				<li>Darknet Diaries - Jack Rhysider</li>
-				<li>Revisionist History - Malcolm Gladwell</li>
+			<ul class="podcast">
+				<li><span class="podcast">Huberman Lab Podcast</span> - Andrew Huberman</li>
+				<li><span class="podcast">Darknet Diaries</span> - Jack Rhysider</li>
+				<li><span class="podcast">Revisionist History</span> - Malcolm Gladwell</li>
 			</ul>
 		</div>
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	ul {
-		list-style-type: circle;
+		list-style-type: disc;
 	}
 	li {
 		@apply text-base;
@@ -52,11 +54,35 @@
 		border-radius: 3px;
 		width: 200px;
 		height: 200px;
+		@apply drop-shadow-md;
 	}
 	.utah {
 		@apply font-bold transition text-red-800 hover_text-red-500;
 	}
 	.vpi {
 		@apply font-bold transition text-sky-800 hover_text-sky-500;
+	}
+	.podcast li {
+		@apply text-gray-400;
+	}
+	.podcast span {
+		@apply text-black font-bold;
+	}
+	.andrew-container {
+		display: inline-block;
+	}
+	.andrew {
+		position: relative;
+		z-index: 3;
+		top: -1px;
+	}
+	.andrew::after {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 90%;
+		z-index: 0;
+		content: ' ';
+		@apply font-bold pb-1 bg-lightgray;
 	}
 </style>

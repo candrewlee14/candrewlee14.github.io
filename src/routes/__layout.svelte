@@ -7,7 +7,7 @@
 <div class="flex flex-col h-full w-full items-center bg-white dark_bg-gray-800">
 	<Logo />
 	<Navbar />
-	<div class="w-5/6 h-2 bg-[#EFEFEF] dark_bg-gray-900 my-1" style="content: ' ';" />
+	<div class="w-5/6 bg-lightgray dark_bg-gray-900 pb-1 mb-4" style="content: ' ';" />
 	<slot />
 </div>
 
