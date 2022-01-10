@@ -1,4 +1,4 @@
-<div class="w-full h-full flex justify-center">
+<div class="w-full h-full flex justify-center pb-6">
     <div class="w-3/4 h-full flex flex-col items-center mt-6">
         <h1 class="text-center">Hello! 👋</h1>
         <h1 class="text-center">My name is Andrew Lee</h1>
@@ -18,10 +18,25 @@ When I'm not working or studying, you can find me playing basketball with friend
                 </p>
             </div>
         </div>
+    <div>
+        <h2 class="text-center my-4">Podcasts I'm Listening To 🔊</h2>
+        <ul>
+            <li>Huberman Lab Podcast - Andrew Huberman</li>
+            <li>Darknet Diaries - Jack Rhysider</li>
+            <li>Revisionist History - Malcolm Gladwell</li>
+        </ul>
+        </div>
     </div>
 </div>
 
 <style>
+    ul {
+        list-style-type: circle;
+    }
+    li {
+        @apply text-base;
+        font-family: "Barlow";
+    }
     p {
         width: 100%;
         font-family: "Barlow";
