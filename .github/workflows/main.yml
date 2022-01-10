@@ -13,6 +13,11 @@ jobs:
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
+        
+      - name: setup node
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
 
       - name: Install all dependencies
         run: npm install
