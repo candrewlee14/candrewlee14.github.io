@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-d7bb2de8.css">
+		<link rel="modulepreload" href="/_app/start-cee1916b.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-83dd8948.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-760ac35c.js">
+		<link rel="modulepreload" href="/_app/pages/work.svelte-4dba6ba1.js">
+
+		<script type="module">
+			import { start } from "/_app/start-cee1916b.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-760ac35c.js"),
+						import("/_app/pages/work.svelte-4dba6ba1.js")
+					],
+					url: new URL("http://prerender/work"),
+					params: {}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div class="flex flex-col h-full w-full items-center bg-white dark_bg-gray-800"><div class="svelte-1bqqy04"><div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-1bqqy04">AND</span></div>
+		<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-1bqqy04">REW</span></div>
+		<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-1bqqy04">LEE</span></div>
+	
+</div>
+	<div class="flex justify-evenly w-full mb-4" style="max-width: 800px;"><a href="/" class="svelte-1rtznio">ABOUT</a>
+	<a href="/work" class="svelte-1rtznio">WORK</a>
+	<a href="/blog" class="svelte-1rtznio">BLOG</a>
+</div>
+	<div class="w-5/6 h-2 bg-[#EFEFEF] dark_bg-gray-900 my-1" style="content: ' ';"></div>
+	<div class="w-full h-full flex justify-center"><div class="w-3/4 h-full"><h1 class="text-center">Welcome to SvelteKit</h1>
+		<p>Hey there big laddie <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
+		</p></div></div>
+</div>
+
+</div>
+	</body>
+</html>
