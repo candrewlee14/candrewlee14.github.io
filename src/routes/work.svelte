@@ -9,14 +9,14 @@
 <div class="w-full h-full flex justify-center pb-6">
 	<div class="w-3/4 h-full flex flex-col mt-8">
 		<div class="relative entry-wrap pl-4 border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute bg-sky-200 dark_bg-sky-500" />
 			<div class="entry">
 				<h2>Marketing Coordinator & Software Developer</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technologies</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
 				<hr />
 				<ul class="desc">
-					<li>- Working on detecting trash in rivers using Pytorch, Yolov5, and Opencv.</li>
+					<li> Working on detecting trash in rivers using Pytorch, Yolov5, and Opencv.</li>
 				</ul>
 				<!-- <img class="arrow-img" alt="up arrow" src="/curved-arrow.png"/> -->
 			</div>
@@ -29,12 +29,12 @@
 				<h4 class="dates">Jan 2021 - Aug 2021</h4>
 				<hr />
 				<ul class="desc">
-					<li>- Graphic designing for marketing and promotional materials</li>
-					<li>- Created PowerBI & Domo dashboards for data analytics</li>
-					<li>- Built API middleware and Selenium programs</li>
-					<li>- Deployed Docker containers to Microsoft Azure</li>
-					<li>- Filmed and edited promotional material</li>
-					<li>- Built and deployed React web app on Azure</li>
+					<li> Graphic designing for marketing and promotional materials</li>
+					<li> Created PowerBI & Domo dashboards for data analytics</li>
+					<li> Built API middleware and Selenium programs</li>
+					<li> Deployed Docker containers to Microsoft Azure</li>
+					<li> Filmed and edited promotional material</li>
+					<li> Built and deployed React web app on Azure</li>
 				</ul>
 			</div>
 		</div>
@@ -46,17 +46,16 @@
 					Fairway Independent Mortgage Corporation
 				</h3>
 				<h4 class="dates">Jun 2020 - Jan 2021</h4>
-				<hr class="my-2 border-2 rounded-sm" />
+				<hr />
 				<ul class="desc">
-					<li>- Automated CRM data transfer and form-filling using Python (Selenium package)</li>
+					<li> Automated CRM data transfer and form-filling using Python (Selenium package)</li>
 					<li>
-						- Automated creation of gifting order spreadsheets using Python (exchangelib and pandas
+						Automated creation of gifting order spreadsheets using Python (exchangelib and pandas
 						packages)
 					</li>
-					<li>- Built dashboards in PowerBI analyzing loan operations volume and performance</li>
-					<li>
-						- Built reports through Encompass LOS - Assisted in new technology adoption and IT needs
-					</li>
+					<li> Built dashboards in PowerBI analyzing loan operations volume and performance</li>
+					<li>Built reports through Encompass LOS </li> 
+					<li>Assisted in new technology adoption and IT needs</li>
 				</ul>
 			</div>
 		</div>
@@ -68,20 +67,19 @@
 				<h4 class="dates">May 2020 - Jul 2020</h4>
 				<hr />
 				<ul class="desc">
-					<li>- Worked as a software developer for a genetics research lab</li>
+					<li> Worked as a software developer for a genetics research lab</li>
 					<li>
-						- Wrote backend software in Python using the Flask framework with connections to an
+						Wrote backend software in Python using the Flask framework with connections to an
 						SQLite DB
 					</li>
-					<li>
-						- Significantly reduced false conflicts in the <a
+					<li> Significantly reduced false conflicts in the <a
 							class="text-red-700 dark_text-red-400"
 							href="https://clinvarminer.genetics.utah.edu/">Clinvar Miner</a
 						> genetics database
 					</li>
-					<li>- Worked with Linux server hosting</li>
+					<li> Worked with Linux server hosting</li>
 					<li>
-						- Efficiently found lowest common disease/condition from sets of conditions from the
+						Efficiently found closest common condition from sets of conditions from the
 						Mondo Disease Ontology
 					</li>
 				</ul>
@@ -95,11 +93,11 @@
 				<h4 class="dates">May 2020 - Jun 2020</h4>
 				<hr />
 				<ul class="desc">
-					<li>- Developed data dashboards using PowerBI and PowerApps</li>
-					<li>- Integrated Microsoft semantic analysis on data using Python and PowerBI</li>
-					<li>- Worked with databases and data services like Snowflake</li>
-					<li>- UI/UX dashboard design experience</li>
-					<li>- Created screen capture videos for training purposes</li>
+					<li> Developed data dashboards using PowerBI and PowerApps</li>
+					<li> Integrated Microsoft semantic analysis on data using Python and PowerBI</li>
+					<li> Worked with databases and data services like Snowflake</li>
+					<li> UI/UX dashboard design experience</li>
+					<li> Created screen capture videos for training purposes</li>
 				</ul>
 			</div>
 		</div>
@@ -111,16 +109,15 @@
 				<h4 class="dates">Mar 2019 - Aug 2019</h4>
 				<hr />
 				<ul class="desc">
-					<li>
-						- Full stack web development experience with SQL databases, C# .NET Core backend, and
+					<li>Full stack web development experience with SQL databases, C# .NET Core backend, and
 						REACT and Vue frontend frameworks
 					</li>
-					<li>- Maintained various projects for multiple clients</li>
-					<li>- Created unit tests for new features</li>
-					<li>- Built and redesigned features</li>
-					<li>- Fixed bugs</li>
-					<li>- Worked using the AGILE framework using Jira</li>
-					<li>- Worked with REST APIs</li>
+					<li> Maintained various projects for multiple clients</li>
+					<li> Created unit tests for new features</li>
+					<li> Built and redesigned features</li>
+					<li> Fixed bugs</li>
+					<li> Worked using the AGILE framework using Jira</li>
+					<li> Worked with REST APIs</li>
 				</ul>
 			</div>
 		</div>
@@ -157,6 +154,16 @@
 		@apply font-medium text-gray-400;
 	}
 	.desc {
-		@apply pl-2 py-2;
+		list-style: none;
+		@apply pl-6 pt-1 pb-2;
 	}
+
+	.desc li::before {
+		content: '\2022';
+		position: absolute;
+		margin-left: -1rem;
+		padding-right: 1rem;
+		color: rgb(162, 162, 162);
+	}
+	
 </style>

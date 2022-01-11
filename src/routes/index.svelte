@@ -37,13 +37,63 @@
 				</p>
 			</div>
 		</div>
-		<div>
-			<h2 class="text-center my-4">Podcasts I'm Listening To 🔊</h2>
-			<ul class="podcast">
+		<div class="mt-6">
+			<h2 class="text-center my-2">Podcasts I'm Listening To 🔊</h2>
+			<ul class="podcast-list">
 				<li><span class="podcast">Huberman Lab Podcast</span> - Andrew Huberman</li>
 				<li><span class="podcast">Darknet Diaries</span> - Jack Rhysider</li>
 				<li><span class="podcast">Revisionist History</span> - Malcolm Gladwell</li>
 			</ul>
+		</div>
+		<div class="mt-8" style="max-width: 550px">
+			<h2 class="text-center mt-4 pb-1">My Software Skills ⭐</h2>
+			<div class="bubble-list langs-list">
+				<h4>Languages & Frameworks</h4>
+				<span>React</span>
+				<span>Svelte</span>
+				<span>C#</span>
+				<span>.NET</span>					
+				<span>Java</span>
+				<span>Javascript</span>
+				<span>Typescript</span>
+				<span>CSS</span>
+				<span>C</span>
+				<span>C++</span>
+				<span>Rust</span>
+				<span>HTML</span>
+				<span>Python</span>
+				<span>SQL</span>
+				<span>GraphQL</span>
+			</div>
+			<div class="bubble-list tool-list">
+				<h4>Tools & Platforms</h4>
+				<span>PostgresSQL</span>
+				<span>Sqlite</span>
+				<span>Linux</span>
+				<span>Windows</span>
+				<span>AWS</span>
+				<span>Azure</span>
+				<span>Visual Studio</span>
+				<span>VSCode</span>
+				<span>Vim</span>
+				<span>PowerBI</span>
+				<span>Figma</span>
+				<span>Illustrator</span>
+				<span>Photoshop</span>
+				<span>Excel</span>
+			</div>
+			<div class="bubble-list concept-list">
+				<h4>Concepts & Subjects</h4>
+				<span>Machine Learning</span>
+				<span>REST APIs</span>
+				<span>Image Processing</span>
+				<span>Concurrency</span>
+				<span>Data Analytics</span>
+				<span>Data Visualization</span>
+				<span>Front-End Web Dev</span>
+				<span>UI/UX</span>
+				<span>Graphic Design</span>
+			</div>
 		</div>
 	</div>
 </div>
@@ -65,19 +115,35 @@
 		width: 200px;
 		height: 200px;
 	}
-	.podcast li {
+	.podcast-list li {
 		@apply text-gray-500;
 	}
-	.podcast span {
+	.podcast-list span {
 		@apply font-medium text-black dark_text-lightgray;
+	}
+	.bubble-list {
+		@apply flex flex-wrap mb-4;
+	}
+	.bubble-list h4 {
+		@apply w-full mt-2 mb-1;
+	}
+	.bubble-list span {
+		@apply font-medium text-black dark_text-lightgray px-2 py-1 rounded-2xl mr-1 my-1;
+	}
+	.langs-list span {
+		@apply bg-sky-300 dark_bg-sky-900;
+	}
+	.tool-list span {
+		@apply bg-teal-400 dark_bg-teal-900;
+	}
+	.concept-list span {
+		@apply bg-green-400 dark_bg-green-900;
 	}
 	.andrew-container {
 		display: inline-block;
 	}
 	.andrew {
 		position: relative;
-		/* font-family: 'Permanent Marker'; */
-		/* font-size: 2rem; */
 		z-index: 3;
 		top: -1px;
 	}
