@@ -3,7 +3,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
 		<link rel="icon" href="./favicon.png" />
+		<script>
+			function updateMode() {
+				if (localStorage.theme === 'dark') {
+					document.body.classList.add('dark')
+				} else {
+					document.body.classList.remove('dark')
+				}
+			}
+
+			onMount(() => {
+				let curTheme = localStorage.getItem('theme');
+				if (!curTheme)
+				{
+					localStorage.setItem('theme', 
+						window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+					);
+				}
+				updateMode();
+			});
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 
@@ -11,14 +34,14 @@
 
 		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-a747ba8b.css">
-		<link rel="modulepreload" href="/_app/start-6b83ec9c.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-bf01bb8a.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-18347ab5.js">
-		<link rel="modulepreload" href="/_app/pages/blog.svelte-8e3f30db.js">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-5bd5a9e9.css">
+		<link rel="modulepreload" href="/_app/start-ef45d2b7.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-58b59e47.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-620ee57e.js">
+		<link rel="modulepreload" href="/_app/pages/blog.svelte-b260940e.js">
 
 		<script type="module">
-			import { start } from "/_app/start-6b83ec9c.js";
+			import { start } from "/_app/start-ef45d2b7.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -30,8 +53,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-18347ab5.js"),
-						import("/_app/pages/blog.svelte-8e3f30db.js")
+						import("/_app/pages/__layout.svelte-620ee57e.js"),
+						import("/_app/pages/blog.svelte-b260940e.js")
 					],
 					url: new URL("http://prerender/blog"),
 					params: {}
@@ -43,15 +66,17 @@
 		<div id="svelte">
 
 
-<div class="flex flex-col h-full w-full items-center bg-white dark_bg-gray-800"><div class="svelte-175t36e"><div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-175t36e">AND</span></div>
-			<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-175t36e">REW</span></div>
-			<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-175t36e">LEE</span></div>
+<div class="flex flex-col w-full items-center" style="min-height: 100vh;"><div class="logo p-1 m-10 text-gray-500 dark_text-gray-600 drop-shadow-sm border-4 rounded border-black dark_border-lightgray svelte-yhb1ut"><div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-yhb1ut">AND</span></div>
+			<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-yhb1ut">REW</span></div>
+			<div class="typewriter-container svelte-1w4dm0v cursor" style="--cursor-color: black"><span class="unlocked svelte-yhb1ut">LEE</span></div>
 		
+		<div class="div-after border-4 border-black dark_border-lightgray rounded-md svelte-yhb1ut" style="position: absolute; border-left-color: transparent; border-top-color: transparent;"></div>
 	</div>
-	<div class="flex justify-evenly w-full mb-4" style="max-width: 800px;"><a href="/" class="svelte-1rtznio">ABOUT</a>
-	<a href="/work" class="svelte-1rtznio">WORK</a>
-	<a href="/blog" class="svelte-1rtznio">BLOG</a>
+	<div class="flex justify-evenly w-full mb-4 text-black dark_text-lightgray font-bold" style="max-width: 800px;"><a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-rok7d8" href="/">ABOUT</a>
+	<a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-rok7d8" href="/work">WORK</a>
+	<a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-rok7d8" href="/blog">BLOG</a>
 </div>
+	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-2xl svelte-mcjku9">✸</button>
 	<div class="w-5/6 bg-lightgray dark_bg-gray-900 pb-1 mb-4" style="content: ' ';"></div>
 	<div class="w-full h-full flex justify-center pb-6"><div class="h-full flex-col items-center mt-4 px-6" style="max-width: 500px;"><h1 class="text-center">No blog posts yet!</h1>
 		<p class="my-4">But don&#39;t worry, I&#39;ve got thousands of monkeys all hacking away on typewriters &#39;round the clock.
@@ -60,8 +85,8 @@
 		<p>They&#39;ll probably finish whipping up a shiny new post sometime soon, so stay tuned!
 		</p>
 		<br>
-		<h1 class="text-center text-4xl">🦍 🦍 🦍 🦍 🦍</h1></div></div>
-</div>
+		<h1 class="text-center text-4xl">🦍 🦍 🦍 🦍 🦍</h1></div></div></div>
+<div class="pb-6 w-full bg-lightgray dark_bg-gray-900" style="content: ' ';"></div>
 
 </div>
 	</body>
