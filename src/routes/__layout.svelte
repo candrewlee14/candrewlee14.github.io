@@ -1,7 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-import { get_all_dirty_from_scope } from 'svelte/internal';
-
 
 	import '../app.css';
 	import Logo from '../components/Logo.svelte';
@@ -35,16 +33,16 @@ import { get_all_dirty_from_scope } from 'svelte/internal';
 	<Navbar />
 	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-3xl" on:click={toggle}>
 	{#if theme === 'dark'}
-	✸
+	☀️
 	{/if}
 	{#if !(theme === 'dark')}
-	☾
+	🌙
 	{/if}
 	</button>
-	<div class="w-5/6 bg-lightgray dark_bg-gray-900 pb-1 mb-4" style="content: ' ';" />
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 dark_pb-1 mb-4" style="content: ' ';" />
 	<slot />
 </div>
-<div class="pb-6 w-full bg-lightgray dark_bg-gray-900" style="content: ' ';"/>
+<div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"/>
 
 <style>
 	button {

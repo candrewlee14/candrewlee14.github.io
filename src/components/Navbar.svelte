@@ -7,5 +7,6 @@
 <style lang="postcss">
 	a {
 		font-family: 'Raleway';
+		@apply font-bold text-xl;
 	}
 </style>

@@ -11,15 +11,16 @@
 		</h1>
 		<div class="flex flex-row flex-wrap justify-center mt-6">
 			<div class="flex flex-col items-center mb-8" style="min-width: 300px;">
-				<img src="/AndrewHeadshot.png" alt="my face" class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-white bg-black dark_bg-white" />
+				<img src="/AndrewHeadshot.png" alt="my face" 
+					class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-gray-400 bg-black dark_bg-gray-400" />
 			</div>
 			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
 					I'm currently working on detecting river trash at 
-					<a class="text-sky-800 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200" 
+					<a class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200" 
 						href="https://www.vpitechnology.com/">VPI Technologies</a
 					>. I'm also a student at the
-					<a class="text-red-800 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
+					<a class="text-red-700 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
 						href="https://www.cs.utah.edu/"
 					>
 					University of Utah</a>
@@ -61,16 +62,18 @@
 		height: 200px;
 	}
 	.podcast li {
-		@apply text-gray-400;
+		@apply text-gray-500;
 	}
 	.podcast span {
-		@apply text-black dark_text-lightgray;
+		@apply font-medium text-black dark_text-lightgray;
 	}
 	.andrew-container {
 		display: inline-block;
 	}
 	.andrew {
 		position: relative;
+		/* font-family: 'Permanent Marker'; */
+		/* font-size: 2rem; */
 		z-index: 3;
 		top: -1px;
 	}

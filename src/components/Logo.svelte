@@ -3,24 +3,30 @@
 
 	import { onMount } from 'svelte';
 	let lockedIn = false;
-	let fadeIn = false;
+	let fadedIn = false;
+	const SCRAMBLE_TIME = 1200;
+	const SCRAMBLE_DIFF = 300;
+	let reanimate_count = 0;
 </script>
 
-	<div class="logo p-1 m-10 text-gray-500 dark_text-gray-600 drop-shadow-sm border-4 rounded border-black dark_border-lightgray">
+	<div class="logo p-1 m-10 text-gray-500 dark_text-gray-400 drop-shadow-sm border-4 rounded border-black dark_border-lightgray"
+		on:click="{() => {reanimate_count++; lockedIn = false; fadedIn=false;}}"
+	>
 		{#if !lockedIn}
-			<Typewriter scramble={800} scrambleSlowdown={true}>
+			<Typewriter scramble={SCRAMBLE_TIME} scrambleSlowdown={true} delay={reanimate_count === 0 ? 250 : 0}>
 				<span class={lockedIn ? 'locked' : 'unlocked'}>AND</span>
 			</Typewriter>
-			<Typewriter scramble={800} scrambleSlowdown={true}>
+			<Typewriter scramble={SCRAMBLE_TIME + SCRAMBLE_DIFF} scrambleSlowdown={true} delay={reanimate_count === 0 ? 250 : 0}>
 				<span class={lockedIn ? 'locked' : 'unlocked'}>REW</span>
 			</Typewriter>
 			<Typewriter
-				scramble={1000}
+				scramble={SCRAMBLE_TIME + 2*SCRAMBLE_DIFF}
 				scrambleSlowdown={true}
+				delay={reanimate_count === 0 ? 250 : 0}
 				on:done={() => {
 					lockedIn = true;
 					setTimeout(() => {
-						fadeIn = true;
+						fadedIn = true;
 					}, 100);
 				}}
 			>
@@ -28,9 +34,9 @@
 			</Typewriter>
 		{/if}
 		{#if lockedIn}
-			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>AND</span>
-			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>REW</span>
-			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>LEE</span>
+			<span class={fadedIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-400'}>AND</span>
+			<span class={fadedIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-400'}>REW</span>
+			<span class={fadedIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-400'}>LEE</span>
 		{/if}
 		<div class="div-after border-4 border-black dark_border-lightgray rounded-md" style="position: absolute; border-left-color: transparent; border-top-color: transparent;"/>
 	</div>
@@ -40,8 +46,8 @@
 		display: block;
 		font-family: 'Press Start 2P';
 		margin: 0;
-		font: 1rem;
-		line-height: 1rem;
+		font-size: 1.5rem;
+		line-height: 1.5rem;
 		transition: color 2s;
 		@apply uppercase;
 	}
@@ -49,8 +55,8 @@
 		/* border-size: 3px solid;
 		border-radius: 3px; */
 		position: relative;
-		min-width: 62px;
-		min-height: 62px;
+		min-width: 88px;
+		min-height: 88px;
 	}
 	.div-after {
 		position: absolute;
@@ -59,10 +65,6 @@
 		height: calc(100% + 7px);
 		width: calc(100% + 7px);
 		content: ' ';
-		/* border: 3px solid;
-		border-radius: 7px;
-		border-left-color: transparent;
-		border-top-color: transparent; */
 		z-index: 1;
 	}
 </style>
