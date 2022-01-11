@@ -12,11 +12,11 @@
 			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute bg-sky-200 dark_bg-sky-500" />
 			<div class="entry">
 				<h2>Firmware Engineer Intern</h2>
-				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technologies</h3>
+				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technology Group</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
 				<hr />
 				<ul class="desc">
-					<li> Working on detecting trash in rivers using Pytorch, Yolov5, and Opencv.</li>
+					<li> Working on detecting trash in rivers using Pytorch and Opencv.</li>
 				</ul>
 				<!-- <img class="arrow-img" alt="up arrow" src="/curved-arrow.png"/> -->
 			</div>

@@ -22,7 +22,7 @@
 				<p>
 					I'm currently working on detecting trash in rivers at 
 					<a class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200" 
-						href="https://www.vpitechnology.com/">VPI Technologies</a
+						href="https://www.vpitechnology.com/">VPI Technology Group</a
 					>. I'm also a student at the
 					<a class="text-red-700 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
 						href="https://www.cs.utah.edu/"
