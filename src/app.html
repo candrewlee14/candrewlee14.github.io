@@ -3,7 +3,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
 		<link rel="icon" href="%svelte.assets%/favicon.png" />
+		<script>
+			function updateMode() {
+				if (localStorage.theme === 'dark') {
+					document.body.classList.add('dark')
+				} else {
+					document.body.classList.remove('dark')
+				}
+			}
+
+			onMount(() => {
+				let curTheme = localStorage.getItem('theme');
+				if (!curTheme)
+				{
+					localStorage.setItem('theme', 
+						window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+					);
+				}
+				updateMode();
+			});
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
 	</head>

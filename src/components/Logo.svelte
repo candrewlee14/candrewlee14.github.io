@@ -6,7 +6,7 @@
 	let fadeIn = false;
 </script>
 
-	<div>
+	<div class="logo p-1 m-10 text-gray-500 dark_text-gray-600 drop-shadow-sm border-4 rounded border-black dark_border-lightgray">
 		{#if !lockedIn}
 			<Typewriter scramble={800} scrambleSlowdown={true}>
 				<span class={lockedIn ? 'locked' : 'unlocked'}>AND</span>
@@ -28,13 +28,14 @@
 			</Typewriter>
 		{/if}
 		{#if lockedIn}
-			<span class={fadeIn ? 'locked' : 'unlocked'}>AND</span>
-			<span class={fadeIn ? 'locked' : 'unlocked'}>REW</span>
-			<span class={fadeIn ? 'locked' : 'unlocked'}>LEE</span>
+			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>AND</span>
+			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>REW</span>
+			<span class={fadeIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-600'}>LEE</span>
 		{/if}
+		<div class="div-after border-4 border-black dark_border-lightgray rounded-md" style="position: absolute; border-left-color: transparent; border-top-color: transparent;"/>
 	</div>
 
-<style>
+<style lang="postcss">
 	span {
 		display: block;
 		font-family: 'Press Start 2P';
@@ -44,31 +45,24 @@
 		transition: color 2s;
 		@apply uppercase;
 	}
-	div {
-		border: 3px solid;
+	.logo {
+		/* border-size: 3px solid;
+		border-radius: 3px; */
 		position: relative;
-		border-radius: 3px;
 		min-width: 62px;
 		min-height: 62px;
-		@apply p-1 m-10 drop-shadow-sm;
 	}
-	div:after {
-		top: 3px;
-		left: 3px;
-		height: calc(100% + 6px);
-		width: calc(100% + 6px);
-		content: ' ';
+	.div-after {
 		position: absolute;
-		border: 3px solid;
+		top: 3.5px;
+		left: 4px;
+		height: calc(100% + 7px);
+		width: calc(100% + 7px);
+		content: ' ';
+		/* border: 3px solid;
 		border-radius: 7px;
 		border-left-color: transparent;
-		border-top-color: transparent;
+		border-top-color: transparent; */
 		z-index: 1;
-	}
-	.locked {
-		@apply text-black;
-	}
-	.unlocked {
-		@apply text-gray-500;
 	}
 </style>

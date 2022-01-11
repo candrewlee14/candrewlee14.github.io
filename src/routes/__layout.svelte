@@ -1,15 +1,43 @@
 <script>
+	import { onMount } from 'svelte';
+
+
 	import '../app.css';
 	import Logo from '../components/Logo.svelte';
 	import Navbar from '../components/Navbar.svelte';
+
+	function updateMode() {
+		if (localStorage.theme === 'dark') {
+			document.body.classList.add('dark')
+		} else {
+			document.body.classList.remove('dark')
+		}
+	}
+
+	function toggle() {
+		let curTheme = localStorage.getItem('theme');
+		if (curTheme === 'dark'){
+			localStorage.theme = "light";
+		}
+		else {
+			localStorage.theme = "dark";
+		}
+		updateMode();
+	}
 </script>
 
-<div class="flex flex-col h-full w-full items-center bg-white dark_bg-gray-800">
+<div class="flex flex-col w-full items-center" style="min-height: 100vh;">
 	<Logo />
 	<Navbar />
+	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-2xl" on:click={toggle}>✸</button>
 	<div class="w-5/6 bg-lightgray dark_bg-gray-900 pb-1 mb-4" style="content: ' ';" />
 	<slot />
 </div>
+<div class="pb-6 w-full bg-lightgray dark_bg-gray-900" style="content: ' ';"/>
 
 <style>
+	button {
+		top: 3rem;
+		right: 2rem;
+	}
 </style>

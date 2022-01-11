@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Press+Start+2P&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,9 +14,8 @@
 html,
 body,
 #svelte {
-	width: 100%;
-	height: 100%;
 	margin: 0;
+	@apply bg-white dark_bg-gray-800;
 }
 
 h1,
@@ -27,6 +23,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Raleway';
+	@apply text-black dark_text-lightgray;
 }
 h1 {
 	@apply text-2xl;
@@ -39,5 +36,9 @@ h3 {
 }
 p {
 	font-family: 'Barlow';
-	@apply font-light;
+	@apply font-light dark_font-normal text-black dark_text-lightgray;
+}
+ 
+a {
+	@apply font-bold transition;
 }
