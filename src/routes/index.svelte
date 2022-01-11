@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>About Me - Andrew Lee</title>
+</svelte:head>
+
 <div class="w-full h-full flex justify-center pb-6">
 	<div class="w-3/4 h-full flex flex-col items-center mt-6">
 		<h1 class="text-center">Hello! 👋</h1>
