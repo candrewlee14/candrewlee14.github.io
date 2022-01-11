@@ -11,7 +11,7 @@
 		<div class="relative entry-wrap pl-4 border-lightgray">
 			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute bg-sky-200 dark_bg-sky-500" />
 			<div class="entry">
-				<h2>Marketing Coordinator & Software Developer</h2>
+				<h2>Firmware Engineer Intern</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technologies</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
 				<hr />

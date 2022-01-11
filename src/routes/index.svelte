@@ -20,7 +20,7 @@
 			</div>
 			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
-					I'm currently working on detecting river trash at 
+					I'm currently working on detecting trash in rivers at 
 					<a class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200" 
 						href="https://www.vpitechnology.com/">VPI Technologies</a
 					>. I'm also a student at the
