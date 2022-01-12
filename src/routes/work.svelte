@@ -18,7 +18,6 @@
 					<hr />
 					<li> Working on detecting trash in rivers using Pytorch and Opencv</li>
 				</ul>
-				<!-- <img class="arrow-img" alt="up arrow" src="/curved-arrow.png"/> -->
 			</div>
 		</div>
 		<div class="relative entry-wrap pl-4  border-lightgray dark_border-gray-500" >
