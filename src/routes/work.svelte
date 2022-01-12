@@ -8,21 +8,21 @@
 
 <div class="w-full h-full flex justify-center pb-6">
 	<div class="w-3/4 h-full flex flex-col mt-8">
-		<div class="relative entry-wrap pl-4 border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute bg-sky-200 dark_bg-sky-500" />
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
+			<div class="dot" style="background-color: rgb(125, 175, 255);"/>
 			<div class="entry">
 				<h2>Firmware Engineer Intern</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technology Group</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
-				<hr />
 				<ul class="desc">
-					<li> Working on detecting trash in rivers using Pytorch and Opencv.</li>
+					<hr />
+					<li> Working on detecting trash in rivers using Pytorch and Opencv</li>
 				</ul>
 				<!-- <img class="arrow-img" alt="up arrow" src="/curved-arrow.png"/> -->
 			</div>
 		</div>
-		<div class="relative entry-wrap pl-4  border-lightgray" >
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+		<div class="relative entry-wrap pl-4  border-lightgray dark_border-gray-500" >
+			<div class="dot" />
 			<div class="entry">
 				<h2>Marketing Coordinator & Software Developer</h2>
 				<h3 class="company text-cyan-600 dark_text-cyan-500">Neo Home Loans</h3>
@@ -38,8 +38,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="relative entry-wrap pl-4  border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+		<div class="relative entry-wrap pl-4  border-lightgray dark_border-gray-500">
+			<div class="dot" />
 			<div class="entry">
 				<h2>Data Analyst & Admin Assistant</h2>
 				<h3 class="company text-green-700 dark_text-green-500">
@@ -59,8 +59,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="relative entry-wrap pl-4 border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
+			<div class="dot" />
 			<div class="entry">
 				<h2>Software Engineer</h2>
 				<h3 class="company text-red-700 dark_text-red-400">University of Utah - Genetics Lab</h3>
@@ -85,8 +85,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="relative entry-wrap pl-4 border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
+			<div class="dot" />
 			<div class="entry">
 				<h2>Data Visualization Intern</h2>
 				<h3 class="company text-yellow-600 dark_text-yellow-400">BrainStorm Inc.</h3>
@@ -101,8 +101,8 @@
 				</ul>
 			</div>
 		</div>
-		<div class="relative entry-wrap pl-4 border-lightgray">
-			<div class="dot border-lightgray bg-white dark_bg-gray-600 absolute" />
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
+			<div class="dot" />
 			<div class="entry">
 				<h2>Software Development Intern</h2>
 				<h3 class="company text-rose-700 dark_text-rose-400">Red Pepper Software</h3>
@@ -126,15 +126,18 @@
 
 <style lang="postcss">
 	hr {
-		@apply my-2 border rounded-sm border-lightgray;
+		@apply my-2 border rounded-sm;
 	}
-	.dot {
+	.entry hr {
+		@apply border-lightgray dark_border-gray-400;
+	}
+	.entry-wrap .dot {
 		content: ' ';
 		width: 15px;
 		height: 15px;
 		border-radius: 100%;
 		left: -9px;
-		@apply border-4;
+		@apply border-4 border-gray-500 dark_border-lightgray bg-white dark_bg-gray-600 absolute;
 	}
 	.entry-wrap {
 		border-right: transparent;

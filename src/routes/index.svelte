@@ -1,3 +1,7 @@
+<script>
+	import feather from 'feather-icons';
+</script>
+
 <svelte:head>
 	<title>About Me - Andrew Lee</title>
 </svelte:head>
@@ -33,9 +37,25 @@
 				<p>
 					I'm interested in art, music, fashion, technology, business, and health. When I'm not
 					working or studying, you can find me playing basketball with friends, jamming on the
-					piano, playing Super Smash Bros, or coding on a fun project.
+					piano, playing Super Smash Bros, reading up on a new technical breakthrough, or coding on a fun project.
 				</p>
+				<p>Feel free to connect with me through my socials below!</p>
 			</div>
+		</div>
+		<!-- <h2>Socials 🌐</h2> -->
+		<div class="socials border-lightgray dark_border-gray-900">
+			<a href="https://github.com/candrewlee14">
+				{@html feather.icons.github.toSvg()}
+				<span>candrewlee14</span>
+			</a>
+			<a href="mailto:candrewlee14@gmail.com">
+				{@html feather.icons.mail.toSvg()}
+				<span>candrewlee14@gmail.com</span>
+			</a>
+			<a href="https://www.linkedin.com/in/c-andrew-lee">
+				{@html feather.icons.linkedin.toSvg()}
+				<span>c-andrew-lee</span>
+			</a>
 		</div>
 		<div class="mt-6">
 			<h2 class="text-center my-2">Podcasts I'm Listening To 🔊</h2>
@@ -110,6 +130,21 @@
 		width: 100%;
 		font-family: 'Barlow';
 		@apply mb-4;
+	}
+	.socials {
+		@apply flex flex-row flex-wrap p-1 pt-3 border-4 rounded mt-4 mb-4;
+	}
+	.socials h2, .socials a {
+		@apply pb-2 block;
+	}
+	.socials h2 {
+		@apply pl-1 pt-4;
+	}
+	.socials span {
+		@apply pl-2 transition text-gray-600 hover_text-gray-400 dark_text-gray-400 dark_hover_text-gray-500;
+	}
+	.socials a {
+		@apply flex pl-3 pr-6;
 	}
 	.profile {
 		width: 200px;

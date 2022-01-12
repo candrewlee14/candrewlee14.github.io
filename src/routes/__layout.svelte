@@ -45,7 +45,7 @@
 	🌙
 	{/if}
 	</button>
-	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 dark_pb-1 mb-4" style="content: ' ';" />
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-4" style="content: ' ';" />
 	<slot />
 </div>
 <div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"/>

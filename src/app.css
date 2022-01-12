@@ -58,3 +58,16 @@ p, li {
 a {
 	@apply font-semibold dark_font-bold transition;
 }
+
+.feather {
+	width: 24px;
+	height: 24px;
+	stroke: black;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+.dark .feather {
+	stroke: white;
+}
