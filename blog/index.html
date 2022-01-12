@@ -7,20 +7,44 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
 		<link rel="icon" href="./waving_hand/favicon.ico" />
+		<style>
+			body {
+				visibility: hidden;
+				opacity: 0;
+			}
+		</style>		
 		<script>
 			function updateMode() {
 				if (localStorage.theme === 'dark') {
 					document.body.classList.add('dark')
+					document.body.style.background = "black";
 				} else {
 					document.body.classList.remove('dark')
+					document.body.style.background = "white";
 				}
 			}
 
-			localStorage.setItem('theme', 
-				window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-			);
-			updateMode();
+			function showContent() {
+				document.body.style.visibility = 'visible';
+				document.body.style.opacity = 1;
+			}
+
+			window.addEventListener('DOMContentLoaded', function () {
+				localStorage.setItem('theme', 
+					window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+				);
+				updateMode();
+				showContent();
+			});
 		</script>
+		<noscript>
+			<style>
+				body {
+					visibility: visible;
+					opacity: 1;
+				}
+			</style>
+		</noscript>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Blog - Andrew Lee</title>
 
@@ -28,14 +52,14 @@
 
 		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-4e6d9768.css">
-		<link rel="modulepreload" href="/_app/start-b9555ee2.js">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-5711ac63.css">
+		<link rel="modulepreload" href="/_app/start-05f3a947.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-f1b24350.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-b8045b06.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-ca91a6e4.js">
 		<link rel="modulepreload" href="/_app/pages/blog.svelte-ca07c28b.js">
 
 		<script type="module">
-			import { start } from "/_app/start-b9555ee2.js";
+			import { start } from "/_app/start-05f3a947.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -47,7 +71,7 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-b8045b06.js"),
+						import("/_app/pages/__layout.svelte-ca91a6e4.js"),
 						import("/_app/pages/blog.svelte-ca07c28b.js")
 					],
 					url: new URL("http://prerender/blog"),
@@ -71,7 +95,7 @@
 	<a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-3kd12y" href="/blog">BLOG</a>
 </div>
 	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-3xl svelte-mcjku9">
-	🌙</button>
+	</button>
 	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 dark_pb-1 mb-4" style="content: ' ';"></div>
 	
 
