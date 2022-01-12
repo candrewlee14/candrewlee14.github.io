@@ -1,9 +1,9 @@
 <script>
 	import { onMount } from 'svelte';
-
 	import '../app.css';
 	import Logo from '../components/Logo.svelte';
 	import Navbar from '../components/Navbar.svelte';
+	import PageTransition from '../components/PageTransition.svelte';
 
 	let theme = null;
 	function updateMode() {
@@ -19,7 +19,6 @@
 	}
 
 	function toggle() {
-		// console.log("Clicked button!");
 		let curTheme = localStorage.getItem('theme');
 		if (curTheme === 'dark'){
 			localStorage.theme = "light";
@@ -32,6 +31,17 @@
 	onMount(() => {
 		updateMode();
 	});
+
+	export let key;
+</script>
+
+<!-- Assign current route's path to `key` prop -->
+<script context="module">
+	export const load = async ({ url }) => ({
+	  props: {
+		key: url,
+	  },
+	})
 </script>
 
 <div class="flex flex-col w-full items-center" style="min-height: 100vh;">
@@ -46,7 +56,7 @@
 	{/if}
 	</button>
 	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-4" style="content: ' ';" />
-	<slot />
+	<PageTransition refresh={key}><slot/></PageTransition>
 </div>
 <div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"/>
 
