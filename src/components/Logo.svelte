@@ -38,6 +38,11 @@
 			<span class={fadedIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-400'}>REW</span>
 			<span class={fadedIn ? 'text-black dark_text-lightgray' : 'text-gray-500 dark_text-gray-400'}>LEE</span>
 		{/if}
+		<noscript>
+			<span class='text-black dark_text-lightgray' style="transition: none;">AND</span>
+			<span class='text-black dark_text-lightgray' style="transition: none;">REW</span>
+			<span class='text-black dark_text-lightgray' style="transition: none;">LEE</span>
+		</noscript>
 		<div class="div-after border-4 border-black dark_border-lightgray rounded-md" style="position: absolute; border-left-color: transparent; border-top-color: transparent;"/>
 	</div>
 

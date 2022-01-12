@@ -19,7 +19,7 @@
 	}
 
 	function toggle() {
-		console.log("Clicked button!");
+		// console.log("Clicked button!");
 		let curTheme = localStorage.getItem('theme');
 		if (curTheme === 'dark'){
 			localStorage.theme = "light";
