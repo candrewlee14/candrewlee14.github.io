@@ -129,6 +129,7 @@
 		@apply my-2 border rounded-sm;
 	}
 	.entry hr {
+		max-width: 800px;
 		@apply border-lightgray dark_border-gray-400;
 	}
 	.entry-wrap .dot {
