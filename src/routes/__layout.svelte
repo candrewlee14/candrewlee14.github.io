@@ -9,14 +9,17 @@
 	function updateMode() {
 		if (localStorage.theme === 'dark') {
 			theme = 'dark';
-			document.body.classList.add('dark')
+			document.body.classList.add('dark');
+			document.body.style.background = "#1f2937";
 		} else {
 			document.body.classList.remove('dark')
+			document.body.style.background = "white";
 			theme = 'light';
 		}
 	}
 
 	function toggle() {
+		console.log("Clicked button!");
 		let curTheme = localStorage.getItem('theme');
 		if (curTheme === 'dark'){
 			localStorage.theme = "light";
@@ -26,6 +29,9 @@
 		}
 		updateMode();
 	}
+	onMount(() => {
+		updateMode();
+	});
 </script>
 
 <div class="flex flex-col w-full items-center" style="min-height: 100vh;">
@@ -35,7 +41,7 @@
 	{#if theme === 'dark'}
 	☀️
 	{/if}
-	{#if !(theme === 'dark')}
+	{#if theme === 'light'}
 	🌙
 	{/if}
 	</button>

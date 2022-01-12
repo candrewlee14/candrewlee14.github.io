@@ -68,7 +68,7 @@
 			<div class="bubble-list tool-list">
 				<h4>Tools & Platforms</h4>
 				<span>PostgresSQL</span>
-				<span>Sqlite</span>
+				<span>SQLite</span>
 				<span>Linux</span>
 				<span>Windows</span>
 				<span>AWS</span>

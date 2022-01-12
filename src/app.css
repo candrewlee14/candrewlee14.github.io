@@ -15,8 +15,24 @@ html,
 body,
 #svelte {
 	margin: 0;
+}
+#svelte {
 	@apply bg-white dark_bg-gray-800;
 }
+/* body {
+	background: white;
+} */
+/* 
+html {
+	overflow: hidden;
+	height: 100%;
+	background: black;
+}
+body {
+	overflow: auto;
+	height: 100%;
+	overscroll-behavior: none;
+} */
 
 h1,
 h2,
