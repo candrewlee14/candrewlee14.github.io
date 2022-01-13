@@ -70,6 +70,7 @@
 			<div class="bubble-list langs-list">
 				<h4>Languages & Frameworks</h4>
 				<span>React</span>
+				<span>Next.js</span>
 				<span>Svelte</span>
 				<span>C#</span>
 				<span>.NET</span>					
@@ -87,6 +88,8 @@
 			</div>
 			<div class="bubble-list tool-list">
 				<h4>Tools & Platforms</h4>
+				<span>Docker</span>
+				<span>Git</span>
 				<span>PostgresSQL</span>
 				<span>SQLite</span>
 				<span>Linux</span>
@@ -113,6 +116,7 @@
 				<span>Front-End Web Dev</span>
 				<span>UI/UX</span>
 				<span>Graphic Design</span>
+				<span>Agile</span>
 			</div>
 		</div>
 	</div>
