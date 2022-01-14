@@ -17,7 +17,10 @@
 				<h4 class="dates">Aug 2021 - Present</h4>
 				<ul class="desc">
 					<hr />
-					<li> Working on detecting trash in rivers using Pytorch and Opencv</li>
+					<li>Training custom machine learning models to detect trash in rivers using Pytorch & Yolov5</li>
+					<li>Parsing video streams with ffmpeg & Opencv and generating randomized datasets</li>
+					<li>Managing concurrent image labeling</li>
+					<li>Building internal DevOps CLI tools for GitLab project management</li>
 				</ul>
 			</div>
 		</div>
