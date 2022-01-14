@@ -20,8 +20,12 @@
 		</h1>
 		<div class="flex flex-row flex-wrap justify-center mt-6">
 			<div class="flex flex-col items-center mb-8" style="min-width: 300px;">
-				<img src="/AndrewHeadshot.png" alt="my face" 
-					class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-gray-400 bg-black dark_bg-gray-400" />
+				<picture>
+					<source type="image/webp" srcset="/AndrewHeadshot.webp">
+					<source type="image/png" srcset="/AndrewHeadshot.png">
+					<img src="/AndrewHeadshot.png" alt="my face" 
+						class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-gray-400 bg-black dark_bg-gray-400" />
+				</picture>
 			</div>
 			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
@@ -156,7 +160,7 @@
 		height: 200px;
 	}
 	.podcast-list li {
-		@apply text-gray-500;
+		@apply text-gray-500 dark_text-gray-400;
 	}
 	.podcast-list span {
 		@apply font-medium text-black dark_text-lightgray;
