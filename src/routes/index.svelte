@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Learn more about me!">
 	<title>About Me - Andrew Lee</title>
 </svelte:head>
 

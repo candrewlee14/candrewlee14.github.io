@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Blog - Andrew Lee</title>
+	<meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Check out my blog!">
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">
