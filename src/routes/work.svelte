@@ -15,8 +15,8 @@
 				<h2>Firmware Engineer Intern</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technology Group</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
+				<hr />
 				<ul class="desc">
-					<hr />
 					<li>Training custom machine learning models to detect trash in rivers using Pytorch & Yolov5</li>
 					<li>Parsing video streams with ffmpeg & Opencv and generating randomized datasets</li>
 					<li>Managing concurrent image labeling</li>
@@ -28,7 +28,7 @@
 			<div class="dot" />
 			<div class="entry">
 				<h2>Marketing Coordinator & Software Developer</h2>
-				<h3 class="company text-cyan-600 dark_text-cyan-500">Neo Home Loans</h3>
+				<h3 class="company text-cyan-700 dark_text-cyan-500">Neo Home Loans</h3>
 				<h4 class="dates">Jan 2021 - Aug 2021</h4>
 				<hr />
 				<ul class="desc">
@@ -92,7 +92,7 @@
 			<div class="dot" />
 			<div class="entry">
 				<h2>Data Visualization Intern</h2>
-				<h3 class="company text-yellow-600 dark_text-yellow-400">BrainStorm Inc.</h3>
+				<h3 class="company text-yellow-700 dark_text-yellow-400">BrainStorm Inc.</h3>
 				<h4 class="dates">May 2020 - Jun 2020</h4>
 				<hr />
 				<ul class="desc">
@@ -158,7 +158,7 @@
 		@apply font-medium;
 	}
 	.dates {
-		@apply font-medium text-gray-400;
+		@apply font-medium text-gray-500 dark_text-gray-400;
 	}
 	.desc {
 		list-style: none;

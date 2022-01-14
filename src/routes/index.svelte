@@ -71,9 +71,9 @@
 			</ul>
 		</div>
 		<div class="mt-8" style="max-width: 550px">
-			<h2 class="text-center mt-4 pb-1">My Software Skills ⭐</h2>
+			<h2 class="text-center mt-4 pb-2">My Software Skills ⭐</h2>
 			<div class="bubble-list langs-list">
-				<h4>Languages & Frameworks</h4>
+				<h3>Languages & Frameworks</h3>
 				<span>React</span>
 				<span>Next.js</span>
 				<span>Svelte</span>
@@ -92,7 +92,7 @@
 				<span>GraphQL</span>
 			</div>
 			<div class="bubble-list tool-list">
-				<h4>Tools & Platforms</h4>
+				<h3>Tools & Platforms</h3>
 				<span>Docker</span>
 				<span>Git</span>
 				<span>PostgresSQL</span>
@@ -111,7 +111,7 @@
 				<span>Excel</span>
 			</div>
 			<div class="bubble-list concept-list">
-				<h4>Concepts & Subjects</h4>
+				<h3>Concepts & Subjects</h3>
 				<span>Machine Learning</span>
 				<span>REST APIs</span>
 				<span>Image Processing</span>
@@ -168,7 +168,7 @@
 	.bubble-list {
 		@apply flex flex-wrap mb-4;
 	}
-	.bubble-list h4 {
+	.bubble-list h3 {
 		@apply w-full mt-2 mb-1;
 	}
 	.bubble-list span {
