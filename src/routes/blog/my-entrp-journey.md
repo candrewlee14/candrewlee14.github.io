@@ -4,7 +4,8 @@ date: 2022-02-22
 excerpt: How I'm creating value in my career!
 ---
 
-# Early Life
+# Origin Story
+I've always been a tinkerer.
 
 # Discovering Code
 

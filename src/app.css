@@ -52,7 +52,7 @@ h3 {
 }
 p, li {
 	font-family: 'Barlow';
-	@apply font-light text-black dark_text-lightgray;
+	@apply font-normal text-black dark_text-lightgray;
 }
  
 a {

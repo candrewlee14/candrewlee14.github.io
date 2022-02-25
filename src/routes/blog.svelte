@@ -1,5 +1,6 @@
 <script context="module">
 	import { base } from '$app/paths';
+	import dayjs from 'dayjs';
 	export const load = async ({ fetch }) => {
 		const posts = await fetch('/posts.json');
 		const allPosts = await posts.json();
@@ -34,7 +35,7 @@
 						<a href={`${base}/${post.path}`}>
 							<div class="flex flex-row">
 								<p class="num mr-4">#{posts.length - i}</p>
-								<p class="date">{post.meta.date.substring(0, 10)} by Andrew Lee</p>
+								<p class="date">{dayjs(post.meta.date).format("MMM D, YYYY")} by Andrew Lee</p>
 							</div>
 							<h2 class="title">{post.meta.title}</h2>
 							<p class="excerpt">{post.meta.excerpt}</p>
