@@ -8,11 +8,11 @@
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">
-	<div class="w-3/4 h-full flex flex-col mt-8">
+	<div class="w-3/4 h-full flex flex-col">
 		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
 			<div class="dot" style="background-color: rgb(125, 175, 255);"/>
 			<div class="entry">
-				<h2>Firmware Engineer Intern</h2>
+				<h2>Machine Learning Intern</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technology Group</h3>
 				<h4 class="dates">Aug 2021 - Present</h4>
 				<hr />
@@ -158,7 +158,7 @@
 		@apply font-medium;
 	}
 	.dates {
-		@apply font-medium text-gray-500 dark_text-gray-400;
+		@apply font-medium text-gray-500 dark_text-gray-400 italic;
 	}
 	.desc {
 		list-style: none;

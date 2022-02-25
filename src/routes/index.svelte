@@ -3,12 +3,15 @@
 </script>
 
 <svelte:head>
-	<meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Learn more about me!">
+	<meta
+		name="description"
+		content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Learn more about me!"
+	/>
 	<title>About Me - Andrew Lee</title>
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">
-	<div class="w-3/4 h-full flex flex-col items-center mt-6">
+	<div class="w-3/4 h-full flex flex-col items-center">
 		<h1 class="text-center">Hello! 👋</h1>
 		<h1 class="text-center">
 			My name is <div class="andrew-container">
@@ -21,28 +24,35 @@
 		<div class="flex flex-row flex-wrap justify-center mt-6">
 			<div class="flex flex-col items-center mb-8" style="min-width: 300px;">
 				<picture>
-					<source type="image/webp" srcset="/AndrewHeadshot.webp">
-					<source type="image/png" srcset="/AndrewHeadshot.png">
-					<img src="/AndrewHeadshot.png" alt="my face" 
-						class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-gray-400 bg-black dark_bg-gray-400" />
+					<source type="image/webp" srcset="/AndrewHeadshot.webp" />
+					<source type="image/png" srcset="/AndrewHeadshot.png" />
+					<img
+						src="/AndrewHeadshot.png"
+						alt="my face"
+						class="profile drop-shadow-md border-4 rounded-sm border-black dark_border-gray-400 bg-black dark_bg-gray-400"
+					/>
 				</picture>
 			</div>
 			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
-					I'm currently working on detecting trash in rivers at 
-					<a class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200" 
+					I'm currently working on detecting trash in rivers at
+					<a
+						class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200"
 						href="https://www.vpitechnology.com/">VPI Technology Group</a
 					>. I'm also a student at the
-					<a class="text-red-700 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
+					<a
+						class="text-red-700 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
 						href="https://www.cs.utah.edu/"
 					>
-					University of Utah</a>
+						University of Utah</a
+					>
 					earning my Honors BS/MS in Computer Science.
 				</p>
 				<p>
 					I'm interested in art, music, fashion, technology, business, and health. When I'm not
 					working or studying, you can find me playing basketball with friends, jamming on the
-					piano, playing Super Smash Bros, reading up on a new technical breakthrough, or coding on a fun project.
+					piano, playing Super Smash Bros, reading up on a new technical breakthrough, or coding on
+					a fun project.
 				</p>
 				<p>Feel free to connect with me through my socials below!</p>
 			</div>
@@ -78,7 +88,7 @@
 				<span>Next.js</span>
 				<span>Svelte</span>
 				<span>C#</span>
-				<span>.NET</span>					
+				<span>.NET</span>
 				<span>Java</span>
 				<span>Javascript</span>
 				<span>Typescript</span>
@@ -143,7 +153,8 @@
 	.socials {
 		@apply flex flex-row flex-wrap p-1 pt-3 border-4 rounded mt-4 mb-4;
 	}
-	.socials h2, .socials a {
+	.socials h2,
+	.socials a {
 		@apply pb-2 block;
 	}
 	.socials h2 {
@@ -199,5 +210,4 @@
 		z-index: 0;
 		content: ' ';
 	}
-
 </style>

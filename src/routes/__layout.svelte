@@ -55,7 +55,7 @@
 	🌙
 	{/if}
 	</button>
-	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-4" style="content: ' ';" />
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-10" style="content: ' ';" />
 	<PageTransition refresh={key}><slot/></PageTransition>
 </div>
 <div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"/>
