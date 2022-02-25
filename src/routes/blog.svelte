@@ -39,7 +39,6 @@
 							</div>
 							<h2 class="title">{post.meta.title}</h2>
 							<p class="excerpt">{post.meta.excerpt}</p>
-							<br class="my-4" />
 						</a>
 					</div>
 				{/each}
@@ -60,7 +59,7 @@
 <style lang="postcss">
 	.postlink {
 		@apply flex flex-row justify-start;
-		@apply border-lightgray;
+		@apply border-lightgray mb-6 mt-6;
 	}
 	.blogtitle {
 		margin-top: -10px;
@@ -69,8 +68,11 @@
 		@apply mt-2 mb-4 border rounded-sm;
 		@apply border-lightgray dark_border-gray-400;
 	}
+	.postlink .num{
+		@apply bg-sky-200 dark_bg-sky-900 px-2 mb-1 rounded-md;
+	}
 	.postlink .title {
-		@apply text-blue-500 dark_text-blue-400;
+		@apply text-blue-500 hover_text-blue-300 dark_text-blue-400 dark_hover_text-blue-200 transition;
 	}
 
 	.postlink .date {

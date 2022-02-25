@@ -1,16 +1,16 @@
 ---
 title: My Entreprenuerial Journey
 date: 2022-02-22
-excerpt: How I'm creating value in my career!
+excerpt: Creating value through automation!
 ---
 
-# Origin Story
-I've always been a tinkerer.
+## Origin Story
+I've always been a tinkerer. Ever since I was little, I was always interested in how things worked, what made things tick.
 
-# Discovering Code
+## Discovering Code
 
-# Off to College
+## Off to College
 
-# Discovering the Value of Automation
+## Discovering the Value of Automation
 
-# Where I'm Going Next
+## Where I'm Going Next

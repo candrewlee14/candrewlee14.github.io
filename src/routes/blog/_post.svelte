@@ -15,25 +15,25 @@
 		@apply mx-6;
 		max-width: 900px;
 	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p {
+	.content :global(h1),
+	.content :global(h2),
+	.content :global(h3),
+	.content :global(h4),
+	.content :global(h5),
+	.content :global(h6),
+	.content :global(p) {
 		@apply mb-2;
 	}
-	h1 {
+	.content :global(h1) {
 		@apply text-3xl;
 	}
-	h2 {
+	.content :global(h2) {
 		@apply text-2xl;
 	}
-	h3 {
+	.content :global(h3) {
 		@apply text-xl;
 	}
-	h4 {
+	.content :global(h4) {
 		@apply text-lg;
 	}
 	.date {
