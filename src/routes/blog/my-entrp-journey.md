@@ -47,13 +47,57 @@ Over the next few years, I'd learn to make simple websites with HTML, CSS, and J
 I learned some jQuery too, which I'd later return to and find completely out of style (*classic* frontend experience).
 Everything I was working on was web-based and visual, right up until my very first high school Computer Science class. 
 
-## High School & Beyond
+## Gradient Descent
 
-In high school, I learned to use C++ and C# with Visual Studio. I built my first console applications, a choose-your-own adventure game and a file searcher. 
-I learned to use WinForms and built a replica of the calculator app.
+In high school classes, I learned to use C++ and C# with Visual Studio. I built my first console applications, a choose-your-own adventure game and a file search tool. 
+I learned to use WinForms and built a replica of the calculator app. I learned about how computers access and store memory, and the foundations of computing.
+I won the Computer Technology Sterling Scholar award for Lone Peak High School and went to regionals.
+
+Even with my interest in computer science, an impending choice for my college major loomed above me. 
+I wasn't sure if I wanted to be a software developer or if I just was interested in programming.
+At the same time, I enjoyed learning about anatomy and chemistry in my classes and considered a career in the health sector. 
+I knew I wanted a career that made on impact on lives and made the world a better place, and becoming a doctor seemed like the way to go.
+
+When it came down to selecting a college, I chose the University of Utah for its stellar medical and computer science departments.
+I registered for my first week of class, ready to pursue pre-med. 
+I went to my first biology lecture, and halfway through, I realized I had completely checked and was reading about the Rust programming language.
+I walked out after class that day, switched my major to computer science, and never looked back.
+
+Since then I've studied algorithms, databases, operating systems, graphics, programming languages, computer vision, and more. 
+I've learned how broad and deep the field of computer science is, and I'm passionate to continue learning.
+Even with that passion, I continue to have other interests. 
+I still think the medical field is incredibly fascinating, I love to learn about business strategy.
+That wide-ranging curiosity that has fueled my love for learning has also made it difficult to pin down an specific area.
+
+Part of what has made defining my career direction so difficult is my wide-ranging curiosity. 
+There's just so much in the world that is exciting to me that I want to explore.
+In trying to identify a niche for me to create value in society, I've distilled what drives me into a few points.
+
+- I love to tinker and build cool stuff, especially when science and technology are involved
+- I have talent and passion for software development
+- I want to people to have happy lives doing what they love, and not have to waste time doing things they don't
+
+A unifying theme of these driving forces is automation: abstracting away repetitive tasks to allow people to focus on what matters to them.
+I love building things that solve problems while saving time.
+Only in retrospect do I realize that automation has been a common thread of so much of my work.
 
 ## The Power of Automation
 
-## Where I'm Going Next
+When I see repetive and inefficient processes, I'm eager to automate. 
+To help me keep track of all my college and extracurricular work, I built a program to [sync Canvas assignments into Microsoft To Do](https://github.com/candrewlee14/canvas-todo-linker). 
+To help improve my programming productivity, I stored my [dotfiles](https://github.com/candrewlee14/dotfiles) 
+to reproduce my development environment on new machines with a single command. 
 
+At Fairway Mortage, I designed software to generate client gift orders. It was a task previously done by hand, and my work saved hours every week.
+I built PowerBI dashboards to improve employee performance visibility, saving time for management and helping them lead with data.
+I created report workflows to reliably handle and assign Verification-of-Employment calls. 
+This time-saving work helped us continue to perform at scale during one of the busiest years ever in the mortgage industry.
+
+At Neo Home Loans, I built middleware to connect lead generation services to our CRM. 
+I even automated the *deployment* of that automation with containerization and a CI/CD pipeline.
+I did the same when a developed a web app to communicate the loan process to clients.
+
+At my current job at VPI, I'm categorizing and quantifying trash in rivers using machine learning, the crown jewel of automation tooling.
+
+## The Future
 

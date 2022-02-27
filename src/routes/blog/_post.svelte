@@ -25,7 +25,7 @@
 		@apply mb-4 mt-2;
 	}
 	.content :global(p) {
-		@apply mb-4;
+		@apply mb-4 text-base;
 	}
 	.content :global(h1) {
 		@apply text-3xl;
@@ -42,8 +42,13 @@
 		@apply text-lg;
 	}
 	.content :global(a) {
-		@apply text-blue-400 hover_text-blue-200 font-normal;
+		@apply text-blue-500 hover_text-blue-200 font-normal;
 	}
+    .content :global(ul) {
+        list-style-type: disc;
+        list-style-position: outside;
+        @apply mb-4 ml-5;
+    }
 	.date {
 		@apply font-medium text-gray-500 dark_text-gray-400 italic mb-4;
 	}
