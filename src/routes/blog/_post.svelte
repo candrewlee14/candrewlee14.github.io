@@ -13,6 +13,7 @@
 <style lang="postcss">
 	.content {
 		@apply mx-6;
+        margin-top: -15px;
 		max-width: 900px;
 	}
 	.content :global(h1),
@@ -20,21 +21,28 @@
 	.content :global(h3),
 	.content :global(h4),
 	.content :global(h5),
-	.content :global(h6),
+	.content :global(h6) {
+		@apply mb-4 mt-2;
+	}
 	.content :global(p) {
-		@apply mb-2;
+		@apply mb-4;
 	}
 	.content :global(h1) {
 		@apply text-3xl;
 	}
 	.content :global(h2) {
-		@apply text-2xl;
+		@apply text-2xl pl-1 pb-1;
+        border-bottom: 2px solid;
+        @apply border-gray-400;
 	}
 	.content :global(h3) {
 		@apply text-xl;
 	}
 	.content :global(h4) {
 		@apply text-lg;
+	}
+	.content :global(a) {
+		@apply text-blue-400 hover_text-blue-200 font-normal;
 	}
 	.date {
 		@apply font-medium text-gray-500 dark_text-gray-400 italic mb-4;
