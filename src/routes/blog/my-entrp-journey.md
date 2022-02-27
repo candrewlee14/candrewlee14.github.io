@@ -4,7 +4,7 @@ date: 2022-02-22
 excerpt: Creating value through automation!
 ---
 
-## Beginnings 
+## Beginnings 🐣
 
 I've always been a tinkerer. Ever since I was little, I've been interested in how things work and how they're made. 
 My favorite books were non-fictions about engines, light, electricity, and space!
@@ -24,7 +24,7 @@ I ate it up. I learned about biology, calculus, chemistry, and statistics.
 Salman Kahn's voice is probably permanently engrained in my psyche, and I thank him for it.
 Then one day, I ran into a new learning module available called Computer Programming.
 
-## Discovering Code
+## Discovering Code 👾
 
 I had always thought computers were amazing, and I loved playing video games like NBA2K7 and Lego Star Wars on the PlayStation 2. 
 I thought it'd be really cool to learn about how those all work, so I decided to dive in to Kahn Academy's coding course.
@@ -47,7 +47,7 @@ Over the next few years, I'd learn to make simple websites with HTML, CSS, and J
 I learned some jQuery too, which I'd later return to and find completely out of style (*classic* frontend experience).
 Everything I was working on was web-based and visual, right up until my very first high school Computer Science class. 
 
-## Gradient Descent
+## Gradient Descent 🎯
 
 In high school classes, I learned to use C++ and C# with Visual Studio. I built my first console applications, a choose-your-own adventure game and a file search tool. 
 I learned to use WinForms and built a replica of the calculator app. I learned about how computers access and store memory, and the foundations of computing.
@@ -79,9 +79,9 @@ In trying to identify a niche for me to create value in society, I've distilled 
 
 A unifying theme of these driving forces is automation: abstracting away repetitive tasks to allow people to focus on what matters to them.
 I love building things that solve problems while saving time.
-Only in retrospect do I realize that automation has been a common thread of so much of my work.
+In retrospect, automation has been a common thread of so much of my work.
 
-## The Power of Automation
+## Power of Automation 🤖
 
 When I see repetive and inefficient processes, I'm eager to automate. 
 To help me keep track of all my college and extracurricular work, I built a program to [sync Canvas assignments into Microsoft To Do](https://github.com/candrewlee14/canvas-todo-linker). 
@@ -95,9 +95,9 @@ This time-saving work helped us continue to perform at scale during one of the b
 
 At Neo Home Loans, I built middleware to connect lead generation services to our CRM. 
 I even automated the *deployment* of that automation with containerization and a CI/CD pipeline.
-I did the same when a developed a web app to communicate the loan process to clients.
+I did the same when I developed a web app to communicate the loan process to clients.
 
 At my current job at VPI, I'm categorizing and quantifying trash in rivers using machine learning, the crown jewel of automation tooling.
 
-## The Future
+## The Future 🚀
 
