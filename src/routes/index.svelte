@@ -73,11 +73,18 @@
 			</a>
 		</div>
 		<div class="mt-6">
+			<h2 class="text-center my-2">Recent Projects 🏗</h2>
+			<ul class="podcast-list">
+				<li><a href="https://candrewlee14.github.io/alphablitz">AlphaBlitz</a> - A brand new word game inspired by Wordle </li>
+			</ul>
+		</div>
+		<div class="mt-6">
 			<h2 class="text-center my-2">Podcasts I'm Listening To 🔊</h2>
 			<ul class="podcast-list">
 				<li><span class="podcast">Huberman Lab Podcast</span> - Andrew Huberman</li>
 				<li><span class="podcast">Darknet Diaries</span> - Jack Rhysider</li>
 				<li><span class="podcast">Revisionist History</span> - Malcolm Gladwell</li>
+				<li><span class="podcast">Snacks Daily</span> - Robinhood</li>
 			</ul>
 		</div>
 		<div class="mt-8" style="max-width: 550px">
@@ -149,6 +156,9 @@
 		width: 100%;
 		font-family: 'Barlow';
 		@apply mb-4;
+	}
+	.podcast-list a {
+		@apply text-blue-500 hover_text-blue-300;
 	}
 	.socials {
 		@apply flex flex-row flex-wrap p-1 pt-3 border-4 rounded mt-4 mb-4;
