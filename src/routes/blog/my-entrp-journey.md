@@ -16,7 +16,15 @@ When I took piano lessons, I'd often make up my own songs rather than playing th
 Creation in any form was what made me happy, but *especially* when it involved science.
 
 <div class="gallery">
-    <img src="/entrp-journey/lego_christmas.png" alt="little Andrew with his legos" width=700 />
+    <picture>
+        <source type="image/webp" srcset="/entrp-journey/lego_christmas.webp" />
+        <source type="image/png" srcset="/entrp-journey/lego_christmas.png" />
+        <img
+            src="/entrp-journey/lego_christmas.png"
+            alt="little Andrew with his legos"
+            width=700
+        />
+    </picture>
 </div>
 
 Around 6th grade, my teacher introduced the class to this cool education website called [Kahn Academy](https://www.khanacademy.org/).
@@ -48,7 +56,15 @@ With some hard work, I had made something that anybody with a computer could pla
 The thrill of building something that people will enjoy continues to drive me today.
 
 <div class="gallery">
-    <img src="/entrp-journey/science_fair_win.png" alt="winning the science fair" width=500 />
+    <picture>
+        <source type="image/webp" srcset="/entrp-journey/science_fair_win.webp" />
+        <source type="image/png" srcset="/entrp-journey/science_fair_win.png" />
+        <img
+            src="/entrp-journey/science_fair_win.png"
+            alt="winning the science fair"
+            width=500
+        />
+    </picture>
 </div>
 
 Over the next few years, I'd learn to make simple websites with HTML, CSS, and JavaScript through [Codecademy](https://www.codecademy.com/). 
@@ -64,7 +80,15 @@ I learned to use WinForms and built a replica of the calculator app. I learned a
 I worked hard in school, scored well on my ACT, and won the Computer Technology Sterling Scholar Award for Lone Peak High School.
 
 <div class="gallery">
-    <img src="/entrp-journey/sterling_scholar.png" alt="regional sterling scholar event" width=600 />
+    <picture>
+        <source type="image/webp" srcset="/entrp-journey/sterling_scholar.webp" />
+        <source type="image/png" srcset="/entrp-journey/sterling_scholar.png" />
+        <img
+            src="/entrp-journey/sterling_scholar.png"
+            alt="regional sterling scholar event"
+            width=600
+        />
+    </picture>
 </div>
 
 Even with my concrete interest in computer science, the impending choice for my college major loomed over me. 
@@ -82,7 +106,15 @@ I've learned how broad and deep the field of computer science is, and I'm passio
 Even with that passion, I continue to have other interests for medicine, business, sports, fashion, food, and music. 
 
 <div class="gallery">
-    <img src="/entrp-journey/andrew_utah_shirt.png" alt="getting food wearing a University of Utah shirt in Salt Lake City" width=500 />
+    <picture>
+        <source type="image/webp" srcset="/entrp-journey/andrew_utah_shirt.webp" />
+        <source type="image/png" srcset="/entrp-journey/andrew_utah_shirt.png" />
+        <img
+            src="/entrp-journey/andrew_utah_shirt.png"
+            alt="getting food wearing a University of Utah shirt in Salt Lake City"
+            width=500
+        />
+    </picture>
 </div>
 
 My wide-ranging curiosity that has fueled my love for learning has also made it difficult to pin down a specific area to pursue.
@@ -117,7 +149,15 @@ I even automated the *deployment* of that automation with containerization and a
 I did the same when I developed a web app to communicate the loan process to clients.
 
 <div class="gallery">
-    <img src="/entrp-journey/river_detections.jpeg" alt="river object detections" width=600 />
+    <picture>
+        <source type="image/webp" srcset="/entrp-journey/river_detections.webp" />
+        <source type="image/jpeg" srcset="/entrp-journey/river_detections.jpeg" />
+        <img
+            src="/entrp-journey/river_detections.jpeg"
+            alt="river object detections"
+            width=600
+        />
+    </picture>
 </div>
 
 At my current job at VPI, I'm categorizing and quantifying trash in rivers using machine learning, the crown jewel of automation tooling.
@@ -133,4 +173,4 @@ I'm training hard to make sure when inspiration strikes, I'll be ready to seize 
 
 Everybody could use a little more time, so until you hear from me again, I'll be automating :)
 
-~ Andrew 
+~ Andrew 🛠

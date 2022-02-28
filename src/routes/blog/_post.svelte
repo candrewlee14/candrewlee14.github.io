@@ -51,7 +51,7 @@
         @apply mb-4 ml-5;
     }
     .content :global(img) {
-        @apply mb-0 rounded-sm; 
+        @apply mb-0 rounded-sm border-2 border-gray-300; 
         object-fit: contain;
     }
     .content :global(.gallery) {
