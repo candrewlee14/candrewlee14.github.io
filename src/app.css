@@ -11,6 +11,10 @@
 	}
 }
 
+html {
+	font-size: 18px;
+}
+
 html,
 body,
 #svelte {
@@ -52,7 +56,7 @@ h3 {
 }
 p, li {
 	font-family: 'Barlow';
-	@apply font-medium dark_font-medium text-black dark_text-lightgray;
+	@apply font-normal text-black dark_text-lightgray;
 }
  
 a {
