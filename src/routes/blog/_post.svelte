@@ -7,6 +7,7 @@
 <div class="content flex flex-col align-center">
 	<h1>{title}</h1>
 	<p class="date">{dayjs(date).format('MMM D, YYYY')} by Andrew Lee</p>
+    <base target="_blank"/>
 	<slot />
 </div>
 
@@ -48,6 +49,13 @@
         list-style-type: disc;
         list-style-position: outside;
         @apply mb-4 ml-5;
+    }
+    .content :global(img) {
+        @apply mb-0 rounded-sm; 
+        object-fit: contain;
+    }
+    .content :global(.gallery) {
+        @apply flex flex-row flex-wrap justify-center w-full mb-5;
     }
 	.date {
 		@apply font-medium text-gray-500 dark_text-gray-400 italic mb-4;
