@@ -75,7 +75,7 @@
 		<div class="mt-6">
 			<h2 class="text-center my-2">Recent Projects 🏗</h2>
 			<ul class="podcast-list">
-				<li><a href="https://candrewlee14.github.io/alphablitz">AlphaBlitz</a> - A brand new word game inspired by Wordle </li>
+				<li><a rel="external" href="https://candrewlee14.github.io/alphablitz">AlphaBlitz</a> - A brand new word game inspired by Wordle </li>
 			</ul>
 		</div>
 		<div class="mt-6">
