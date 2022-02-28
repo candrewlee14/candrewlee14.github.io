@@ -22,11 +22,11 @@ Creation in any form was what made me happy, but *especially* when it involved s
 Around 6th grade, my teacher introduced the class to this cool education website called [Kahn Academy](https://www.khanacademy.org/).
 My mind was *completely* blown. All this time that school felt like it was moving too slowly, 
 there was this vast library of free videos where I could learn almost anything at my own pace?!
-I could ask all the questions in the world and nobody would tell me I'm asking too many questions?!
+I could ask all the questions in the world ... and nobody would tell me I'm asking too many questions?!
 
 I ate it up. I learned about biology, calculus, chemistry, and statistics.
 Salman Kahn's voice is probably permanently engrained in my psyche, and I thank him for it.
-Then one day, I ran into a new learning module available called Computer Programming.
+Then one day, I ran into a new learning module available called *Computer Programming*.
 
 ## Discovering Code 👾
 
@@ -38,7 +38,7 @@ I'd never run out of pieces, and I'd never be missing the right size of gear.
 There were no limits, and the only parts I needed were bits of knowledge.
 
 Of course, I started small. Kahn Academy taught a dialect of ProcessingJS, so I started learning about the event loop and how to draw simple shapes to the screen.
-Then I started learning about making short animations, and then how to make simple games.
+I then learned about making short animations, and then simple games.
 There was a small community competition going on to make a game under 150 lines of code, so I built a little game called [Jump](https://www.khanacademy.org/computer-programming/jump/2179273176). 
 Reading the code now, I've got a *boatload* of advice to give 12-year-old me. 
 
@@ -61,16 +61,16 @@ Everything I was working on in software was web-based and visual, right up until
 
 In high school classes, I learned to use C++ and C# with Visual Studio. I built my first console applications, like a choose-your-own adventure game and a file search tool. 
 I learned to use WinForms and built a replica of the calculator app. I learned about how computers access and store memory, and the foundations of computing.
-I worked hard in school, did well on my ACT, and won the Computer Technology Sterling Scholar award for Lone Peak High School and went to regionals.
+I worked hard in school, scored well on my ACT, and won the Computer Technology Sterling Scholar Award for Lone Peak High School.
 
 <div class="gallery">
-    <img src="/entrp-journey/sterling_scholar.png" alt="sterling scholar group photo" width=600 />
+    <img src="/entrp-journey/sterling_scholar.png" alt="regional sterling scholar event" width=600 />
 </div>
 
 Even with my concrete interest in computer science, the impending choice for my college major loomed over me. 
 I wasn't sure if I wanted to be a software developer or if I just liked programming.
 At the same time, I enjoyed learning about anatomy and chemistry in my classes and considered a career in the health sector. 
-I knew I wanted a career that made on impact on lives and made the world a better place, and becoming a doctor seemed like the way to go.
+I knew I wanted a career that made a positive impact on lives and made the world a better place, so becoming a doctor seemed like the way to go.
 
 When it came down to selecting a college, I chose the University of Utah for its stellar medical and computer science departments.
 I registered for my first week of class, ready to pursue pre-med. 
@@ -79,11 +79,15 @@ I walked out after class that day, switched my major to computer science, and ne
 
 Since then I've studied algorithms, databases, operating systems, graphics, programming languages, computer vision, and more. 
 I've learned how broad and deep the field of computer science is, and I'm passionate to continue learning.
-Even with that passion, I continue to have other interests for medicine, business, sports, fashion, and music. 
+Even with that passion, I continue to have other interests for medicine, business, sports, fashion, food, and music. 
 
-My wide-ranging curiosity that has fueled my love for learning has also made it difficult to pin down an specific area to pursue.
+<div class="gallery">
+    <img src="/entrp-journey/andrew_utah_shirt.png" alt="getting food wearing a University of Utah shirt in Salt Lake City" width=500 />
+</div>
+
+My wide-ranging curiosity that has fueled my love for learning has also made it difficult to pin down a specific area to pursue.
 There's just so much in the world that is exciting to me that I want to explore.
-In trying to identify a niche for me to create value in society, I've distilled what drives me into a few points.
+In trying to identify a niche for me to create value in society, I've distilled what drives me into a few key points.
 
 - I love to tinker and build cool stuff, especially when science and technology are involved
 - I have talent and passion for software development
@@ -97,7 +101,7 @@ In retrospect, automation has been a common thread of so much of my work already
 
 When I see repetive and inefficient processes, I'm eager to switch things up. 
 If I've got to repeat the same action more than a few times, my automation insticts kick in and I know it's time to build.
-I do understand there's a tradeoff between development cost and just doing the work ([relevant xkcd](https://xkcd.com/1319/)), but when it's worth it, I *love* to automate.
+I understand there's a tradeoff between development cost and just doing the work ([relevant xkcd](https://xkcd.com/1319/)), but when it's worth it, I *love* to automate.
 
 To help me keep track of all my college and extracurricular work, I built a program to [sync Canvas assignments into Microsoft To Do](https://github.com/candrewlee14/canvas-todo-linker). 
 To help improve my programming productivity, I stored my [dotfiles](https://github.com/candrewlee14/dotfiles) 
@@ -112,9 +116,21 @@ At Neo Home Loans, I built middleware to connect lead generation services to our
 I even automated the *deployment* of that automation with containerization and a CI/CD pipeline.
 I did the same when I developed a web app to communicate the loan process to clients.
 
+<div class="gallery">
+    <img src="/entrp-journey/river_detections.jpeg" alt="river object detections" width=600 />
+</div>
+
 At my current job at VPI, I'm categorizing and quantifying trash in rivers using machine learning, the crown jewel of automation tooling.
-The software work I've done at each of these companies has been primarily building automations that save time and money.
-It's how I'm passionate about creating value.
+The software work I've done at each of these companies has been primarily building solutions that save time and money.
+It's a powerful skill that I am passionate about using and improving to solve difficult problems.
 
-## The Future 🚀
+<!-- ## The Future 🚀 -->
 
+I'm excited to continue building time-saving solutions, both as an employee *and* as a prospective entreprenuer.
+I'll continue my education, formally and informally, to level up my skills.
+In my current phase of career, I'm focusing on sponging up knowledge and honing my craft.
+I'm training hard to make sure when inspiration strikes, I'll be ready to seize the opportunity and build something people will love.
+
+Everybody could use a little more time, so until you hear from me again, I'll be automating :)
+
+~ Andrew 
