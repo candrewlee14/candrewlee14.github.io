@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="Andrew Lee, Software, Software Development, Blog, About Me"/>
-		<meta name="author" content="Andrew Lee"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
-		<link rel="icon" href="./waving_hand/favicon.ico" />
-		<style>
-			body {
-				visibility: hidden;
-				opacity: 0;
-			}
-		</style>		
-		<script>
-			function updateMode() {
-				if (localStorage.theme === 'dark') {
-					document.body.classList.add('dark')
-					document.body.style.background = "black";
-				} else {
-					document.body.classList.remove('dark')
-					document.body.style.background = "white";
-				}
-			}
 
-			function showContent() {
-				document.body.style.visibility = 'visible';
-				document.body.style.opacity = 1;
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Andrew Lee, Software, Software Development, Blog, About Me" />
+	<meta name="author" content="Andrew Lee" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;300;400;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="./waving_hand/favicon.ico" />
+	<style>
+		body {
+			visibility: hidden;
+			opacity: 0;
+		}
+	</style>
+	<script>
+		function updateMode() {
+			if (localStorage.theme === 'dark') {
+				document.body.classList.add('dark')
+				document.body.style.background = "black";
+			} else {
+				document.body.classList.remove('dark')
+				document.body.style.background = "white";
 			}
+		}
 
-			window.addEventListener('DOMContentLoaded', function () {
-				localStorage.setItem('theme', 
+		function showContent() {
+			document.body.style.visibility = 'visible';
+			document.body.style.opacity = 1;
+		}
+
+		window.addEventListener('DOMContentLoaded', function () {
+			if (localStorage.getItem('theme') == null) {
+				localStorage.setItem('theme',
 					window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 				);
-				updateMode();
-				showContent();
-			});
-		</script>
-		<noscript>
-			<style>
-				body {
-					visibility: visible;
-					opacity: 1;
-				}
-			</style>
-		</noscript>
-		<title>Blog - Andrew Lee</title><meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Check out my blog!" data-svelte="svelte-arppew">
+			}
+			updateMode();
+			showContent();
+		});
+	</script>
+	<noscript>
+		<style>
+			body {
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+	<title>Blog - Andrew Lee</title><meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Check out my blog!" data-svelte="svelte-qbtozk">
 
 		
 
 		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b05f4586.css">
-		<link rel="modulepreload" href="/_app/start-ca79d6fc.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-cdffe093.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-10607c74.js">
-		<link rel="modulepreload" href="/_app/pages/blog.svelte-4eaba95c.js">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9a313b2f.css">
+		<link rel="stylesheet" href="/_app/assets/pages/blog.svelte-267b2405.css">
+		<link rel="modulepreload" href="/_app/start-429ccd92.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-c9d17524.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-c6b978bf.js">
+		<link rel="modulepreload" href="/_app/pages/blog.svelte-5570ba04.js">
 
 		<script type="module">
-			import { start } from "/_app/start-ca79d6fc.js";
+			import { start } from "/_app/start-429ccd92.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -72,17 +79,18 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-10607c74.js"),
-						import("/_app/pages/blog.svelte-4eaba95c.js")
+						import("/_app/pages/__layout.svelte-c6b978bf.js"),
+						import("/_app/pages/blog.svelte-5570ba04.js")
 					],
 					url: new URL("http://prerender/blog"),
 					params: {}
 				}
 			});
 		</script>
-	</head>
-	<body>
-		<div id="svelte">
+</head>
+
+<body>
+	<div id="svelte">
 
 
 
@@ -103,19 +111,27 @@
 </div>
 	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-3xl svelte-mcjku9">
 	</button>
-	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-4" style="content: ' ';"></div>
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-10" style="content: ' ';"></div>
 	<div>
 
-<div class="w-full h-full flex justify-center pb-6"><div class="h-full flex-col items-center mt-4 px-6" style="max-width: 500px;"><h1 class="text-center">No blog posts yet!</h1>
-		<p class="my-4">But don&#39;t worry, I&#39;ve got thousands of monkeys all hacking away on typewriters &#39;round the clock.
-			If your local grocery store is out of bananas, you&#39;ll know who to blame.
+<div class="w-full h-full flex justify-center pb-6"><div class="h-full flex-col items-center px-6" style="max-width: 500px;"><div class="posts mb-8 svelte-138j6dj"><h1 class="blogtitle text-3xl mb-4 text-center svelte-138j6dj">1 Post</h1>
+				<div class="postlink w-full svelte-138j6dj"><a href="/blog/my-entrp-journey"><div class="flex flex-row"><p class="num mr-4 svelte-138j6dj">#1</p>
+								<p class="date svelte-138j6dj">Feb 22, 2022 by Andrew Lee</p></div>
+							<h2 class="title svelte-138j6dj">My Entreprenuerial Journey</h2>
+							<p class="excerpt">Creating value through automation!</p></a>
+					</div>
+				<hr class="border-8 svelte-138j6dj"></div>
+		<h1 class="text-center">That&#39;s All, Folks!</h1>
+		<p class="my-4">But don&#39;t worry, I&#39;ve got thousands of monkeys all hacking away on typewriters &#39;round the
+			clock. If your local grocery store is out of bananas, you&#39;ll know who to blame.
 		</p>
-		<p>They&#39;re bound to whip up a shiny new post sometime soon, so stay tuned!
-		</p>
+		<p>They&#39;re bound to whip up a shiny new post sometime soon, so stay tuned!</p>
 		<br>
-		<h1 class="text-center text-4xl">🦍 🦍 🦍 🦍 🦍</h1></div></div></div></div>
+		<h1 class="text-center text-4xl">🦍 🦍 🦍 🦍 🦍</h1></div>
+</div></div></div>
 <div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"></div>
 
-</div>
-	</body>
+<script type="application/json" data-type="svelte-data" data-url="/posts.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"meta\":{\"title\":\"My Entreprenuerial Journey\",\"date\":\"2022-02-22T00:00:00.000Z\",\"excerpt\":\"Creating value through automation!\"},\"path\":\"blog\u002Fmy-entrp-journey\"}]"}</script></div>
+</body>
+
 </html>

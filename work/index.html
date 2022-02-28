@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="keywords" content="Andrew Lee, Software, Software Development, Blog, About Me"/>
-		<meta name="author" content="Andrew Lee"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
-		<link rel="icon" href="./waving_hand/favicon.ico" />
-		<style>
-			body {
-				visibility: hidden;
-				opacity: 0;
-			}
-		</style>		
-		<script>
-			function updateMode() {
-				if (localStorage.theme === 'dark') {
-					document.body.classList.add('dark')
-					document.body.style.background = "black";
-				} else {
-					document.body.classList.remove('dark')
-					document.body.style.background = "white";
-				}
-			}
 
-			function showContent() {
-				document.body.style.visibility = 'visible';
-				document.body.style.opacity = 1;
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Andrew Lee, Software, Software Development, Blog, About Me" />
+	<meta name="author" content="Andrew Lee" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;300;400;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="./waving_hand/favicon.ico" />
+	<style>
+		body {
+			visibility: hidden;
+			opacity: 0;
+		}
+	</style>
+	<script>
+		function updateMode() {
+			if (localStorage.theme === 'dark') {
+				document.body.classList.add('dark')
+				document.body.style.background = "black";
+			} else {
+				document.body.classList.remove('dark')
+				document.body.style.background = "white";
 			}
+		}
 
-			window.addEventListener('DOMContentLoaded', function () {
-				localStorage.setItem('theme', 
+		function showContent() {
+			document.body.style.visibility = 'visible';
+			document.body.style.opacity = 1;
+		}
+
+		window.addEventListener('DOMContentLoaded', function () {
+			if (localStorage.getItem('theme') == null) {
+				localStorage.setItem('theme',
 					window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 				);
-				updateMode();
-				showContent();
-			});
-		</script>
-		<noscript>
-			<style>
-				body {
-					visibility: visible;
-					opacity: 1;
-				}
-			</style>
-		</noscript>
-		<title>Work - Andrew Lee</title><meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. View my work experience here." data-svelte="svelte-1p2kquw">
+			}
+			updateMode();
+			showContent();
+		});
+	</script>
+	<noscript>
+		<style>
+			body {
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+	<title>Work - Andrew Lee</title><meta name="description" content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. View my work experience here." data-svelte="svelte-1p2kquw">
 
 		
 
 		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b05f4586.css">
-		<link rel="stylesheet" href="/_app/assets/pages/work.svelte-5e55ace7.css">
-		<link rel="modulepreload" href="/_app/start-ca79d6fc.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-cdffe093.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-10607c74.js">
-		<link rel="modulepreload" href="/_app/pages/work.svelte-b0162e42.js">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9a313b2f.css">
+		<link rel="stylesheet" href="/_app/assets/pages/work.svelte-1179dd1c.css">
+		<link rel="modulepreload" href="/_app/start-429ccd92.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-c9d17524.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-c6b978bf.js">
+		<link rel="modulepreload" href="/_app/pages/work.svelte-ff79d178.js">
 
 		<script type="module">
-			import { start } from "/_app/start-ca79d6fc.js";
+			import { start } from "/_app/start-429ccd92.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -73,17 +79,18 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-10607c74.js"),
-						import("/_app/pages/work.svelte-b0162e42.js")
+						import("/_app/pages/__layout.svelte-c6b978bf.js"),
+						import("/_app/pages/work.svelte-ff79d178.js")
 					],
 					url: new URL("http://prerender/work"),
 					params: {}
 				}
 			});
 		</script>
-	</head>
-	<body>
-		<div id="svelte">
+</head>
+
+<body>
+	<div id="svelte">
 
 
 
@@ -104,84 +111,85 @@
 </div>
 	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-3xl svelte-mcjku9">
 	</button>
-	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-4" style="content: ' ';"></div>
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-10" style="content: ' ';"></div>
 	<div>
 
-<div class="w-full h-full flex justify-center pb-6"><div class="w-3/4 h-full flex flex-col mt-8"><div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h" style="background-color: rgb(125, 175, 255);"></div>
-			<div class="entry svelte-1xrj0h"><h2>Firmware Engineer Intern</h2>
-				<h3 class="company text-sky-700 dark_text-sky-300 svelte-1xrj0h">VPI Technology Group</h3>
-				<h4 class="dates svelte-1xrj0h">Aug 2021 - Present</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Training custom machine learning models to detect trash in rivers using Pytorch &amp; Yolov5</li>
-					<li class="svelte-1xrj0h">Parsing video streams with ffmpeg &amp; Opencv and generating randomized datasets</li>
-					<li class="svelte-1xrj0h">Managing concurrent image labeling</li>
-					<li class="svelte-1xrj0h">Building internal DevOps CLI tools for GitLab project management</li></ul></div></div>
-		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h"></div>
-			<div class="entry svelte-1xrj0h"><h2>Marketing Coordinator &amp; Software Developer</h2>
-				<h3 class="company text-cyan-700 dark_text-cyan-500 svelte-1xrj0h">Neo Home Loans</h3>
-				<h4 class="dates svelte-1xrj0h">Jan 2021 - Aug 2021</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Graphic designing for marketing and promotional materials</li>
-					<li class="svelte-1xrj0h">Created PowerBI &amp; Domo dashboards for data analytics</li>
-					<li class="svelte-1xrj0h">Built API middleware and Selenium programs</li>
-					<li class="svelte-1xrj0h">Deployed Docker containers to Microsoft Azure</li>
-					<li class="svelte-1xrj0h">Filmed and edited promotional material</li>
-					<li class="svelte-1xrj0h">Built and deployed React web app on Azure</li></ul></div></div>
-		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h"></div>
-			<div class="entry svelte-1xrj0h"><h2>Data Analyst &amp; Admin Assistant</h2>
-				<h3 class="company text-green-700 dark_text-green-500 svelte-1xrj0h">Fairway Independent Mortgage Corporation
+<div class="w-full h-full flex justify-center pb-6"><div class="w-3/4 h-full flex flex-col"><div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx" style="background-color: rgb(125, 175, 255);"></div>
+			<div class="entry svelte-xc75zx"><h2>Machine Learning Intern</h2>
+				<h3 class="company text-sky-700 dark_text-sky-300 svelte-xc75zx">VPI Technology Group</h3>
+				<h4 class="dates svelte-xc75zx">Aug 2021 - Present</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Training custom machine learning models to detect trash in rivers using Pytorch &amp; Yolov5</li>
+					<li class="svelte-xc75zx">Parsing video streams with ffmpeg &amp; Opencv and generating randomized datasets</li>
+					<li class="svelte-xc75zx">Managing concurrent image labeling</li>
+					<li class="svelte-xc75zx">Building internal DevOps CLI tools for GitLab project management</li></ul></div></div>
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx"></div>
+			<div class="entry svelte-xc75zx"><h2>Marketing Coordinator &amp; Software Developer</h2>
+				<h3 class="company text-cyan-700 dark_text-cyan-500 svelte-xc75zx">Neo Home Loans</h3>
+				<h4 class="dates svelte-xc75zx">Jan 2021 - Aug 2021</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Graphic designing for marketing and promotional materials</li>
+					<li class="svelte-xc75zx">Created PowerBI &amp; Domo dashboards for data analytics</li>
+					<li class="svelte-xc75zx">Built API middleware and Selenium programs</li>
+					<li class="svelte-xc75zx">Deployed Docker containers to Microsoft Azure</li>
+					<li class="svelte-xc75zx">Filmed and edited promotional material</li>
+					<li class="svelte-xc75zx">Built and deployed React web app on Azure</li></ul></div></div>
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx"></div>
+			<div class="entry svelte-xc75zx"><h2>Data Analyst &amp; Admin Assistant</h2>
+				<h3 class="company text-green-700 dark_text-green-500 svelte-xc75zx">Fairway Independent Mortgage Corporation
 				</h3>
-				<h4 class="dates svelte-1xrj0h">Jun 2020 - Jan 2021</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Automated CRM data transfer and form-filling using Python (Selenium package)</li>
-					<li class="svelte-1xrj0h">Automated creation of gifting order spreadsheets using Python (exchangelib and pandas
+				<h4 class="dates svelte-xc75zx">Jun 2020 - Jan 2021</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Automated CRM data transfer and form-filling using Python (Selenium package)</li>
+					<li class="svelte-xc75zx">Automated creation of gifting order spreadsheets using Python (exchangelib and pandas
 						packages)
 					</li>
-					<li class="svelte-1xrj0h">Built dashboards in PowerBI analyzing loan operations volume and performance</li>
-					<li class="svelte-1xrj0h">Built reports through Encompass LOS </li> 
-					<li class="svelte-1xrj0h">Assisted in new technology adoption and IT needs</li></ul></div></div>
-		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h"></div>
-			<div class="entry svelte-1xrj0h"><h2>Software Engineer</h2>
-				<h3 class="company text-red-700 dark_text-red-400 svelte-1xrj0h">University of Utah - Genetics Lab</h3>
-				<h4 class="dates svelte-1xrj0h">May 2020 - Jul 2020</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Worked as a software developer for a genetics research lab</li>
-					<li class="svelte-1xrj0h">Wrote backend software in Python using the Flask framework with connections to an
+					<li class="svelte-xc75zx">Built dashboards in PowerBI analyzing loan operations volume and performance</li>
+					<li class="svelte-xc75zx">Built reports through Encompass LOS </li> 
+					<li class="svelte-xc75zx">Assisted in new technology adoption and IT needs</li></ul></div></div>
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx"></div>
+			<div class="entry svelte-xc75zx"><h2>Software Engineer</h2>
+				<h3 class="company text-red-700 dark_text-red-400 svelte-xc75zx">University of Utah - Genetics Lab</h3>
+				<h4 class="dates svelte-xc75zx">May 2020 - Jul 2020</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Worked as a software developer for a genetics research lab</li>
+					<li class="svelte-xc75zx">Wrote backend software in Python using the Flask framework with connections to an
 						SQLite DB
 					</li>
-					<li class="svelte-1xrj0h">Significantly reduced false conflicts in the <a class="text-red-700 dark_text-red-400" href="https://clinvarminer.genetics.utah.edu/">Clinvar Miner</a> genetics database
+					<li class="svelte-xc75zx">Significantly reduced false conflicts in the <a class="text-red-700 dark_text-red-400" href="https://clinvarminer.genetics.utah.edu/">Clinvar Miner</a> genetics database
 					</li>
-					<li class="svelte-1xrj0h">Worked with Linux server hosting</li>
-					<li class="svelte-1xrj0h">Efficiently found closest common condition from sets of conditions from the
+					<li class="svelte-xc75zx">Worked with Linux server hosting</li>
+					<li class="svelte-xc75zx">Efficiently found closest common condition from sets of conditions from the
 						Mondo Disease Ontology
 					</li></ul></div></div>
-		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h"></div>
-			<div class="entry svelte-1xrj0h"><h2>Data Visualization Intern</h2>
-				<h3 class="company text-yellow-700 dark_text-yellow-400 svelte-1xrj0h">BrainStorm Inc.</h3>
-				<h4 class="dates svelte-1xrj0h">May 2020 - Jun 2020</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Developed data dashboards using PowerBI and PowerApps</li>
-					<li class="svelte-1xrj0h">Integrated Microsoft semantic analysis on data using Python and PowerBI</li>
-					<li class="svelte-1xrj0h">Worked with databases and data services like Snowflake</li>
-					<li class="svelte-1xrj0h">UI/UX dashboard design experience</li>
-					<li class="svelte-1xrj0h">Created screen capture videos for training purposes</li></ul></div></div>
-		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-1xrj0h"><div class="dot svelte-1xrj0h"></div>
-			<div class="entry svelte-1xrj0h"><h2>Software Development Intern</h2>
-				<h3 class="company text-rose-700 dark_text-rose-400 svelte-1xrj0h">Red Pepper Software</h3>
-				<h4 class="dates svelte-1xrj0h">Mar 2019 - Aug 2019</h4>
-				<hr class="svelte-1xrj0h">
-				<ul class="desc svelte-1xrj0h"><li class="svelte-1xrj0h">Full stack web development experience with SQL databases, C# .NET Core backend, and
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx"></div>
+			<div class="entry svelte-xc75zx"><h2>Data Visualization Intern</h2>
+				<h3 class="company text-yellow-700 dark_text-yellow-400 svelte-xc75zx">BrainStorm Inc.</h3>
+				<h4 class="dates svelte-xc75zx">May 2020 - Jun 2020</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Developed data dashboards using PowerBI and PowerApps</li>
+					<li class="svelte-xc75zx">Integrated Microsoft semantic analysis on data using Python and PowerBI</li>
+					<li class="svelte-xc75zx">Worked with databases and data services like Snowflake</li>
+					<li class="svelte-xc75zx">UI/UX dashboard design experience</li>
+					<li class="svelte-xc75zx">Created screen capture videos for training purposes</li></ul></div></div>
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500 svelte-xc75zx"><div class="dot svelte-xc75zx"></div>
+			<div class="entry svelte-xc75zx"><h2>Software Development Intern</h2>
+				<h3 class="company text-rose-700 dark_text-rose-400 svelte-xc75zx">Red Pepper Software</h3>
+				<h4 class="dates svelte-xc75zx">Mar 2019 - Aug 2019</h4>
+				<hr class="svelte-xc75zx">
+				<ul class="desc svelte-xc75zx"><li class="svelte-xc75zx">Full stack web development experience with SQL databases, C# .NET Core backend, and
 						REACT and Vue frontend frameworks
 					</li>
-					<li class="svelte-1xrj0h">Maintained various projects for multiple clients</li>
-					<li class="svelte-1xrj0h">Created unit tests for new features</li>
-					<li class="svelte-1xrj0h">Built and redesigned features</li>
-					<li class="svelte-1xrj0h">Fixed bugs</li>
-					<li class="svelte-1xrj0h">Worked using the AGILE framework using Jira</li>
-					<li class="svelte-1xrj0h">Worked with REST APIs</li></ul></div></div></div>
+					<li class="svelte-xc75zx">Maintained various projects for multiple clients</li>
+					<li class="svelte-xc75zx">Created unit tests for new features</li>
+					<li class="svelte-xc75zx">Built and redesigned features</li>
+					<li class="svelte-xc75zx">Fixed bugs</li>
+					<li class="svelte-xc75zx">Worked using the AGILE framework using Jira</li>
+					<li class="svelte-xc75zx">Worked with REST APIs</li></ul></div></div></div>
 </div></div></div>
 <div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"></div>
 
 </div>
-	</body>
+</body>
+
 </html>
