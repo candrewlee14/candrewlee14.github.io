@@ -63,4 +63,21 @@
 	.content :global(strong) {
 		@apply font-semibold dark_font-bold;
 	}
+	.content :global(picture) {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	.content :global(.txt-and-img) {
+		@apply flex flex-row flex-wrap justify-between pb-6;
+	}
+	.content :global(.txt-side) {
+		max-width: 450px;
+		margin-right: 10px;
+	}
+	.content :global(.img-side) {
+		max-width: 450px;
+		@apply flex flex-col;
+		/* margin: auto; */
+	}
 </style>
