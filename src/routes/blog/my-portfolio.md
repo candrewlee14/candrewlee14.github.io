@@ -10,18 +10,17 @@ This early in my career, I've built most of my projects to explore the vast land
 Sometimes, the point of a project is to help me understand a programming language better and learn the tooling and ecosystem around it. 
 Sometimes it's to automate a repetitive task. Sometimes it's to create something entertaining. Sometimes it's to help communicate a message. My projects will often have a prominent visual aspect, because an attractive, clean UI a much nicer experience both as a developer and a user. 
 
-I've gone ahead and separated these projects into topics. Some fit into multiple buckets, so I just picked one for it. Without further ado, let's get into some of my projects!
+I've gone ahead and separated these projects into topics. Some fit into multiple buckets, so I just picked one for each. Without further ado, let's get into some of my projects!
 
 ## Simulations 
-Simulations allow exploration of concepts. They can help students and researchers develop an intuitive understanding of a process.
-Using the power of modern computing, we can visualize ideas and communicate beautiful complexity.
 
-### - Evolution
+> Simulations allow exploration of concepts. They can help students and researchers develop an intuitive understanding of a process.
+> Using the power of modern computing, we can visualize ideas and communicate beautiful complexity.
+
+### - [Evolution](https://candrewlee14.github.io/EvolutionGameP5/)
 
 <div class="txt-and-img">
 <div class="txt-side">
-
-https://candrewlee14.github.io/EvolutionGameP5/
 
 Evolution is a difficult process to imagine. The effects of environmental pressures and competition isn't always easy to see in real life on our timescale.
 Simulating evolution and keeping track of the data, however, makes that process easier to understand. 
@@ -51,11 +50,10 @@ I built this to help students understand how different traits can be advantageou
 </div>
 </div>
 
-### - Cellular Automata
+### - [Cellular Automata](https://github.com/candrewlee14/game-of-life-rs)
 <div class="txt-and-img">
 <div class="txt-side">
 
-https://github.com/candrewlee14/game-of-life-rs
 
 I wrote this to explore [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life).
 This is a cross-platform terminal application that takes mouse input. Choose a random seed, or leave the map empty and fill it in as you please. 
@@ -79,12 +77,10 @@ and exploring of different behaviors of simple patterns in the Game of Life can 
     </div>
 </div>
 
-### - Boid Flocking
+### - [Boid Flocking](https://github.com/candrewlee14/boidflock)
 
 <div class="txt-and-img">
 <div class="txt-side">
-
-https://github.com/candrewlee14/boidflock
 
 Boidflock is another example of artificial life, where complex behaviors observed in reality can be simulated with a simple set of rules.
 
@@ -109,11 +105,13 @@ It makes for a great screensaver!
 
 ## Games
 
-### - Hangman
+> We love to play. Games bring us together, inspire friendships, and bring joy to people everywhere.
+> Games, in many ways, are a universal language. Video games allow new ways to play and new frontiers to explore.
+
+### - [Hangman](https://github.com/candrewlee14/hangman-rs)
+
 <div class="txt-and-img">
 <div class="txt-side">
-
-https://github.com/candrewlee14/hangman-rs
 
 This is the classic hangman game, it generates a random word and the player has to guess the letters. 
 I wanted to make something to be able to play on the terminal across platforms. 
@@ -125,7 +123,6 @@ It was one of my very first programs in the [Rust](https://www.rust-lang.org/) l
     <source type="image/png" srcset="/my-portfolio/hangman.png" />
     <img
         src="/my-portfolio/hangman.png"
-        style="float: right;"
         alt="hangman game"
         width=200
     />
@@ -133,12 +130,11 @@ It was one of my very first programs in the [Rust](https://www.rust-lang.org/) l
 </div>
 </div>
 
-### - Multiplayer Maze Game
+### - [Multiplayer Maze Game](https://github.com/candrewlee14/mazeio)
 
 <div class="txt-and-img">
 <div class="txt-side">
 
-https://github.com/candrewlee14/mazeio
 
 I wanted to be able to race my younger brother in a maze game, so I decided to build it for us.
 It was some of my very first work with networking, and I learned a lot. I built an async server using the [Tokio runtime](https://tokio.rs/),
@@ -150,7 +146,6 @@ and a fancy terminal UI client. There's structured logging, mock client testing,
         <source type="image/png" srcset="/my-portfolio/multiMaze.png" />
         <img
             src="/my-portfolio/multiMaze.png"
-            style="float: right;"
             alt="multiplayer maze game"
             width=400
         />
@@ -158,12 +153,11 @@ and a fancy terminal UI client. There's structured logging, mock client testing,
     </div>
 </div>
 
-### - AlphaBlitz
+### - [AlphaBlitz](https://candrewlee14.github.io/alphablitz)
 
 <div class="txt-and-img">
 <div class="txt-side">
 
-https://candrewlee14.github.io/alphablitz
 
 During the Great Wordle Craze of early 2022, I was inspired to build my own word game for my family.
 I called it AlphaBlitz.
@@ -182,7 +176,6 @@ In my completely unbiased opinion, I happen to think that the game is pretty fun
     <source type="image/png" srcset="/my-portfolio/alphaBlitz.png" />
     <img
         src="/my-portfolio/alphaBlitz.png"
-        style="float: right;"
         alt="alphablitz game"
         width=300
     />
@@ -192,11 +185,15 @@ In my completely unbiased opinion, I happen to think that the game is pretty fun
 
 ## Web Dev
 
-### - Neo Loan Timeline
+> Web development allows one to communcate a message to the whole world. 
+> Anyone anywhere can visit a website, connect over social media, and search for information. 
+> Powerful tooling along with new technologies like WASM and WebGPU make the web the platform to be.
+>
+
+### - [Neo Loan Timeline](https://www.neohomeloans-milestones.com/)
 <div class="txt-and-img">
 <div class="txt-side">
 
-https://www.neohomeloans-milestones.com/
 
 In order to better communicate the timeline of a loan to Neo Home Loan's borrowers, I built a website with React.
 
@@ -212,7 +209,6 @@ On the final milestone update, the site shows a confetti celebration in honor of
     <source type="image/png" srcset="/my-portfolio/neoLoanTimeline.png" />
     <img
         src="/my-portfolio/neoLoanTimeline.png"
-        style="float: right;"
         alt="Neo Home Loans milestone timeline"
         width=400
     />
@@ -220,7 +216,7 @@ On the final milestone update, the site shows a confetti celebration in honor of
 </div>
 </div>
 
-### - Personal Website
+### - [Personal Website](https://github.com/candrewlee14/candrewlee14.github.io/)
 
 <div class="txt-and-img">
 <div class="txt-side">
@@ -237,7 +233,6 @@ If you like what you see, follow my github profile at https://github.com/candrew
     <source type="image/png" srcset="/my-portfolio/andrewLogo.png" />
     <img
         src="/my-portfolio/andrewLogo.png"
-        style="float: right;"
         alt="andrew logo"
         width=200
     />
@@ -247,11 +242,9 @@ If you like what you see, follow my github profile at https://github.com/candrew
 
 ## Automation
 
-### - Canvas -> Microsoft Todo
+### - [Canvas -> Microsoft Todo](https://github.com/candrewlee14/canvas-todo-linker)
 <div class="txt-and-img">
 <div class="txt-side">
-
-https://github.com/candrewlee14/canvas-todo-linker
 
 This middleware automates updating your Microsoft Todo list with school assignments on Canvas.
 Each class gets its own tag, and all new tasks are added to the specified Todo folder. 
@@ -263,7 +256,6 @@ Each class gets its own tag, and all new tasks are added to the specified Todo f
     <source type="image/png" srcset="/my-portfolio/canvasTodo.png" />
     <img
         src="/my-portfolio/canvasTodo.png"
-        style="float: right;"
         alt="canvas todo linker logo"
         width=300
     />
@@ -271,7 +263,7 @@ Each class gets its own tag, and all new tasks are added to the specified Todo f
 </div>
 </div>
 
-### - River Trash Detection
+### - [River Trash Detection](https://www.vpitechnology.com/)
 <div class="txt-and-img">
 <div class="txt-side">
 
@@ -287,7 +279,6 @@ The model categorizes different kinds of debris flowing down the river over time
     <source type="image/jpeg" srcset="/my-story/river_detections.jpeg" />
     <img
         src="/my-story/river_detections.jpeg"
-        style="float: right;"
         alt="river object detections"
         width=400
     />
@@ -297,11 +288,16 @@ The model categorizes different kinds of debris flowing down the river over time
 
 ## Lang Dev
 
-### - Golox
+>Programming language are a crucial topic within computer science. 
+>Languages make opinionated tradeoffs in their design decisions, address the faults of predecessors, 
+>and overall, make the development experience better. 
+>Whether that's through choosing to make an expressive, complex language like Rust, or prioritizing syntactic minimalism like Go, the development experience is getting better. 
+
+
+### - [Golox](https://github.com/candrewlee14/golox)
 <div class="txt-and-img">
 <div class="txt-side">
 
-https://github.com/candrewlee14/golox
 
 In my first project written in Go, I wrote an implementation of the [Lox](https://craftinginterpreters.com/the-lox-language.html) programming language.
 Lox is a dynamic, high-level scripting language.
@@ -318,7 +314,6 @@ I've got more work I'm planning on doing with this, like adding classes and poss
     <source type="image/png" srcset="/my-portfolio/golox.png" />
     <img
         src="/my-portfolio/golox.png"
-        style="float: right;"
         alt="golox example run"
         width=300
     />
@@ -326,11 +321,9 @@ I've got more work I'm planning on doing with this, like adding classes and poss
 </div>
 </div>
 
-### - Zlog
+### - [Zlog](https://github.com/candrewlee14/zlog)
 <div class="txt-and-img">
 <div class="txt-side">
-
-https://github.com/candrewlee14/zlog
 
 Zig is a powerful new systems language addressing the pitfalls of C & C++. 
 A language is only as strong as it's ecosystem, so I wanted to contribute to Zig and it's community.
@@ -346,7 +339,6 @@ Zig's comptime functionality makes compile time configuration simple.
     <source type="image/png" srcset="/my-portfolio/zlog.png" />
     <img
         src="/my-portfolio/zlog.png"
-        style="float: right;"
         alt="zlog example run"
         width=415
     />

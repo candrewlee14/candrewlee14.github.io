@@ -78,6 +78,10 @@
 	.content :global(.img-side) {
 		max-width: 450px;
 		@apply flex flex-col;
-		/* margin: auto; */
+	}
+	.content :global(blockquote) {
+		padding-left: 10px;
+
+		@apply p-2 italic;
 	}
 </style>
