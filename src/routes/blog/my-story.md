@@ -1,7 +1,7 @@
 ---
-title: My Entreprenuerial Journey
+title: My Story
 date: 2022-02-22
-excerpt: Creating value through automation!
+excerpt: Finding my passion for automation!
 ---
 
 ## Beginnings 🐣
@@ -17,10 +17,10 @@ Creation in any form was what made me happy, but *especially* when it involved s
 
 <div class="gallery">
     <picture>
-        <source type="image/webp" srcset="/entrp-journey/lego_christmas.webp" />
-        <source type="image/png" srcset="/entrp-journey/lego_christmas.png" />
+        <source type="image/webp" srcset="/my-story/lego_christmas.webp" />
+        <source type="image/png" srcset="/my-story/lego_christmas.png" />
         <img
-            src="/entrp-journey/lego_christmas.png"
+            src="/my-story/lego_christmas.png"
             alt="little Andrew with his legos"
             width=700
         />
@@ -57,10 +57,10 @@ The thrill of building something that people will enjoy continues to drive me to
 
 <div class="gallery">
     <picture>
-        <source type="image/webp" srcset="/entrp-journey/science_fair_win.webp" />
-        <source type="image/png" srcset="/entrp-journey/science_fair_win.png" />
+        <source type="image/webp" srcset="/my-story/science_fair_win.webp" />
+        <source type="image/png" srcset="/my-story/science_fair_win.png" />
         <img
-            src="/entrp-journey/science_fair_win.png"
+            src="/my-story/science_fair_win.png"
             alt="winning the science fair"
             width=500
         />
@@ -81,10 +81,10 @@ I worked hard in school, scored well on my ACT, and won the Computer Technology 
 
 <div class="gallery">
     <picture>
-        <source type="image/webp" srcset="/entrp-journey/sterling_scholar.webp" />
-        <source type="image/png" srcset="/entrp-journey/sterling_scholar.png" />
+        <source type="image/webp" srcset="/my-story/sterling_scholar.webp" />
+        <source type="image/png" srcset="/my-story/sterling_scholar.png" />
         <img
-            src="/entrp-journey/sterling_scholar.png"
+            src="/my-story/sterling_scholar.png"
             alt="regional sterling scholar event"
             width=600
         />
@@ -107,10 +107,10 @@ Even with that passion, I continue to have other interests for medicine, busines
 
 <div class="gallery">
     <picture>
-        <source type="image/webp" srcset="/entrp-journey/andrew_utah_shirt.webp" />
-        <source type="image/png" srcset="/entrp-journey/andrew_utah_shirt.png" />
+        <source type="image/webp" srcset="/my-story/andrew_utah_shirt.webp" />
+        <source type="image/png" srcset="/my-story/andrew_utah_shirt.png" />
         <img
-            src="/entrp-journey/andrew_utah_shirt.png"
+            src="/my-story/andrew_utah_shirt.png"
             alt="getting food wearing a University of Utah shirt in Salt Lake City"
             width=500
         />
@@ -150,10 +150,10 @@ I did the same when I developed a web app to communicate the loan process to cli
 
 <div class="gallery">
     <picture>
-        <source type="image/webp" srcset="/entrp-journey/river_detections.webp" />
-        <source type="image/jpeg" srcset="/entrp-journey/river_detections.jpeg" />
+        <source type="image/webp" srcset="/my-story/river_detections.webp" />
+        <source type="image/jpeg" srcset="/my-story/river_detections.jpeg" />
         <img
-            src="/entrp-journey/river_detections.jpeg"
+            src="/my-story/river_detections.jpeg"
             alt="river object detections"
             width=600
         />
