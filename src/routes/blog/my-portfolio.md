@@ -1,7 +1,7 @@
 ---
 title: My Portfolio
 date: 2022-04-23
-excerpt: What I've built.
+excerpt: Check out the projects I've worked on!
 ---
 
 It's difficult to unify my portfolio under one umbrella.
