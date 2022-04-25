@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Andrew Lee, Software, Software Development, Blog, About Me" />
+	<meta name="author" content="Andrew Lee" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Permanent+Marker&family=Press+Start+2P&family=Raleway:wght@100;300;400;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YB4GWGHJ27"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-YB4GWGHJ27');
+	</script>
+	<link rel="icon" href="../waving_hand/favicon.ico" />
+	<style>
+		body {
+			visibility: hidden;
+			opacity: 0;
+		}
+	</style>
+	<script>
+		function updateMode() {
+			if (localStorage.theme === 'dark') {
+				document.body.classList.add('dark')
+				document.body.style.background = "black";
+			} else {
+				document.body.classList.remove('dark')
+				document.body.style.background = "white";
+			}
+		}
+
+		function showContent() {
+			document.body.style.visibility = 'visible';
+			document.body.style.opacity = 1;
+		}
+
+		window.addEventListener('DOMContentLoaded', function () {
+			if (localStorage.getItem('theme') == null) {
+				localStorage.setItem('theme',
+					window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+				);
+			}
+			updateMode();
+			showContent();
+		});
+	</script>
+	<noscript>
+		<style>
+			body {
+				visibility: visible;
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+	
+
+		
+
+		<link rel="stylesheet" href="/_app/assets/start-c446e5f0.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-a693f783.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-cb6d6211.css">
+		<link rel="stylesheet" href="/_app/assets/_post-78c0423f.css">
+		<link rel="modulepreload" href="/_app/start-0b8e09d1.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-6bb6c9e1.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-db821b76.js">
+		<link rel="modulepreload" href="/_app/pages/blog/my-portfolio.md-322bcc61.js">
+		<link rel="modulepreload" href="/_app/chunks/_post-5623a79d.js">
+
+		<script type="module">
+			import { start } from "/_app/start-0b8e09d1.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-db821b76.js"),
+						import("/_app/pages/blog/my-portfolio.md-322bcc61.js")
+					],
+					url: new URL("http://prerender/blog/my-portfolio"),
+					params: {}
+				}
+			});
+		</script>
+</head>
+
+<body>
+	<div id="svelte">
+
+
+
+
+
+<div class="flex flex-col w-full items-center" style="min-height: 100vh;"><div class="logo p-1 m-10 text-gray-500 dark_text-gray-400 drop-shadow-sm border-4 rounded border-black dark_border-lightgray svelte-1238xot"><div class="typewriter-container svelte-1w4dm0v cursor delay" style="--cursor-color: black"><span class="unlocked svelte-1238xot">AND</span></div>
+			<div class="typewriter-container svelte-1w4dm0v cursor delay" style="--cursor-color: black"><span class="unlocked svelte-1238xot">REW</span></div>
+			<div class="typewriter-container svelte-1w4dm0v cursor delay" style="--cursor-color: black"><span class="unlocked svelte-1238xot">LEE</span></div>
+		
+		<noscript><span class="text-black dark_text-lightgray svelte-1238xot" style="transition: none;">AND</span>
+			<span class="text-black dark_text-lightgray svelte-1238xot" style="transition: none;">REW</span>
+			<span class="text-black dark_text-lightgray svelte-1238xot" style="transition: none;">LEE</span></noscript>
+		<div class="div-after border-4 border-black dark_border-lightgray rounded-md svelte-1238xot" style="position: absolute; border-left-color: transparent; border-top-color: transparent;"></div>
+	</div>
+	<div class="flex justify-evenly w-full mb-4 text-black dark_text-lightgray font-bold" style="max-width: 800px;"><a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-3kd12y" href="/">ABOUT</a>
+	<a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-3kd12y" href="/work">WORK</a>
+	<a class="hover_text-sky-500 dark_hover_text-sky-300 svelte-3kd12y" href="/blog">BLOG</a>
+</div>
+	<button class="absolute transition-color t-1 l-1 m-1 text-black hover_text-gray-600 dark_text-white dark_hover_text-gray-300 text-3xl svelte-mcjku9">
+	</button>
+	<div class="w-5/6 bg-lightgray dark_bg-gray-500 pb-1 mb-10" style="content: ' ';"></div>
+	<div><div class="content flex flex-col align-center svelte-gvv3hx"><h1>My Portfolio</h1>
+	<p class="date svelte-gvv3hx">Apr 23, 2022 by Andrew Lee</p>
+    <base target="_blank">
+	<p>It’s difficult to unify my portfolio under one umbrella.
+The truth is I’ve worked on many projects in a broad number of topics.
+This early in my career, I’ve built most of my projects to explore the vast landscape of the software space.
+Sometimes, the point of a project is to help me understand a programming language better and learn the tooling and ecosystem around it.
+Sometimes it’s to automate a repetitive task. Sometimes it’s to create something entertaining. Sometimes it’s to help communicate a message. My projects will often have a prominent visual aspect, because an attractive, clean UI a much nicer experience both as a developer and a user. </p>
+<p>I’ve gone ahead and separated these projects into topics. Some fit into multiple buckets, so I just picked one for it. Without further ado, let’s get into some of my projects!</p>
+<h2>Simulations</h2>
+<p>Simulations allow exploration of concepts. They can help students and researchers develop an intuitive understanding of a process.
+Using the power of modern computing, we can visualize ideas and communicate beautiful complexity.</p>
+<h3>- Evolution</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://candrewlee14.github.io/EvolutionGameP5/" rel="nofollow">https://candrewlee14.github.io/EvolutionGameP5/</a></p>
+<p>Evolution is a difficult process to imagine. The effects of environmental pressures and competition isn’t always easy to see in real life on our timescale.
+Simulating evolution and keeping track of the data, however, makes that process easier to understand. </p>
+<p>I built this to help students understand how different traits can be advantageous through natural selection. You can watch how overpopulation can cause extinction, or how certain evolutionary tradeoffs are made over time.</p></div>
+<div class="img-side"><picture>
+        <source type="image/png" srcset="/my-portfolio/evolutionSim.png">
+        <img src="/my-portfolio/evolutionSim.png" alt="evolution simulator" width="400"></picture>
+    <picture>
+        <source type="image/png" srcset="/my-portfolio/evolutionSimGraph.png">
+        <img src="/my-portfolio/evolutionSimGraph.png" alt="evolution simulator graph" width="400"></picture></div></div>
+<h3>- Cellular Automata</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/game-of-life-rs" rel="nofollow">https://github.com/candrewlee14/game-of-life-rs</a></p>
+<p>I wrote this to explore <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life" rel="nofollow">Conway’s Game of Life</a>.
+This is a cross-platform terminal application that takes mouse input. Choose a random seed, or leave the map empty and fill it in as you please.
+Press space to pause and resume, and watch cellular automata at work.</p>
+<p>The incredible complexity that can be generated by simple rules is part of what makes universe so wonderful,
+and exploring of different behaviors of simple patterns in the Game of Life can be mesmerizing.</p></div>
+<div class="img-side"><picture>
+        <source type="image/png" srcset="/my-portfolio/gameOfLife.png">
+        <img src="/my-portfolio/gameOfLife.png" style="float: right;" alt="game of life" width="400"></picture></div></div>
+<h3>- Boid Flocking</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/boidflock" rel="nofollow">https://github.com/candrewlee14/boidflock</a></p>
+<p>Boidflock is another example of artificial life, where complex behaviors observed in reality can be simulated with a simple set of rules.</p>
+<p>The patterns look like flocks of birds or schools of fish moving together.
+I’ve built this software to be easily tunable, so you can play with the weights of different rules to generate new behaviors.
+It makes for a great screensaver!</p></div>
+<div class="img-side"><picture>
+        <source type="image/png" srcset="/my-portfolio/boidFlock.png">
+        <img src="/my-portfolio/boidFlock.png" alt="boid flocking" style="float: right;" width="400"></picture></div></div>
+<h2>Games</h2>
+<h3>- Hangman</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/hangman-rs" rel="nofollow">https://github.com/candrewlee14/hangman-rs</a></p>
+<p>This is the classic hangman game, it generates a random word and the player has to guess the letters.
+I wanted to make something to be able to play on the terminal across platforms.
+It was one of my very first programs in the <a href="https://www.rust-lang.org/" rel="nofollow">Rust</a> language, and it helped me become more familiar with working with packages.</p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/hangman.png">
+    <img src="/my-portfolio/hangman.png" style="float: right;" alt="hangman game" width="200"></picture></div></div>
+<h3>- Multiplayer Maze Game</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/mazeio" rel="nofollow">https://github.com/candrewlee14/mazeio</a></p>
+<p>I wanted to be able to race my younger brother in a maze game, so I decided to build it for us.
+It was some of my very first work with networking, and I learned a lot. I built an async server using the <a href="https://tokio.rs/" rel="nofollow">Tokio runtime</a>,
+and a fancy terminal UI client. There’s structured logging, mock client testing, and performance benchmarking all in there.</p></div>
+<div class="img-side"><picture>
+        <source type="image/png" srcset="/my-portfolio/multiMaze.png">
+        <img src="/my-portfolio/multiMaze.png" style="float: right;" alt="multiplayer maze game" width="400"></picture></div></div>
+<h3>- AlphaBlitz</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://candrewlee14.github.io/alphablitz" rel="nofollow">https://candrewlee14.github.io/alphablitz</a></p>
+<p>During the Great Wordle Craze of early 2022, I was inspired to build my own word game for my family.
+I called it AlphaBlitz.</p>
+<p>You make words starting with letters from the daily 10-letter word. The goal of the game is to use all 26 letters of the alphabet.</p>
+<p>I wrote it using Typescript and the Svelte web framework, which I highly recommend.
+It’s got an automated CI/CD pipeline, domain name, and everything :)</p>
+<p>In my completely unbiased opinion, I happen to think that the game is pretty fun, so check it out!</p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/alphaBlitz.png">
+    <img src="/my-portfolio/alphaBlitz.png" style="float: right;" alt="alphablitz game" width="300"></picture></div></div>
+<h2>Web Dev</h2>
+<h3>- Neo Loan Timeline</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://www.neohomeloans-milestones.com/" rel="nofollow">https://www.neohomeloans-milestones.com/</a></p>
+<p>In order to better communicate the timeline of a loan to Neo Home Loan’s borrowers, I built a website with React.</p>
+<p>The UI of the site was designed around the brand identity of Neo. Clients can see more information about the milestone they are on in their loan.
+It’s a responsive design built for a clean look on mobile and desktop.</p>
+<p>On the final milestone update, the site shows a confetti celebration in honor of a new homeowner!</p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/neoLoanTimeline.png">
+    <img src="/my-portfolio/neoLoanTimeline.png" style="float: right;" alt="Neo Home Loans milestone timeline" width="400"></picture></div></div>
+<h3>- Personal Website</h3>
+<div class="txt-and-img"><div class="txt-side"><p>The very site you’re reading now I built to be able to share what I’m working on and share my thoughts with the world.
+I built it with Svelte and Tailwind CSS.</p>
+<p>If you like what you see, follow my github profile at <a href="https://github.com/candrewlee14" rel="nofollow">https://github.com/candrewlee14</a>!</p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/andrewLogo.png">
+    <img src="/my-portfolio/andrewLogo.png" style="float: right;" alt="andrew logo" width="200"></picture></div></div>
+<h2>Automation</h2>
+<h3>- Canvas -&gt; Microsoft Todo</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/canvas-todo-linker" rel="nofollow">https://github.com/candrewlee14/canvas-todo-linker</a></p>
+<p>This middleware automates updating your Microsoft Todo list with school assignments on Canvas.
+Each class gets its own tag, and all new tasks are added to the specified Todo folder. </p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/canvasTodo.png">
+    <img src="/my-portfolio/canvasTodo.png" style="float: right;" alt="canvas todo linker logo" width="300"></picture></div></div>
+<h3>- River Trash Detection</h3>
+<div class="txt-and-img"><div class="txt-side"><p>At VPI Technologies, I used Pytorch and Yolov5 to build a machine learning model &amp; data pipeline to detect trash in rivers.
+Many rivers in the world have large amounts of debris flowing down them every day.
+To protect our waterways and oceans, it’s important to understand the composition of river debris and to remove the trash.</p>
+<p>The model categorizes different kinds of debris flowing down the river over time, using webcam footage as the source data. </p></div>
+<div class="img-side"><picture><source type="image/webp" srcset="/my-story/river_detections.webp">
+    <source type="image/jpeg" srcset="/my-story/river_detections.jpeg">
+    <img src="/my-story/river_detections.jpeg" style="float: right;" alt="river object detections" width="400"></picture></div></div>
+<h2>Lang Dev</h2>
+<h3>- Golox</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/golox" rel="nofollow">https://github.com/candrewlee14/golox</a></p>
+<p>In my first project written in Go, I wrote an implementation of the <a href="https://craftinginterpreters.com/the-lox-language.html" rel="nofollow">Lox</a> programming language.
+Lox is a dynamic, high-level scripting language.</p>
+<p>Golox lexes, parses, and interprets Lox programs. It implements a pretty REPL to interactively run lines of code. Helpful parsing errors and runtime errors are reported.
+Golox leverages Go’s garbage collector to efficiently handle memory.</p>
+<p>Benchmarking results in faster runtimes than Python in many cases, although recursion is currently slower.
+I’ve got more work I’m planning on doing with this, like adding classes and possibly lowering to LLVM’s IR for compilation. </p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/golox.png">
+    <img src="/my-portfolio/golox.png" style="float: right;" alt="golox example run" width="300"></picture></div></div>
+<h3>- Zlog</h3>
+<div class="txt-and-img"><div class="txt-side"><p><a href="https://github.com/candrewlee14/zlog" rel="nofollow">https://github.com/candrewlee14/zlog</a></p>
+<p>Zig is a powerful new systems language addressing the pitfalls of C &amp; C++.
+A language is only as strong as it’s ecosystem, so I wanted to contribute to Zig and it’s community.</p>
+<p>In addition to improving Zig’s standard library, I built a allocation-free logging library.
+Logs are written in JSON or pretty printed to the terminal.
+Zig’s comptime functionality makes compile time configuration simple.</p></div>
+<div class="img-side"><picture>
+    <source type="image/png" srcset="/my-portfolio/zlog.png">
+    <img src="/my-portfolio/zlog.png" style="float: right;" alt="zlog example run" width="415"></picture></div></div>
+</div></div></div>
+<div class="pb-6 w-full bg-lightgray dark_bg-gray-900 mt-8" style="content: ' ';"></div>
+
+</div>
+</body>
+
+</html>
