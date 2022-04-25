@@ -165,7 +165,7 @@ and a fancy terminal UI client. There's structured logging, mock client testing,
 
 https://candrewlee14.github.io/alphablitz
 
-During the Great Wordle Craze of early 2021, I was inspired to build my own word game for my family.
+During the Great Wordle Craze of early 2022, I was inspired to build my own word game for my family.
 I called it AlphaBlitz.
 
 You make words starting with letters from the daily 10-letter word. The goal of the game is to use all 26 letters of the alphabet.
@@ -197,6 +197,14 @@ In my completely unbiased opinion, I happen to think that the game is pretty fun
 <div class="txt-side">
 
 https://www.neohomeloans-milestones.com/
+
+In order to better communicate the timeline of a loan to Neo Home Loan's borrowers, I built a website with React.
+
+The UI of the site was designed around the brand identity of Neo. Clients can see more information about the milestone they are on in their loan.
+It's a responsive design built for a clean look on mobile and desktop.
+
+On the final milestone update, the site shows a confetti celebration in honor of a new homeowner!
+
 </div>
 <div class="img-side">
 <picture >
@@ -206,7 +214,7 @@ https://www.neohomeloans-milestones.com/
         src="/my-portfolio/neoLoanTimeline.png"
         style="float: right;"
         alt="Neo Home Loans milestone timeline"
-        width=300
+        width=400
     />
 </picture>
 </div>
@@ -217,6 +225,11 @@ https://www.neohomeloans-milestones.com/
 <div class="txt-and-img">
 <div class="txt-side">
 
+The very site you're reading now I built to be able to share what I'm working on and share my thoughts with the world.
+I built it with Svelte and Tailwind CSS.
+
+If you like what you see, follow my github profile at https://github.com/candrewlee14!
+
 </div>
 <div class="img-side">
 <picture >
@@ -226,7 +239,7 @@ https://www.neohomeloans-milestones.com/
         src="/my-portfolio/andrewLogo.png"
         style="float: right;"
         alt="andrew logo"
-        width=175
+        width=200
     />
 </picture>
 </div>
@@ -239,6 +252,9 @@ https://www.neohomeloans-milestones.com/
 <div class="txt-side">
 
 https://github.com/candrewlee14/canvas-todo-linker
+
+This middleware automates updating your Microsoft Todo list with school assignments on Canvas.
+Each class gets its own tag, and all new tasks are added to the specified Todo folder. 
 
 </div>
 <div class="img-side">
@@ -255,12 +271,15 @@ https://github.com/candrewlee14/canvas-todo-linker
 </div>
 </div>
 
-### - Client Gift Orders
-
 ### - River Trash Detection
 <div class="txt-and-img">
 <div class="txt-side">
 
+At VPI Technologies, I used Pytorch and Yolov5 to build a machine learning model & data pipeline to detect trash in rivers.
+Many rivers in the world have large amounts of debris flowing down them every day. 
+To protect our waterways and oceans, it's important to understand the composition of river debris and to remove the trash.
+
+The model categorizes different kinds of debris flowing down the river over time, using webcam footage as the source data. 
 </div>
 <div class="img-side">
 <picture>
@@ -276,8 +295,6 @@ https://github.com/candrewlee14/canvas-todo-linker
 </div>
 </div>
 
-### - Dotfiles
-
 ## Lang Dev
 
 ### - Golox
@@ -286,6 +303,14 @@ https://github.com/candrewlee14/canvas-todo-linker
 
 https://github.com/candrewlee14/golox
 
+In my first project written in Go, I wrote an implementation of the [Lox](https://craftinginterpreters.com/the-lox-language.html) programming language.
+Lox is a dynamic, high-level scripting language.
+
+Golox lexes, parses, and interprets Lox programs. It implements a pretty REPL to interactively run lines of code. Helpful parsing errors and runtime errors are reported.
+Golox leverages Go's garbage collector to efficiently handle memory.
+
+Benchmarking results in faster runtimes than Python in many cases, although recursion is currently slower. 
+I've got more work I'm planning on doing with this, like adding classes and possibly lowering to LLVM's IR for compilation. 
 </div>
 <div class="img-side">
 <picture >
@@ -307,6 +332,13 @@ https://github.com/candrewlee14/golox
 
 https://github.com/candrewlee14/zlog
 
+Zig is a powerful new systems language addressing the pitfalls of C & C++. 
+A language is only as strong as it's ecosystem, so I wanted to contribute to Zig and it's community.
+
+In addition to improving Zig's standard library, I built a allocation-free logging library. 
+Logs are written in JSON or pretty printed to the terminal. 
+Zig's comptime functionality makes compile time configuration simple.
+
 </div>
 <div class="img-side">
 <picture >
@@ -316,7 +348,7 @@ https://github.com/candrewlee14/zlog
         src="/my-portfolio/zlog.png"
         style="float: right;"
         alt="zlog example run"
-        width=400
+        width=415
     />
 </picture>
 </div>
