@@ -17,7 +17,7 @@ I've gone ahead and separated these projects into topics. Some fit into multiple
 > Simulations allow exploration of concepts. They can help students and researchers develop an intuitive understanding of a process.
 > Using the power of modern computing, we can visualize ideas and communicate beautiful complexity.
 
-### - [Evolution](https://candrewlee14.github.io/EvolutionGameP5/)
+### - [Evolution](https://github.com/candrewlee14/EvolutionGameP5/)
 
 <div class="txt-and-img">
 <div class="txt-side">
@@ -153,7 +153,7 @@ and a fancy terminal UI client. There's structured logging, mock client testing,
     </div>
 </div>
 
-### - [AlphaBlitz](https://candrewlee14.github.io/alphablitz)
+### - [AlphaBlitz](https://alphablitz.day/)
 
 <div class="txt-and-img">
 <div class="txt-side">
