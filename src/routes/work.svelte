@@ -12,9 +12,23 @@
 		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
 			<div class="dot" style="background-color: rgb(125, 175, 255);"/>
 			<div class="entry">
+				<h2>Software Development Intern - Edge Team</h2>
+				<h3 class="company text-teal-600 dark_text-teal-300">InfluxData</h3>
+				<h4 class="dates">May 2022 - Aug 2022</h4>
+				<hr />
+				<ul class="desc">
+					<li>Implemented features and fixed bugs for <a class="text-teal-300" href="https://github.com/influxdata/influxdb">InfluxDB</a>, the open-source time series database.</li>
+					<li>Built a new <a class="text-teal-500 dark_text-teal-300" href="https://www.influxdata.com/blog/return-influxdb-v1-shell/">InfluxQL shell</a> with features like fancy tables and command autocompletion.</li>
+					<li>Designed a proof-of-concept visualization for geo-temporal data on a 3D globe.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="relative entry-wrap pl-4 border-lightgray dark_border-gray-500">
+			<div class="dot" style="background-color: rgb(125, 175, 255);"/>
+			<div class="entry">
 				<h2>Machine Learning Intern</h2>
 				<h3 class="company text-sky-700 dark_text-sky-300">VPI Technology Group</h3>
-				<h4 class="dates">Aug 2021 - Present</h4>
+				<h4 class="dates">Aug 2021 - May 2022</h4>
 				<hr />
 				<ul class="desc">
 					<li>Training custom machine learning models to detect trash in rivers using Pytorch & Yolov5</li>
@@ -130,6 +144,9 @@
 <style lang="postcss">
 	hr {
 		@apply my-2 border rounded-sm;
+	}
+	a {
+		@apply font-medium dark_font-light;
 	}
 	.entry hr {
 		max-width: 800px;

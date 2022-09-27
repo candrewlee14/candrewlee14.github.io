@@ -35,11 +35,7 @@
 			</div>
 			<div class="max-w-xl" style="min-width: 200px;">
 				<p>
-					I'm currently working on detecting trash in rivers at
-					<a
-						class="text-sky-700 hover_text-sky-500 dark_text-sky-300 dark_hover_text-sky-200"
-						href="https://www.vpitechnology.com/">VPI Technology Group</a
-					>. I'm also a student at the
+					I'm currently a student at the
 					<a
 						class="text-red-700 hover_text-red-500 dark_text-red-400 dark_hover_text-red-300"
 						href="https://www.cs.utah.edu/"
@@ -47,6 +43,7 @@
 						University of Utah</a
 					>
 					earning my Honors BS/MS in Computer Science.
+					I'll be graduating May 2024.
 				</p>
 				<p>
 					I'm interested in art, music, fashion, technology, business, and health. When I'm not
@@ -76,6 +73,7 @@
 			<h2 class="text-center my-2">Recent Projects 🏗</h2>
 			<ul class="podcast-list">
 				<li><a rel="external" href="https://candrewlee14.github.io/alphablitz">AlphaBlitz</a> - A brand new word game inspired by Wordle </li>
+				<li><a href="https://github.com/candrewlee14/webman">Webman</a> - A cross-platform executable manager</li>
 			</ul>
 		</div>
 		<div class="mt-6">
@@ -84,7 +82,6 @@
 				<li><span class="podcast">Huberman Lab Podcast</span> - Andrew Huberman</li>
 				<li><span class="podcast">Darknet Diaries</span> - Jack Rhysider</li>
 				<li><span class="podcast">Revisionist History</span> - Malcolm Gladwell</li>
-				<li><span class="podcast">Snacks Daily</span> - Robinhood</li>
 			</ul>
 		</div>
 		<div class="mt-8" style="max-width: 550px">
@@ -158,7 +155,7 @@
 		@apply mb-4;
 	}
 	.podcast-list a {
-		@apply text-blue-500 hover_text-blue-300;
+		@apply text-blue-500 dark_text-blue-400 hover_text-blue-300;
 	}
 	.socials {
 		@apply flex flex-row flex-wrap p-1 pt-3 border-4 rounded mt-4 mb-4;
