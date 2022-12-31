@@ -1,6 +1,6 @@
 {
   ".svelte-kit/build/runtime/internal/start.js": {
-    "file": "start-39bd0505.js",
+    "file": "start-9f69fa42.js",
     "src": ".svelte-kit/build/runtime/internal/start.js",
     "isEntry": true,
     "imports": [
@@ -12,6 +12,7 @@
       "___layout-31ea665d.js",
       ".svelte-kit/build/components/error.svelte",
       "src/routes/index.svelte",
+      "src/routes/blog/i-will-write-more.md",
       "src/routes/blog/my-portfolio.md",
       "src/routes/blog/my-story.md",
       "src/routes/blog.svelte",
@@ -43,26 +44,38 @@
       "assets/pages/index.svelte-29578247.css"
     ]
   },
+  "src/routes/blog/i-will-write-more.md": {
+    "file": "pages/blog/i-will-write-more.md-d44c659d.js",
+    "src": "src/routes/blog/i-will-write-more.md",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bab6421d.js",
+      "__post-0ba3a7a5.js",
+      "_dayjs.min-60ad303a.js",
+      "__commonjsHelpers-7d66b65f.js"
+    ]
+  },
   "src/routes/blog/my-portfolio.md": {
-    "file": "pages/blog/my-portfolio.md-70175242.js",
+    "file": "pages/blog/my-portfolio.md-ca97bf1a.js",
     "src": "src/routes/blog/my-portfolio.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bab6421d.js",
-      "__post-1939579f.js",
+      "__post-0ba3a7a5.js",
       "_dayjs.min-60ad303a.js",
       "__commonjsHelpers-7d66b65f.js"
     ]
   },
   "src/routes/blog/my-story.md": {
-    "file": "pages/blog/my-story.md-eded0932.js",
+    "file": "pages/blog/my-story.md-7db94255.js",
     "src": "src/routes/blog/my-story.md",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-bab6421d.js",
-      "__post-1939579f.js",
+      "__post-0ba3a7a5.js",
       "_dayjs.min-60ad303a.js",
       "__commonjsHelpers-7d66b65f.js"
     ]
@@ -127,20 +140,20 @@
       "node_modules/svelte-typewriter/src/helpers/sleep.js"
     ],
     "css": [
-      "assets/__layout-75d3012f.css"
+      "assets/__layout-2dc9d40d.css"
     ]
   },
   "__commonjsHelpers-7d66b65f.js": {
     "file": "chunks/_commonjsHelpers-7d66b65f.js"
   },
-  "__post-1939579f.js": {
-    "file": "chunks/_post-1939579f.js",
+  "__post-0ba3a7a5.js": {
+    "file": "chunks/_post-0ba3a7a5.js",
     "imports": [
       "_index-bab6421d.js",
       "_dayjs.min-60ad303a.js"
     ],
     "css": [
-      "assets/_post-1a515a52.css"
+      "assets/_post-597e5fd5.css"
     ]
   },
   "_dayjs.min-60ad303a.js": {
