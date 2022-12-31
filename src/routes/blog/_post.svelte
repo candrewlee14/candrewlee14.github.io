@@ -26,7 +26,7 @@
 		@apply mb-4 mt-2;
 	}
 	.content :global(p) {
-		@apply mb-4 text-base;
+		@apply mb-4 text-lg;
 	}
 	.content :global(h1) {
 		@apply text-3xl;
