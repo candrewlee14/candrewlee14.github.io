@@ -147,11 +147,9 @@
 	}
 	li {
 		@apply text-base;
-		font-family: 'Barlow';
 	}
 	p {
 		width: 100%;
-		font-family: 'Barlow';
 		@apply mb-4;
 	}
 	.podcast-list a {
@@ -164,9 +162,7 @@
 	.socials a {
 		@apply pb-2 block;
 	}
-	.socials h2 {
-		@apply pl-1 pt-4;
-	}
+	
 	.socials span {
 		@apply pl-2 transition text-gray-600 hover_text-gray-400 dark_text-gray-400 dark_hover_text-gray-500;
 	}
