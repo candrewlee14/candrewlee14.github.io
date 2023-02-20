@@ -17,7 +17,7 @@
 				<h4 class="dates">May 2022 - Aug 2022</h4>
 				<hr />
 				<ul class="desc">
-					<li>Implemented features and fixed bugs for <a class="text-teal-300" href="https://github.com/influxdata/influxdb">InfluxDB</a>, the open-source time series database.</li>
+					<li>Implemented features and fixed bugs for <a class="text-teal-500 dark_text-teal-300" href="https://github.com/influxdata/influxdb">InfluxDB</a>, the open-source time series database.</li>
 					<li>Built a new <a class="text-teal-500 dark_text-teal-300" href="https://www.influxdata.com/blog/return-influxdb-v1-shell/">InfluxQL shell</a> with features like fancy tables and command autocompletion.</li>
 					<li>Designed a proof-of-concept visualization for geo-temporal data on a 3D globe.</li>
 				</ul>
