@@ -1,0 +1,115 @@
+import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
+import { FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import AndrewLogo from "~/components/andrew";
+import { useTheme } from "~/storage/theme";
+
+export const meta: MetaFunction = () => {
+	return [
+		{ title: "New Remix SPA" },
+		{ name: "description", content: "Welcome to Remix (SPA Mode)!" },
+	];
+};
+
+function Socials() {
+	return (
+		<div className="flex text-2xl">
+			<Link to="" className="ml-2">
+				<IoMail className="text-red-400" />
+			</Link>
+      <Link
+        to=""
+        className="ml-2"  
+      >
+        <FaGithub className="text-black dark:text-white" />
+      </Link>
+      <Link
+        to=""
+        className="ml-2"
+      >
+        <FaTwitter className="text-blue-400" />
+      </Link>
+      <Link
+        to=""
+        className="ml-2"
+      >
+        <FaLinkedin className="text-sky-400" />
+      </Link>
+		</div>
+	);
+}
+
+export default function Index() {
+	const { theme, setTheme } = useTheme();
+
+	return (
+    <div className="mx-4">
+		<div className="max-w-prose mx-auto lg:text-lg">
+			<div className="my-8">
+				<AndrewLogo />
+			</div>
+			<button
+				type="button"
+				className="absolute top-10 right-3 lg:right-10 text-3xl transition-all hover:rotate-45"
+				onClick={() =>
+					setTheme((curTheme) => (curTheme === "light" ? "dark" : "light"))
+				}
+			>
+				{theme === "light" ? <FaMoon /> : <FaSun />}
+			</button>
+			<article className="prose lg:prose-lg">
+				<div className="text-center">
+					<h1 className="!my-2 text-center">Hello! 👋</h1>
+					<h1>
+						I'm <span className="text-blue-400">Andrew Lee</span>.
+					</h1>
+				</div>
+				<div className="">
+					<p>
+						I'm currently earning my <strong className="text-black dark:text-white">Honors BS & MS</strong> in{" "}
+						<strong className="text-black dark:text-white">Computer Science</strong> at the{" "}
+						<span className="text-red-600 dark:text-red-400 font-bold whitespace-nowrap">
+							University of Utah
+						</span>. I'll be graduating May 2024.
+					</p>
+					<p>
+						I'm interested in art, music, fashion, technology, business, and
+						health. When I'm not working or studying, you can find me playing
+						basketball with friends, jamming on the piano, playing Super Smash
+						Bros, reading up on a new technical breakthrough, or coding on a fun
+						project.
+					</p>
+					<p>Feel free to connect with me through my socials below.</p>
+				</div>
+				<div className="my-6 flex flex-row flex-wrap justify-between ring-4 ring-blue-300 dark:ring-blue-600 rounded py-2 px-8">
+					<div className="flex items-center">
+						<IoMail className="text-red-400" />
+						<Link to="mailto:candrewlee14@gmail.com" className="ml-2">
+							candrewlee14
+						</Link>
+					</div>
+          <div className="flex items-center">
+						<FaGithub className="text-black dark:text-white" />
+						<Link to="https://github.com/candrewlee14" className="ml-2">
+							candrewlee14
+						</Link>
+					</div>
+					<div className="flex items-center">
+						<FaTwitter className="text-blue-400" />
+						<Link to="https://twitter.com/c_andrew_lee" className="ml-2">
+							c_andrew_lee
+						</Link>
+					</div>
+					<div className="flex items-center">
+						<FaLinkedin className="text-sky-400" />
+						<Link to="https://www.linkedin.com/in/c-andrew-lee" className="ml-2">
+							c-andrew-lee
+						</Link>
+					</div>
+				</div>
+			</article>
+		</div>
+    </div>
+	);
+}
