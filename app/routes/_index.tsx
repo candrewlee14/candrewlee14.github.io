@@ -58,15 +58,15 @@ export default function Index() {
 				</div>
 				<ThemeToggle />
 				<article className="prose lg:prose-lg xl:prose-xl mx-auto">
-					<div className="text-center">
+					<div className="text-center !my-12 xl:!my-16">
 						<h1 className="!my-2 text-center">Hello! 👋</h1>
 						<h1>
-							I'm <span className="text-blue-400">Andrew Lee</span>.
+							I'm <span className="text-blue-400 border-b-4 border-slate-200 dark:border-slate-700">Andrew Lee</span>.
 						</h1>
 					</div>
 				</article>
-
-				<div className="flex flex-row flex-wrap w-full justify-center">
+				{/* <hr className="border mb-8" /> */}
+				<div className="flex flex-row flex-wrap w-full justify-center align-middle pt-4">
 					<Image
 						src="/andrew-glacier.jpg"
 						webp_src="/andrew-glacier.webp"
@@ -75,7 +75,7 @@ export default function Index() {
 						imgClassName="rounded"
 					/>
 					<div>
-						<div className="h-full w-0.5 bg-slate-200 dark:bg-slate-700 mx-8"/>
+						<div className="h-full w-0.5 bg-slate-200 dark:bg-slate-700 mx-8 sm:invisible md:visible"/>
 					</div>
 					<article className="mx-4 prose lg:prose-lg xl:prose-xl">
 						<p>
@@ -91,7 +91,7 @@ export default function Index() {
 							<span className="text-red-600 dark:text-red-400 font-bold whitespace-nowrap">
 								University of Utah
 							</span>
-							. I'll be graduating May 2024.
+							. I'll be graduating in May 2024, after which I'll be working at <span className="text-blue-400 font-bold">Lucid Software</span>.
 						</p>
 						<p>
 							I'm interested in art, music, fashion, technology, business, and
@@ -136,6 +136,7 @@ export default function Index() {
 						</div>
 					</article>
 				</div>
+				{/* <hr className="border my-8" /> */}
 			</div>
 		</div>
 	);
