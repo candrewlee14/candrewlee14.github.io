@@ -8,7 +8,7 @@ function Char({
 	return (
 		<div
 			style={style}
-			className={`bg-blue-300 p-2 mx-1 rounded w-10 h-10 text-center font-bold text-white flex justify-center items-center ${className} ${styles.bounce}`}
+			className={`bg-blue-300 p-2 mx-1 rounded w-8 h-8 text-center font-bold text-white flex justify-center items-center ${className} ${styles.bounce}`}
 		>
 			<span>{val}</span>
 		</div>
@@ -23,20 +23,21 @@ function EmptyKey({
 	return (
 		<div
 			style={style}
-			className={`bg-slate-300 dark:bg-slate-600 p-2 mx-1 rounded h-10 text-center font-bold text-white flex justify-center items-center ${className}  ${styles.bounce}`}
+			className={`bg-slate-300 dark:bg-slate-600 p-2 mx-1 rounded h-8 text-center font-bold text-white flex justify-center items-center ${className}  ${styles.bounce}`}
 		>
 			<span>{val}</span>
 		</div>
 	);
 }
 
-export default function AndrewLogo() {
+export default function AndrewLogo({className, style}: {className?: string, style?: React.CSSProperties}) {
 	return (
-		<div className="mx-auto text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-4 ring-slate-100 dark:ring-slate-800">
+		<div className={`text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-4 ring-slate-100 dark:ring-slate-800 ${className}`}>
+			{/* add a squiggly line svg from the center to the top*/}
 			<div className="grid grid-rows-3">
 				<div className="my-1 flex">
 					<EmptyKey
-						className="w-10 text-slate-100 dark:text-slate-500"
+						className="w-8 text-slate-100 dark:text-slate-500"
 						val="C"
 						style={{ animationDelay: "1.0s" }}
 					/>
@@ -61,7 +62,7 @@ export default function AndrewLogo() {
 					/>
 				</div>
 				<div className="flex my-1">
-					<EmptyKey className="w-16" style={{ animationDelay: "1.5s" }} />
+					<EmptyKey className="w-12" style={{ animationDelay: "1.5s" }} />
 					<Char
 						val="R"
 						style={{ animationDelay: "1.6s" }}
@@ -85,7 +86,7 @@ export default function AndrewLogo() {
 					/>
 				</div>
 				<div className="my-1 flex">
-					<EmptyKey className="w-11" style={{ animationDelay: "2.0s" }} />
+					<EmptyKey className="w-9" style={{ animationDelay: "2.0s" }} />
 					<Char
 						val="L"
 						style={{ animationDelay: "2.1s" }}

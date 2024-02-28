@@ -1,7 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import { FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
+import { FaSun, FaMoon, FaGithub, FaLinkedin, FaTwitter, FaHamburger } from "react-icons/fa";
+import { IoMail, IoMenu } from "react-icons/io5";
 import AndrewLogo from "~/components/andrew";
 import { useTheme } from "~/storage/theme";
 import { Image } from "~/components/image";
@@ -37,7 +37,7 @@ function ThemeToggle() {
 	return (
 		<button
 			type="button"
-			className="absolute top-10 right-3 lg:right-10 text-3xl transition-all hover:rotate-45"
+			className="absolute top-10 right-4 md:right-10 text-3xl transition-all hover:rotate-45"
 			onClick={() =>
 				setTheme((curTheme) => (curTheme === "light" ? "dark" : "light"))
 			}
@@ -53,15 +53,23 @@ export default function Index() {
 			<div
 			// className="max-w-prose lg:max-w-screen-lg xl:max-w-screen-lg mx-auto lg:text-lg"
 			>
-				<div className="my-8">
-					<AndrewLogo />
+				<div className="my-8 flex justify-around flex-wrap">
+					<Link to="/">
+						<AndrewLogo className="" />
+					</Link>
 				</div>
 				<ThemeToggle />
-				<article className="prose lg:prose-lg xl:prose-xl mx-auto">
-					<div className="text-center !my-12 xl:!my-16">
-						<h1 className="!my-2 text-center">Hello! 👋</h1>
-						<h1>
-							I'm <span className="text-blue-400 border-b-4 border-slate-200 dark:border-slate-700">Andrew Lee</span>.
+				<div className="prose flex mx-auto justify-center relative lg:absolute lg:top-10 lg:right-24 p-1 rounded max-w-min">
+					<div className="mx-3 whitespace-nowrap">🏠<Link to='/'>Home</Link></div>
+					<div className="mx-3 whitespace-nowrap">⚒️<Link to='/work'>Work</Link></div>
+					<div className="mx-3 whitespace-nowrap">📃<Link to='/home'>Blog</Link></div>
+				</div>
+				{/* <hr className="border my-8" /> */}
+				<article className="prose mx-auto">
+					<div className="text-center !my-8 xl:!my-9">
+						<h1 className="!my-2 flex justify-center flex-wrap">
+							<span className="mx-3">👋Hello!</span>
+							<span>I'm <span className="text-blue-400 border-b-4 border-slate-200 dark:border-slate-700">Andrew Lee</span>.</span>
 						</h1>
 					</div>
 				</article>
@@ -71,13 +79,13 @@ export default function Index() {
 						src="/andrew-glacier.jpg"
 						webp_src="/andrew-glacier.webp"
 						alt="Andrew Lee"
-						className="mb-8 mx-8 w-96"
+						className="mb-8 mx-8 w-72"
 						imgClassName="rounded"
 					/>
 					<div>
-						<div className="h-full w-0.5 bg-slate-200 dark:bg-slate-700 mx-8 sm:invisible md:visible"/>
+						<div className="h-full w-1 bg-slate-200 dark:bg-slate-700 mx-8 hidden xl:block" />
 					</div>
-					<article className="mx-4 prose lg:prose-lg xl:prose-xl">
+					<article className="mx-4 prose">
 						<p>
 							I'm currently earning my{" "}
 							<strong className="text-black dark:text-white">
@@ -91,7 +99,8 @@ export default function Index() {
 							<span className="text-red-600 dark:text-red-400 font-bold whitespace-nowrap">
 								University of Utah
 							</span>
-							. I'll be graduating in May 2024, after which I'll be working at <span className="text-blue-400 font-bold">Lucid Software</span>.
+							. My areas of specialization have been Systems (OSes, Distributed) and AI/ML (Computer Vision, Deep Learning, NLP).
+							I'll be graduating in May 2024, after which I'll be working at <span className="text-blue-400 font-bold">Lucid Software</span>.
 						</p>
 						<p>
 							I'm interested in art, music, fashion, technology, business, and
