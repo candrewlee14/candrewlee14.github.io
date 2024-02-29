@@ -49,11 +49,13 @@ function WorkEntry({ entry }: { entry: WorkEntry }) {
 export default function Work() {
     return (
         <div className="flex flex-col items-center mx-4">
-            <article className="prose">
-                <h1 className="text-center">⚒️Work</h1>
+            <article className="prose max-w-none">
+                <h1 className="text-center mb-8">⚒️Work</h1>
+                <div className="mt-14">
                 {workEntries.map((entry) => (
                     <WorkEntry key={entry.company} entry={entry} />
                 ))}
+                </div>
             </article>
         </div>
     )

@@ -25,13 +25,13 @@ export function Navbar() {
     const isWork = location.pathname === "/work";
     const isHome = location.pathname === "/";
     return (
-        <div className="my-8 flex justify-around flex-wrap">
-            <Link to="/">
+        <div className="my-8 mb-10 flex justify-around flex-wrap">
+            <Link to="/" className="my-8">
                 <AndrewLogo className="mx-auto" />
             </Link>
             <ThemeToggle />
-            <div className="prose flex mx-auto justify-center relative mt-4 lg:mt-0 lg:absolute lg:top-10 lg:right-24 p-1 rounded max-w-min">
-                <div className="mx-3 whitespace-nowrap">🏠<Link to='/' className={isHome ? "text-blue-400 dark:text-blue-500" : "no-underline"}>Home</Link></div>
+            <div id="navbar" className="prose-xl flex mx-auto justify-center relative mt-4 lg:mt-0 lg:absolute lg:top-8 lg:right-24 p-1 rounded max-w-min">
+                <div className="mx-3 whitespace-nowrap">👨<Link to='/' className={isHome ? "text-blue-400 dark:text-blue-500" : "no-underline"}>About</Link></div>
                 <div className="mx-3 whitespace-nowrap">⚒️<Link to='/work' className={isWork ? "text-blue-400 dark:text-blue-500" : "no-underline"}>Work</Link></div>
                 <div className="mx-3 whitespace-nowrap">📃<Link to='/blog' className={isBlog ? "text-blue-400 dark:text-blue-500" : "no-underline"}>Blog</Link></div>
             </div>

@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kotta+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
 
 @tailwind base;
 @tailwind components;
@@ -10,22 +12,22 @@
 
 
 @layer base {
-    html {
-        font-family: "Proxima Nova", system-ui, sans-serif;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: "Open Sans", sans-serif;
+    h1, h2 {
+        /* font-family: "Open Sans", sans-serif; */
         /* font-family: "Nunito Sans", sans-serif; */
+        font-family: "Libre Baskerville", serif;
+        /* font-family: "Montserrat Alternates", sans-serif; */
     }
-    a, p {
-        font-family: "Open Sans", sans-serif;
-    }
-    p {
-        /* font-family: "Nunito Sans", sans-serif; */
-        /* font-family: "Noto Serif", serif; */
-        /* font-family: "Libre Baskerville", serif; */
+    h3, h4, h5, h6 {
+        font-family: "Nunito Sans", sans-serif;
+        /* font-family: 'Kotta One', serif; */
+        /* font-family: "Montserrat Alternates", sans-serif; */
+
     }
     
+    html, a, p {
+        font-family: "Open Sans", sans-serif;
+    }
 }
 
 .open-sans {

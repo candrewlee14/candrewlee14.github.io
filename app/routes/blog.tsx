@@ -13,7 +13,7 @@ export default function Blog() {
     return (
 		<div className="flex flex-col items-center mx-4">
 			<article className="prose">
-        	<Outlet/>
+        		<Outlet/>
 			</article>
 		</div>
     )

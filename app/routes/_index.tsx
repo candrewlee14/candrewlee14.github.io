@@ -41,8 +41,8 @@ export default function Index() {
 				{/* <hr className="border my-8" /> */}
 				<article className="prose mx-auto">
 					<div className="text-center !my-8 xl:!my-9">
-						<h1 className="!my-2 flex justify-center flex-wrap">
-							<span className="mx-3">👋Hello!</span>
+						<h1 className=" flex justify-center flex-wrap">
+							<span className="mx-3">👋 Hello!</span>
 							<span>I'm <span className="text-blue-400 border-b-4 border-slate-200 dark:border-slate-700">Andrew Lee</span>.</span>
 						</h1>
 					</div>

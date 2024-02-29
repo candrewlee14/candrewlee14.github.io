@@ -32,7 +32,7 @@ function EmptyKey({
 
 export default function AndrewLogo({className, style}: {className?: string, style?: React.CSSProperties}) {
 	return (
-		<div className={`text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-4 ring-slate-100 dark:ring-slate-800 ${className}`}>
+		<div className={`text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-8 p-1 ring-slate-100 dark:ring-slate-700 ${className}`}>
 			{/* add a squiggly line svg from the center to the top*/}
 			<div className="grid grid-rows-3">
 				<div className="my-1 flex">
