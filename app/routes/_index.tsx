@@ -8,8 +8,8 @@ import { Image } from "~/components/image";
 
 export const meta: MetaFunction = () => {
 	return [
-		{ title: "New Remix SPA" },
-		{ name: "description", content: "Welcome to Remix (SPA Mode)!" },
+		{ title: "Andrew Lee - Home" },
+		{ name: "description", content: "Andrew Lee - Home" },
 	];
 };
 
@@ -32,38 +32,12 @@ function Socials() {
 	);
 }
 
-function ThemeToggle() {
-	const { theme, setTheme } = useTheme();
-	return (
-		<button
-			type="button"
-			className="absolute top-10 right-4 md:right-10 text-3xl transition-all hover:rotate-45"
-			onClick={() =>
-				setTheme((curTheme) => (curTheme === "light" ? "dark" : "light"))
-			}
-		>
-			{theme === "light" ? <FaMoon /> : <FaSun />}
-		</button>
-	);
-}
-
 export default function Index() {
 	return (
 		<div className="mx-4 lg:mx-16">
 			<div
 			// className="max-w-prose lg:max-w-screen-lg xl:max-w-screen-lg mx-auto lg:text-lg"
 			>
-				<div className="my-8 flex justify-around flex-wrap">
-					<Link to="/">
-						<AndrewLogo className="" />
-					</Link>
-				</div>
-				<ThemeToggle />
-				<div className="prose flex mx-auto justify-center relative lg:absolute lg:top-10 lg:right-24 p-1 rounded max-w-min">
-					<div className="mx-3 whitespace-nowrap">🏠<Link to='/'>Home</Link></div>
-					<div className="mx-3 whitespace-nowrap">⚒️<Link to='/work'>Work</Link></div>
-					<div className="mx-3 whitespace-nowrap">📃<Link to='/home'>Blog</Link></div>
-				</div>
 				{/* <hr className="border my-8" /> */}
 				<article className="prose mx-auto">
 					<div className="text-center !my-8 xl:!my-9">

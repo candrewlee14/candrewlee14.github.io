@@ -8,6 +8,7 @@ import {
 
 import type { LinksFunction } from "@remix-run/node";
 import "./tailwind.css";
+import { Navbar } from "./components/navbar";
 
 export function Layout({ children }: { children: React.ReactNode }) {
 	return (
@@ -32,9 +33,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 						</div>
 					))}
 				</div>
+				<Navbar/>
 				{children}
 				<ScrollRestoration />
 				<Scripts />
+				<div className="mt-4 mb-3">&nbsp;
+						{/* <footer className="text-center">Bruh</footer> */}
+				</div>
 			</body>
 		</html>
 	);
