@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Image from "../components/Image.svelte";
-	import "iconify-icon";
+	import Icon from '@iconify/svelte';
 </script>
 
 <svelte:head>
@@ -74,14 +74,14 @@
 			>
 				<div class="flex flex-row justify-around flex-grow">
 					<div class="flex items-center mx-4">
-						<iconify-icon class="text-red-400" icon="mdi:email" />
+						<Icon class="text-red-400" icon="mdi:email" />
 						<a href="mailto:candrewlee14@gmail.com" class="ml-2">
 							candrewlee14
 						</a>
 					</div>
 					<div class="flex items-center mx-4">
 						<!-- <FaGithub class="text-black dark:text-white" /> -->
-						<iconify-icon
+						<Icon
 							class="text-black dark:text-white"
 							icon="mdi:github"
 						/>
@@ -92,8 +92,8 @@
 				</div>
 				<div class="flex flex-row justify-around flex-grow">
 					<div class="flex items-center mx-4">
-						<iconify-icon
-							class="text-black dark:text-white"
+						<Icon
+							class="text-blue-400"
 							icon="mdi:twitter"
 						/>
 						<a href="https://twitter.com/c_andrew_lee" class="ml-2">
@@ -101,8 +101,8 @@
 						</a>
 					</div>
 					<div class="flex items-center mx-4">
-						<iconify-icon
-							class="text-black dark:text-white"
+						<Icon
+							class="text-sky-500 dark:text-sky-400"
 							icon="mdi:linkedin"
 						/>
 						<a

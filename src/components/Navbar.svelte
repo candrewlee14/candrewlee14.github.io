@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Logo from './Logo.svelte';
-	import 'iconify-icon';
+	import Icon from '@iconify/svelte';
 
 	import { onMount } from 'svelte';
 	import { writable, type Writable } from 'svelte/store';
@@ -40,13 +40,15 @@
 	</a>
 	<button
 		type="button"
+		aria-label="Toggle theme"
+		name="theme-toggle"
 		class="absolute top-10 right-4 md:right-10 text-3xl transition-all hover:rotate-45"
 		on:click={toggle}
 	>
 		{#if $theme === 'light'}
-			<iconify-icon icon="fa-solid:moon" />
+			<Icon icon="fa-solid:moon" />
 		{:else}
-			<iconify-icon icon="fa-solid:sun" />
+			<Icon icon="fa-solid:sun" />
 		{/if}
 	</button>
 	<div
