@@ -14,17 +14,16 @@ jobs:
       - name: git-checkout
         uses: actions/checkout@v2
         
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: '16'
+          bun-version: latest
 
       - name: Install all dependencies
-        run: npm install
+        run: bun install
 
       - name: Build
         run: |
-          npm run build # The build command of your project
+          bun run build # The build command of your project
           cd build
           touch .nojekyll # We do this because svelte has special underscore directories
     

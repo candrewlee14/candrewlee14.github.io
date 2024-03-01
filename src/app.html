@@ -21,52 +21,12 @@
 
 		gtag('config', 'G-YB4GWGHJ27');
 	</script>
-	<link rel="icon" href="%svelte.assets%/waving_hand/favicon.ico" />
-	<style>
-		body {
-			visibility: hidden;
-			opacity: 0;
-		}
-	</style>
-	<script>
-		function updateMode() {
-			if (localStorage.theme === 'dark') {
-				document.body.classList.add('dark')
-				document.body.style.background = "black";
-			} else {
-				document.body.classList.remove('dark')
-				document.body.style.background = "white";
-			}
-		}
-
-		function showContent() {
-			document.body.style.visibility = 'visible';
-			document.body.style.opacity = 1;
-		}
-
-		window.addEventListener('DOMContentLoaded', function () {
-			if (localStorage.getItem('theme') == null) {
-				localStorage.setItem('theme',
-					window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-				);
-			}
-			updateMode();
-			showContent();
-		});
-	</script>
-	<noscript>
-		<style>
-			body {
-				visibility: visible;
-				opacity: 1;
-			}
-		</style>
-	</noscript>
-	%svelte.head%
+	<link rel="icon" href="%sveltekit.assets%/waving_hand/favicon.ico" />
+	%sveltekit.head%
 </head>
 
 <body>
-	<div id="svelte">%svelte.body%</div>
+	<div id="svelte">%sveltekit.body%</div>
 </body>
 
 </html>
