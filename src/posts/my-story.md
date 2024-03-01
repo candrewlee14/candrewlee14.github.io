@@ -2,6 +2,11 @@
 title: My Origin Story 👨‍💻
 date: 2022-02-22
 excerpt: Finding my passion for automation!
+description: Finding my passion for automation!
+categories:
+  - sveltekit
+  - svelte
+published: true
 ---
 
 ## Beginnings 🐣

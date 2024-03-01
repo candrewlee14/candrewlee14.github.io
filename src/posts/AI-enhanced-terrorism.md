@@ -1,7 +1,11 @@
 ---
 title: AI-Enhanced Terrorism
 date: 2023-03-30
-excerpt: A sharp tool makes a dangerous weapon.
+description: A sharp tool makes a dangerous weapon.
+categories:
+  - sveltekit
+  - svelte
+published: true
 ---
 
 With the breakneck pace of development of publicly available AI technology released in the past year, there have been a lot of questions about ethics. How do these technologies enable bad actors? How will society handle the potentially rapid displacement of jobs? Should more powerful AIs continue to be developed at the pace we’ve seen? [A recent petition](https://futureoflife.org/open-letter/pause-giant-ai-experiments/), signed by a lengthening list of industry giants, says no. Despite the weight of the signatures, I question the influence this will have (as I do for the majority of well-meaning petitions frankly). Regardless, it’s clearly a signal that a lot of smart people are concerned about the future because of AI. Misinformation, propaganda, and scams, just to name a few techniques bad actors might employ, seem like they are going to be super-powered by AI in the very near future, if not already. 

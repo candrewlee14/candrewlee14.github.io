@@ -1,12 +1,60 @@
-<div class="flex justify-evenly w-full mb-4 text-black dark_text-lightgray font-bold" style="max-width: 800px;">
-	<a class="hover_text-sky-500 dark_hover_text-sky-300" href="/">ABOUT</a>
-	<a class="hover_text-sky-500 dark_hover_text-sky-300" href="/work">WORK</a>
-	<a class="hover_text-sky-500 dark_hover_text-sky-300" href="/blog">BLOG</a>
-</div>
+<script lang="ts">
+	import Logo from "./Logo.svelte";
+	import "iconify-icon";
 
-<style lang="postcss">
-	a {
-		font-family: 'Raleway';
-		@apply font-bold text-xl;
+	import { onMount } from "svelte";
+	import { writable, type Writable } from "svelte/store";
+
+	type Theme = "light" | "dark";
+	export const theme: Writable<Theme> = writable(getDefaultTheme());
+
+	function getDefaultTheme() {
+		return (
+			typeof window !== "undefined"
+				? localStorage.getItem("theme") || "light"
+				: "light"
+		) as Theme;
 	}
-</style>
+
+	theme.subscribe((t) => {
+		if (typeof window !== "undefined") {
+			localStorage.setItem("theme", t);
+			const htmlNode = document.querySelector("html");
+			htmlNode?.setAttribute("data-theme", t);
+			htmlNode?.setAttribute("class", t);
+		}
+	});
+
+	function toggle() {
+		theme.update((t) => (t === "light" ? "dark" : "light"));
+	}
+
+	onMount(() => {
+		theme.set(getDefaultTheme());
+	});
+</script>
+
+<div class="my-8 mb-10 flex justify-around flex-wrap">
+	<a href="/" class="my-8">
+		<Logo className="mx-auto" />
+	</a>
+	<button
+		type="button"
+		class="absolute top-10 right-4 md:right-10 text-3xl transition-all hover:rotate-45"
+		on:click={toggle}
+	>
+		{#if $theme === "light"}
+			<iconify-icon icon="fa-solid:moon" />
+		{:else}
+			<iconify-icon icon="fa-solid:sun" />
+		{/if}
+	</button>
+	<div
+		id="navbar"
+		class="prose-xl flex mx-auto justify-center relative mt-4 lg:mt-0 lg:absolute lg:top-8 lg:right-24 p-1 rounded max-w-min"
+	>
+		<div class="mx-3 whitespace-nowrap">👨<a href="/">About</a></div>
+		<div class="mx-3 whitespace-nowrap">⚒️<a href="/work">Work</a></div>
+		<div class="mx-3 whitespace-nowrap">📃<a href="/blog">Blog</a></div>
+	</div>
+</div>
