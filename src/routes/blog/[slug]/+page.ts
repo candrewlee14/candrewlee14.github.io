@@ -1,6 +1,6 @@
-import { read } from '$app/server';
+export const prerender = true;
+
 import { error } from '@sveltejs/kit'
-import {readingTime} from 'reading-time-estimator';
 
 export async function load({ params }) {
 	try {
