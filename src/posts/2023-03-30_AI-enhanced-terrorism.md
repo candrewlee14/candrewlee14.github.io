@@ -3,8 +3,8 @@ title: AI-Enhanced Terrorism
 date: 2023-03-30
 description: A sharp tool makes a dangerous weapon.
 categories:
-  - sveltekit
-  - svelte
+  - AI safety
+  - AI
 published: true
 ---
 

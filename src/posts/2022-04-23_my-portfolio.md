@@ -1,7 +1,11 @@
 ---
-title: My Portfolio
+title: Some Projects So Far 🏗️
 date: 2022-04-23
-excerpt: Check out the projects I've worked on!
+description: Check out a few of the projects I've worked on.
+categories:
+  - projects
+  - portfolio
+published: false
 ---
 
 It's difficult to unify my portfolio under one umbrella.

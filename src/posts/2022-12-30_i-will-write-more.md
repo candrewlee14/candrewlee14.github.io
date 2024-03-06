@@ -1,7 +1,11 @@
 ---
 title: I Will Write More 📔
 date: 2022-12-30
-excerpt: A goal for 2023
+description: A goal for 2023
+categories:
+  - goals
+  - writing
+published: true
 ---
 
 As this year draws to a close, I’ve been spending some time in self-reflection. This year has been filled with change for me. I got married to an amazing girl, decided to pursue a Master’s degree, made some new friends, spent plenty of good times with my family, and worked on some interesting projects with interesting people. All in all, I am happy and grateful for life right now and I’m excited about my trajectory.
