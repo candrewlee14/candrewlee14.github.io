@@ -1,4 +1,4 @@
-import{s as $e,e as o,a as s,c as a,m as l,g as r,l as U,i as n,n as ge,f as i}from"./scheduler.PDf83Eay.js";import{S as et,i as tt}from"./index.CuWBlEiL.js";function nt(Ye){let m,Ie="Beginnings 🐣",F,y,be=`I’ve always been a tinkerer. Ever since I was little, I’ve been interested in how things work and how they’re made.
+import{s as $e,e as o,a as s,c as a,m as l,g as r,l as U,i as n,n as ge,f as i}from"./scheduler.3ocNSSGe.js";import{S as et,i as tt}from"./index.Ch_UlnAJ.js";function nt(Ye){let m,Ie="Beginnings 🐣",F,y,be=`I’ve always been a tinkerer. Ever since I was little, I’ve been interested in how things work and how they’re made.
 My favorite books were non-fictions about engines, light, electricity, and space!
 A few boxes of Legos, Lincoln Logs, and an Erector Set gave me every opportunity to let my imagination loose.`,O,w,xe=`I made toy cars, spaceships, ninja stars, skycrapers, boats, robots, and more.
 During school, I was constantly doodling my own cartoons.
