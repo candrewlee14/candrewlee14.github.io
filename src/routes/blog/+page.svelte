@@ -14,7 +14,7 @@
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">
-	<div class="h-full flex-col items-center px-6 prose" style="max-width: 500px;">
+	<div class="h-full flex-col items-center px-6 prose prose-img:rounded-xl prose-p:indent-4" style="max-width: 500px;">
 		{#if data.posts.length > 0}
 			<div class="posts mb-8">
 				<h1 class="text-center mb-12">📝{data.posts.length} Post{data.posts.length != 1 ? 's' : ''}</h1>

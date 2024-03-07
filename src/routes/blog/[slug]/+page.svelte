@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div class="flex flex-col items-center">
-	<article class="prose">
+	<article class="prose prose-img:rounded-md">
 		<h1 class="text-center">{data.meta.title}</h1>
 		<p class="date text-center">
 			{dayjs(data.meta.date).format("MMM D, YYYY")} by Andrew Lee
