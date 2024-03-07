@@ -4,7 +4,7 @@
 	import utc from 'dayjs/plugin/utc';
 	import timezone from 'dayjs/plugin/timezone'; // dependent on utc plugin
 	import { andrewTz } from '$lib/posts';
-	
+
 	dayjs.extend(utc);
 	dayjs.extend(timezone);
 
@@ -15,8 +15,12 @@
 	<title>Blog - Andrew Lee</title>
 	<meta
 		name="description"
-		content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Check out my blog!"
+		content="Hello, I'm Andrew Lee! Check out my blog!"
 	/>
+	<meta property="og:title" content="Blog - Andrew Lee" />
+	<meta property="og:description" content="Hello, I'm Andrew Lee! Check out my blog!" />
+	<meta property="og:image" content="https://candrewlee14.github.io/candrewlee14-social-preview.png" />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">

@@ -4,11 +4,18 @@
 </script>
 
 <svelte:head>
+	<title>About Me - Andrew Lee</title>
 	<meta
 		name="description"
-		content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. Learn more about me!"
+		content="Hello, I'm Andrew Lee! Learn more about me here."
 	/>
-	<title>About Me - Andrew Lee</title>
+	<meta property="og:title" content="About Me - Andrew Lee" />
+	<meta property="og:description" content="Hello, I'm Andrew Lee! Learn more about me here." />
+	<meta property="og:image" content="https://candrewlee14.github.io/candrewlee14-social-preview.png" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:profile:first_name" content="Andrew" />
+	<meta property="og:profile:last_name" content="Lee" />
+	<meta property="og:profile:username" content="candrewlee14" />
 </svelte:head>
 
 <div>

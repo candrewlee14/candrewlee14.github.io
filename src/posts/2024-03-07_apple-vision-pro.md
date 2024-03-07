@@ -8,6 +8,7 @@ categories:
   - XR
   - Apple
 published: true
+socialPreview: /apple-vision-pro/apple-vision-pro.webp
 ---
 
 ![Apple Vision Pro](/apple-vision-pro/apple-vision-pro.webp)

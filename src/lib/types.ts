@@ -8,6 +8,7 @@ export type Post = {
 	categories: Categories[]
 	published: boolean
     readTime: number
+    socialPreview?: string
 }
 
 export type WorkEntry = {

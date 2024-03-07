@@ -124,11 +124,18 @@
 </script>
 
 <svelte:head>
+	<title>Work - Andrew Lee</title>
 	<meta
 		name="description"
-		content="Hello, I'm Andrew Lee! I'm a software developer and student at the University of Utah. View my work experience here."
+		content="Hello, I'm Andrew Lee! View my work experience here."
 	/>
-	<title>Work - Andrew Lee</title>
+	<meta property="og:title" content="Work - Andrew Lee" />
+	<meta
+		property="og:description"
+		content="Hello, I'm Andrew Lee! View my work experience here."
+	/>
+	<meta name="og:image" content="https://candrewlee14.github.io/candrewlee14-social-preview.png" />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <div class="flex flex-col items-center -ml-2">

@@ -7,6 +7,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<meta property="og:url" content={`https://candrewlee14.github.io${data.pathname}`} />
+</svelte:head>
+
 <div class="flex flex-row min-w-screen h-2">
 	{#each ['bg-red-400 dark:bg-red-600', 'bg-yellow-400 dark:bg-yellow-600', 'bg-green-400 dark:bg-green-600', 'bg-violet-400 dark:bg-violet-600'] as color}
 		<div class={`flex-grow ${color}`}>&nbsp;</div>
