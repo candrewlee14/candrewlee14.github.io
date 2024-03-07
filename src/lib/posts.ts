@@ -2,6 +2,8 @@ import { json } from '@sveltejs/kit'
 import type { Post } from '$lib/types'
 import { readingTime } from 'reading-time-estimator'
 
+export const andrewTz = 'America/Denver';
+
 export async function getPosts() {
 	let posts: Post[] = []
 

@@ -21,7 +21,7 @@ published: true
     I've never heard much about how using the first iPhone felt, but I'm sure all the little interactions like touching and swiping that feel second-nature to us today must've felt magical.
     Hopefully, I can communicate some of that magic newness here.
 
-    With that being said, this won't be an in-depth technical or objective review. This is about how I felt and what that means.
+    With that being said, this won't be an in-depth technical or objective review. This is about how I felt and what I think that means.
     I'm trying a different narrative style for this post. Forgive me if it feels strange, I'm experimenting!
 
 </div>
@@ -211,7 +211,7 @@ Here's the thing: I can't help but be starry-eyed about the future of AR after t
 AR has the ability to revolutionize the way we experience entertainment, work, and education.
 I doubted its potential to go mainstream before, but I believe it now. The Vision Pro elevates that nascent possibility to the realm of the probable, and I'm excited about it.
 
-If you haven't tried the demo yourself, I implore you to give it a go and let me know what you think.
+If you haven't tried the demo yourself, I implore you to give it a go and if you feel so inclined, let me know what you think.
 I hope you've enjoyed reading my experience, and if you've made it this far, thanks so much for taking the time!
 
 Over and out. 🫡
