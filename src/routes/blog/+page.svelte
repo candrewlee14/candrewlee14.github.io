@@ -1,6 +1,12 @@
 <script lang='ts'>
     import { base } from '$app/paths';
     import dayjs from 'dayjs';
+	import utc from 'dayjs/plugin/utc';
+	import timezone from 'dayjs/plugin/timezone'; // dependent on utc plugin
+	import { andrewTz } from '$lib/posts';
+	
+	dayjs.extend(utc);
+	dayjs.extend(timezone);
 
 	export let data;
 </script>
@@ -24,7 +30,7 @@
 						<a href={`${base}/blog/${post.slug}`}>
 							<div class="flex flex-row">
 								<p class="num mr-4">#{data.posts.length - i}</p>
-								<p class="date">{dayjs(post.date).format("MMM D, YYYY")} — {post.readTime} minute read</p>
+								<p class="date">{dayjs(post.date).add(12, 'hour').tz(andrewTz).format("MMM D, YYYY")} — {post.readTime} minute read</p>
 							</div>
 							<h2 class="title">{post.title}</h2>
 							<p class="description">{post.description}</p>

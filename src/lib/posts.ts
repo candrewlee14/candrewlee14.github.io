@@ -2,6 +2,8 @@ import { json } from '@sveltejs/kit'
 import type { Post } from '$lib/types'
 import { readingTime } from 'reading-time-estimator'
 
+export const andrewTz = 'America/Denver';
+
 export async function getPosts() {
 	let posts: Post[] = []
 
@@ -15,7 +17,7 @@ export async function getPosts() {
 			const metadata = file.metadata as Omit<Post, 'slug' | 'default'>
 
 			let readTime = 0;
-			if ('default' in file)	{
+			if ('default' in file) {
 				readTime = readingTime(file.default?.render().html as string).minutes;
 			}
 
@@ -25,7 +27,7 @@ export async function getPosts() {
 	}
 
 	posts = posts.sort((first, second) =>
-    new Date(second.date).getTime() - new Date(first.date).getTime()
+		new Date(second.date).getTime() - new Date(first.date).getTime()
 	)
 
 	return posts

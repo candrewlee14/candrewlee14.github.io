@@ -35,7 +35,7 @@
 </script>
 
 <div class="my-8 mb-10 flex justify-around flex-wrap">
-	<a href="/" class="my-8">
+	<a href="/" class="my-8 w-full lg:w-fit">
 		<Logo className="mx-auto" />
 	</a>
 	<button
@@ -53,7 +53,7 @@
 	</button>
 	<div
 		id="navbar"
-		class="prose-xl flex mx-auto justify-center relative mt-4 lg:mt-0 lg:absolute lg:top-8 lg:right-24 p-1 rounded max-w-min"
+		class="prose-xl flex mx-auto justify-center relative mt-4 md:mt-0 lg:absolute lg:top-8 lg:right-24 p-1 rounded max-w-min"
 	>
 		<div class="mx-3 whitespace-nowrap">
 			👨<a href="/" class={path === '/' ? 'text-blue-400' : ''}>About</a>
