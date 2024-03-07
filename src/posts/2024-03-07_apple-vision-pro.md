@@ -1,6 +1,6 @@
 ---
 title: My Apple Vision Pro Demo Experience
-date: 2024-03-05
+date: 2024-03-07
 description: Mind blown.
 categories:
   - VR
