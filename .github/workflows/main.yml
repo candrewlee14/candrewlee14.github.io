@@ -6,6 +6,9 @@ on:
     branches:
       - main
 
+env:
+  SITE_URL: https://candrewlee14.github.io
+
 jobs:
   build:
     runs-on: ubuntu-latest
