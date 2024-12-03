@@ -16,6 +16,6 @@ export type WorkEntry = {
     company: string;
     image_url?: string;
     colorClass?: [string, string];
-    dates: [Date, Date];
+    dates: [Date, Date | null];
     bullet_points: string[];
 };

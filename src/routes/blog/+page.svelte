@@ -24,20 +24,24 @@
 </svelte:head>
 
 <div class="w-full h-full flex justify-center pb-6">
-	<div class="h-full flex-col items-center px-6 prose" style="max-width: 500px;">
+	<article class="h-full flex-col items-center prose max-w-none">
 		{#if data.posts.length > 0}
 			<div class="posts mb-8">
-				<h1 class="text-center mb-12">📝{data.posts.length} Post{data.posts.length != 1 ? 's' : ''}</h1>
+				<h1 class="text-center mb-12">📝 {data.posts.length} Post{data.posts.length != 1 ? 's' : ''}</h1>
 				<div class="not-prose">
 				{#each data.posts as post, i}
 					<div class="postlink w-full">
-						<a href={`${base}/blog/${post.slug}`}>
-							<div class="flex flex-row">
-								<p class="num mr-4">#{data.posts.length - i}</p>
-								<p class="date">{dayjs(post.date).add(12, 'hour').tz(andrewTz).format("MMM D, YYYY")} — {post.readTime} minute read</p>
+						<a class="w-full" href={`${base}/blog/${post.slug}`}>
+							<div class="flex flex-row justify-between w-full">
+								<div class='flex flex-row'>
+									<p class="num mr-4">#{data.posts.length - i}</p>
+									<p class="date">{dayjs(post.date).add(12, 'hour').tz(andrewTz).format("MMM D, YYYY")}</p>
+								</div>
+								<p class="date">{post.readTime} minute read</p>
 							</div>
-							<h2 class="title">{post.title}</h2>
-							<p class="description">{post.description}</p>
+							<div class="flex flex-row justify-between">
+								<h2 class="title">{post.title}</h2>
+							</div>
 						</a>
 					</div>
 					<hr />
@@ -49,13 +53,13 @@
 		<p class="my-4">
 			That's all the posts so far! Stay tuned for more.
 		</p>
-	</div>
+	</article>
 </div>
 
 <style lang="postcss">
 	.postlink {
 		@apply flex flex-row justify-start;
-		@apply border-slate-100 mb-6 mt-6;
+		@apply border-slate-100 mb-4 mt-4;
 	}
 
 	.posts hr {

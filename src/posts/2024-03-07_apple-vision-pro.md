@@ -167,7 +167,7 @@ Then, I was sitting above the goal on a professional soccer field. A cross comes
     </div>
 
 My mind was completely fooled by the rhinos here.
-When they were walking right-to-left in my vision then turned to face me, the fourth-wall illusion in my brian shattered.
+When they were walking right-to-left in my vision then turned to face me, the fourth-wall illusion in my brain shattered.
 As they got closer, my heart started beating faster and when they got within arms reach, my flight-or-fight response kicked in.
 *"Woah woah woah, that's too close, big fella."*
 

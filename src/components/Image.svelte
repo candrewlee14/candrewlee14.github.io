@@ -3,7 +3,7 @@
     export let src: string;
     export let webp_src: string;
     export let alt: string;
-    export let className: string;
+    export let className: string = '';
     export let imgClassName: string;
 </script>
 

@@ -3,6 +3,17 @@
 	import EntryComp from "../../components/WorkEntry.svelte";
 	const workEntries: WorkEntry[] = [
 		{
+			title: "Software Developer II",
+			company: "Lucid Software - Site Reliability Engineering",
+			image_url:
+				"data:image/png;base64,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",
+			dates: [new Date("2024-05-15"), null],
+			colorClass: ["border-blue-400", "dark:border-blue-600"],
+			bullet_points: [
+				"Building cool stuff and keeping the lights on!",
+			],
+		},
+		{
 			title: "Software Development Intern",
 			company: "Lucid Software - Data Infrastructure Team",
 			image_url:
@@ -139,9 +150,9 @@
 </svelte:head>
 
 <div class="flex flex-col items-center -ml-2">
-	<article class="prose max-w-none">
-		<h1 class="text-center mb-8">⚒️Work</h1>
-		<div class="mt-14">
+	<article class="prose max-w-screen-lg">
+		<h1 class="text-center mb-8">💼 Work</h1>
+		<div class="mt-10">
 			{#each workEntries as entry}
 				<EntryComp {entry} />
 			{/each}

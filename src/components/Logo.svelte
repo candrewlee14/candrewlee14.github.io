@@ -11,62 +11,62 @@
 			<EmptyKey
 				className="w-8 text-slate-100 dark:text-slate-500"
 				val="C"
-				style="animation-delay: 1.0s"
+				style="animation-delay: 0.0s"
 			/>
 			<Char
 				val="A"
-				style="animation-delay: 1.1s"
+				style="animation-delay: 0.1s"
 			/>
 			<Char
 				val="N"
-				style="animation-delay: 1.2s"
+				style="animation-delay: 0.2s"
 			/>
 			<Char
 				val="D"
-				style="animation-delay: 1.3s"
+				style="animation-delay: 0.3s"
 			/>
 			<EmptyKey
 				className="flex-grow min-w-10"
-				style="animation-delay: 1.4s"
+				style="animation-delay: 0.4s"
 			/>
 		</div>
 		<div class="flex my-1">
-			<EmptyKey className="w-12" style="animation-delay: 1.5s" />
+			<EmptyKey className="w-12" style="animation-delay: 0.5s" />
 			<Char
 				val="R"
-				style="animation-delay: 1.6s"
+				style="animation-delay: 0.6s"
 			/>
 			<Char
 				val="E"
-				style="animation-delay: 1.7s"
+				style="animation-delay: 0.7s"
 			/>
 			<Char
 				val="W"
-				style="animation-delay: 1.8s"
+				style="animation-delay: 0.8s"
 			/>
 			<EmptyKey
 				className="flex-grow min-w-10"
-				style="animation-delay: 1.9s"
+				style="animation-delay: 0.9s"
 			/>
 		</div>
 		<div class="my-1 flex">
-			<EmptyKey className="w-9" style="animation-delay: 2.0s" />
+			<EmptyKey className="w-9" style="animation-delay: 1.0s" />
 			<Char
 				val="L"
-				style="animation-delay: 2.1s"
+				style="animation-delay: 1.1s"
 			/>
 			<Char
 				val="E"
-				style="animation-delay: 2.2s"
+				style="animation-delay: 1.2s"
 			/>
 			<Char
 				val="E"
-				style="animation-delay: 2.3s"
+				style="animation-delay: 1.3s"
 			/>
 			<EmptyKey
 				className="flex-grow min-w-10 text-slate-100 dark:text-slate-500"
 				val="14"
-				style="animation-delay: 2.4s"
+				style="animation-delay: 1.4s"
 			/>
 		</div>
 	</div>

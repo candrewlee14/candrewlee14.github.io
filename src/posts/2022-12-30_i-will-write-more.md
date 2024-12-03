@@ -1,5 +1,5 @@
 ---
-title: I Will Write More 📔
+title: I Will Write More
 date: 2022-12-30
 description: A goal for 2023
 categories:
