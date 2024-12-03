@@ -1,4 +1,4 @@
-import{s as rt,e as o,a as s,c as a,m as n,g as r,l as p,i,n as ke,f as l}from"./scheduler.3ocNSSGe.js";import{S as pt,i as mt}from"./index.Ch_UlnAJ.js";function dt(st){let m,Ce=`It’s difficult to unify my portfolio under one umbrella.
+import{s as rt,e as o,a as s,c as a,m as n,g as r,l as p,i,n as ke,f as l}from"./scheduler.CZIheOSb.js";import{S as pt,i as mt}from"./index.DDR6389d.js";function dt(st){let m,Ce=`It’s difficult to unify my portfolio under one umbrella.
 The truth is I’ve worked on many projects in a broad number of topics.
 This early in my career, I’ve built most of my projects to explore the vast landscape of the software space.
 Sometimes, the point of a project is to help me understand a programming language better and learn the tooling and ecosystem around it.
