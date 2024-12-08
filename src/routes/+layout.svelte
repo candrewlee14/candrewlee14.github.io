@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import Navbar from '../components/Navbar.svelte';
 	import { fly } from 'svelte/transition';
 	import { cubicIn, cubicOut } from 'svelte/easing';
 
-	export let data;
+	let { data, children } = $props();
 
 	const colors = [
 		'bg-purple-400 dark:bg-purple-600',
@@ -31,7 +31,7 @@
 			in:fly={{ easing: cubicOut, y: 10, duration: 100, delay: 150 }}
 			out:fly={{ easing: cubicIn, y: -10, duration: 100 }}
 		>
-			<slot />
+			{@render children?.()}
 		</div>
 	{/key}
 </div>

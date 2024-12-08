@@ -8,7 +8,7 @@ export default {
     require('@tailwindcss/typography'),
     require('daisyui'),
   ],
-  darkMode: 'selector',
+  darkMode: 'class',
   daisyui: {
     themes: [
       {

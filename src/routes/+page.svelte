@@ -41,7 +41,7 @@
 			/>
 		</div>
 		<div>
-			<div class="h-full w-1 bg-slate-200 dark:bg-slate-700 mx-8 hidden xl:block" />
+			<div class="h-full w-1 bg-slate-200 dark:bg-slate-700 mx-8 hidden xl:block"></div>
 		</div>
 		<article class="prose">
 			<p>

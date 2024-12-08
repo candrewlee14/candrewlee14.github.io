@@ -2,7 +2,11 @@
 	import Char from "./Char.svelte";
 	import EmptyKey from "./EmptyKey.svelte";
 
-	export let className: string | undefined = undefined;
+	interface Props {
+		className?: string | undefined;
+	}
+
+	let { className = undefined }: Props = $props();
 </script>
 
 <div class={`text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-8 p-1 ring-slate-100 dark:ring-slate-700 ${className}`}>

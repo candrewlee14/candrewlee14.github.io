@@ -8,7 +8,7 @@
 	dayjs.extend(utc);
 	dayjs.extend(timezone);
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -34,17 +34,19 @@
 						<a class="w-full" href={`${base}/blog/${post.slug}`}>
 							<div class="flex flex-row justify-between w-full">
 								<div class='flex flex-row'>
-									<p class="num mr-4">#{data.posts.length - i}</p>
-									<p class="date">{dayjs(post.date).add(12, 'hour').tz(andrewTz).format("MMM D, YYYY")}</p>
+									<p class="num bg-sky-200 dark:bg-sky-900 mr-4">#{data.posts.length - i}</p>
+									<p class="font-medium text-gray-500 dark:text-gray-400 italic">{dayjs(post.date).add(12, 'hour').tz(andrewTz).format("MMM D, YYYY")}</p>
 								</div>
-								<p class="date">{post.readTime} minute read</p>
+								<p class="font-medium text-gray-500 dark:text-gray-400 italic">{post.readTime} minute read</p>
 							</div>
 							<div class="flex flex-row justify-between">
-								<h2 class="title">{post.title}</h2>
+								<h2 class="text-blue-500 hover:text-blue-300 dark:text-blue-400 dark:hover:text-blue-200 transition">
+									{post.title}
+								</h2>
 							</div>
 						</a>
 					</div>
-					<hr />
+					<hr class="border-slate-100 dark:border-slate-700" />
 				{/each}
 				</div>
 			</div>
@@ -64,16 +66,8 @@
 
 	.posts hr {
 		@apply mt-2 mb-4 border rounded-sm;
-		@apply border-slate-100 dark:border-slate-700;
 	}
 	.postlink .num{
-		@apply bg-sky-200 dark:bg-sky-900 px-2 mb-1 rounded-md;
-	}
-	.postlink .title {
-		@apply text-blue-500 hover:text-blue-300 dark:text-blue-400 dark:hover:text-blue-200 transition;
-	}
-
-	.postlink .date {
-		@apply font-medium text-gray-500 dark:text-gray-400 italic;
+		@apply px-2 mb-1 rounded-md;
 	}
 </style>

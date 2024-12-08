@@ -1,4 +1,6 @@
 import { json } from '@sveltejs/kit'
+import { render } from 'svelte/server';
+
 import type { Post } from '$lib/types'
 import { readingTime } from 'reading-time-estimator'
 
@@ -18,7 +20,8 @@ export async function getPosts() {
 
 			let readTime = 0;
 			if ('default' in file) {
-				readTime = readingTime(file.default?.render().html as string).minutes;
+				// @ts-ignore
+				readTime = readingTime(render(file.default).html as string).minutes;
 			}
 
 			const post = { ...metadata, slug, readTime } satisfies Post

@@ -1,10 +1,20 @@
 
 <script lang="ts">
-    export let src: string;
-    export let webp_src: string;
-    export let alt: string;
-    export let className: string = '';
-    export let imgClassName: string;
+    interface Props {
+        src: string;
+        webp_src: string;
+        alt: string;
+        className?: string;
+        imgClassName: string;
+    }
+
+    let {
+        src,
+        webp_src,
+        alt,
+        className = '',
+        imgClassName
+    }: Props = $props();
 </script>
 
 <picture class={className}>

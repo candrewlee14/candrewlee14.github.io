@@ -1,8 +1,17 @@
 <script lang="ts">
-    export let val: string | undefined = undefined;
-    export let className: string | undefined = undefined;
-    export let style: string | undefined = undefined;
-    export let color: string = "bg-blue-300";
+    interface Props {
+        val?: string | undefined;
+        className?: string | undefined;
+        style?: string | undefined;
+        color?: string;
+    }
+
+    let {
+        val = undefined,
+        className = undefined,
+        style = undefined,
+        color = "bg-blue-300"
+    }: Props = $props();
 </script>
 
 <div

@@ -8,7 +8,11 @@
 	type Theme = 'light' | 'dark';
 	export const theme: Writable<Theme> = writable(getDefaultTheme());
 
-	export let path: string;
+	interface Props {
+		path: string;
+	}
+
+	let { path }: Props = $props();
 
 	function getDefaultTheme() {
 		return (
@@ -36,7 +40,7 @@
 </script>
 
 <div class="mt-2 mb-6 lg:mb-8 flex justify-around flex-wrap">
-	<a href="/" class="w-full mt-6 lg:w-fit" on:click={() => {
+	<a href="/" class="w-full mt-6 lg:w-fit" onclick={() => {
 		// reset bounce animation on all keys
 		document.querySelectorAll('.bounce').forEach((el) => {
 			el.classList.remove('bounce');
@@ -51,7 +55,7 @@
 		aria-label="Toggle theme"
 		name="theme-toggle"
 		class="absolute top-10 right-4 md:right-10 text-3xl transition-all hover:rotate-45"
-		on:click={toggle}
+		onclick={toggle}
 	>
 		{#if $theme === 'light'}
 			<Icon icon="fa-solid:moon" />

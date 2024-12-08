@@ -1,6 +1,10 @@
 <script lang="ts">
 	import type { WorkEntry } from '$lib/types';
-	export let entry: WorkEntry;
+	interface Props {
+		entry: WorkEntry;
+	}
+
+	let { entry }: Props = $props();
 </script>
 
 <div class="flex flex-row">

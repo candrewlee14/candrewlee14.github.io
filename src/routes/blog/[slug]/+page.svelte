@@ -6,7 +6,7 @@
 	dayjs.extend(utc);
 	dayjs.extend(timezone);
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -29,6 +29,6 @@
 			{dayjs(data.meta.date).add(12, 'hours').tz(andrewTz).format('MMM D, YYYY')} by Andrew Lee
 		</p>
 		<base target="_blank" />
-		<svelte:component this={data.content} />
+		<data.content />
 	</article>
 </div>
