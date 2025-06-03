@@ -10,13 +10,13 @@
         val = undefined,
         className = undefined,
         style = undefined,
-        color = "bg-blue-300"
+        color = "bg-neutral" // Changed from bg-blue-300
     }: Props = $props();
 </script>
 
 <div
     {style}
-    class={`${color} p-2 mx-1 rounded w-8 h-8 text-center font-bold text-white flex justify-center items-center ${className} bounce`}
+    class={`${color} p-2 mx-1 rounded w-8 h-8 text-center font-bold text-neutral-content flex justify-center items-center ${className} bounce`}
 >
     <span>{val}</span>
 </div>

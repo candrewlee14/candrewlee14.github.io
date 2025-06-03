@@ -68,15 +68,15 @@
 		class="prose-xl flex mx-auto justify-center relative mt-6 lg:absolute lg:top-8 lg:right-24 px-1 rounded max-w-min"
 	>
 		<div class="mx-3 whitespace-nowrap">
-			<a href="/" class={(path === '/' || path === '') ? 'text-blue-400' : ''}>About</a>
+			<a href="/" class={(path === '/' || path === '') ? 'text-primary' : ''}>About</a>
 		</div>
 		<div class="mx-3 whitespace-nowrap">
-			<a href="/work" class={path.endsWith('/work') ? 'text-blue-400' : ''}
+			<a href="/work" class={path.endsWith('/work') ? 'text-primary' : ''}
 				>Work</a
 			>
 		</div>
 		<div class="mx-3 whitespace-nowrap">
-			<a href="/blog" class={path.endsWith('/blog') ? 'text-blue-400' : ''}
+			<a href="/blog" class={path.endsWith('/blog') ? 'text-primary' : ''}
 				>Blog</a
 			>
 		</div>
@@ -97,7 +97,7 @@
 		width: 0;
 		height: 2px;
 		transition: width 0.1s, left 0.1s;
-		@apply bg-blue-400 dark:bg-blue-300;
+		@apply bg-primary;
 	}
 
 	#navbar a:hover::after {

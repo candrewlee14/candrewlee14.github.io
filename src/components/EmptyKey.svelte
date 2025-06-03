@@ -10,7 +10,7 @@
 
 <div
     {style}
-    class={`bg-slate-300 dark:bg-slate-600 p-2 mx-1 rounded h-8 text-center font-bold text-white flex justify-center items-center ${className}`}
+    class={`bg-base-300 p-2 mx-1 rounded h-8 text-center font-bold text-base-content flex justify-center items-center ${className}`}
 >
     <span>{val ?? ""}</span>
 </div>

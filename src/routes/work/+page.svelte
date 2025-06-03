@@ -1,6 +1,7 @@
 <script lang="ts">
 	import EntryComp from "../../components/WorkEntry.svelte";
 	import { workEntries } from "./history";
+	import { fadeIn } from '$lib/actions/fadeIn';
 </script>
 
 <svelte:head>
@@ -18,12 +19,14 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
-<div class="flex flex-col items-center -ml-2">
-	<article class="prose max-w-screen-lg">
+<div class="flex flex-col items-center -ml-2 overflow-x-hidden"> <!-- Added overflow-x-hidden -->
+	<article class="prose dark:prose-invert max-w-screen-lg"> <!-- Added dark:prose-invert -->
 		<h1 class="text-center mb-8">💼 Work</h1>
 		<div class="mt-10">
 			{#each workEntries as entry}
-				<EntryComp {entry} />
+				<div use:fadeIn class="fade-in-on-scroll">
+					<EntryComp {entry} />
+				</div>
 			{/each}
 		</div>
 	</article>

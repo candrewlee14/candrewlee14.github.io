@@ -9,11 +9,11 @@
 	let { className = undefined }: Props = $props();
 </script>
 
-<div class={`text-2xl max-w-min text-bold open-sans bg-slate rounded-sm ring-8 p-1 ring-slate-100 dark:ring-slate-700 ${className}`}>
+<div class={`text-2xl max-w-min font-bold open-sans bg-base-200 rounded-sm ring-8 p-1 ring-neutral ${className}`}>
 	<div class="grid grid-rows-3">
 		<div class="my-1 flex">
 			<EmptyKey
-				className="w-8 text-slate-100 dark:text-slate-500"
+				className="w-8 text-neutral"
 				val="C"
 				style="animation-delay: 0.0s"
 			/>
@@ -35,7 +35,7 @@
 			/>
 		</div>
 		<div class="flex my-1">
-			<EmptyKey className="w-12" style="animation-delay: 0.5s" />
+			<EmptyKey className="w-12 text-neutral" style="animation-delay: 0.5s" />
 			<Char
 				val="R"
 				style="animation-delay: 0.6s"
@@ -54,7 +54,7 @@
 			/>
 		</div>
 		<div class="my-1 flex">
-			<EmptyKey className="w-9" style="animation-delay: 1.0s" />
+			<EmptyKey className="w-9 text-neutral" style="animation-delay: 1.0s" />
 			<Char
 				val="L"
 				style="animation-delay: 1.1s"
@@ -68,7 +68,7 @@
 				style="animation-delay: 1.3s"
 			/>
 			<EmptyKey
-				className="flex-grow min-w-10 text-slate-100 dark:text-slate-500"
+				className="flex-grow min-w-10 text-neutral"
 				val="14"
 				style="animation-delay: 1.4s"
 			/>

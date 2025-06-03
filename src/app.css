@@ -15,15 +15,12 @@
 
     h1,
     h2, 
-    h3 {
-        font-family:  "Atkinson Hyperlegible", sans-serif;
-    }
-
     h3,
     h4,
     h5,
     h6 {
         font-family: "Nunito Sans", sans-serif;
+        /* Add margin/padding adjustments if needed later */
     }
 
     html,
@@ -34,12 +31,12 @@
     }
 
     html {
-        font-size: 17px;
+        font-size: 16px; /* Adjusted from 17px */
     }
 
     @screen lg {
         html {
-            font-size: 21px;
+            font-size: 20px; /* Adjusted from 21px */
         }
     }
 }
@@ -56,4 +53,16 @@
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+}
+
+/* Fade-in on scroll animation styles */
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: for a slight upward movement */
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    transition-delay: 0.1s; /* Optional: slight delay */
+}
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Image from '../components/Image.svelte';
 	import Icon from '@iconify/svelte';
+	import { fadeIn } from '$lib/actions/fadeIn';
 </script>
 
 <svelte:head>
@@ -18,8 +19,8 @@
 	<meta property="og:profile:username" content="candrewlee14" />
 </svelte:head>
 
-<div>
-	<article class="prose mx-auto">
+<div class="overflow-x-hidden"> <!-- Added to prevent horizontal scrollbar during animation if elements are wide -->
+	<article use:fadeIn class="fade-in-on-scroll prose mx-auto">
 		<div class="text-center !my-8 xl:!my-9">
 			<h1 class="flex justify-center flex-wrap">
 				<span class="mx-3">👋 Hello!</span>
@@ -31,7 +32,7 @@
 			</h1>
 		</div>
 	</article>
-	<div class="flex flex-row w-full justify-center align-middle pt-4">
+	<div use:fadeIn class="fade-in-on-scroll flex flex-row w-full justify-center align-middle pt-4">
 		<div class="hidden w-72 xl:block mb-4 mx-2">
 			<Image
 				src="/andrew-glacier.jpg"
@@ -66,7 +67,8 @@
 			</p>
 			<p>Feel free to connect with me through my socials below.</p>
 			<div
-				class="my-6 flex flex-row flex-wrap justify-between ring-4 ring-blue-300 dark:ring-blue-600 rounded py-2 mx-auto"
+				use:fadeIn
+				class="fade-in-on-scroll my-6 flex flex-row flex-wrap justify-between ring-4 ring-blue-300 dark:ring-blue-600 rounded py-2 mx-auto"
 			>
 				<div class="flex flex-row justify-around flex-grow">
 					<div class="flex items-center mx-4">

@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex flex-row">
-	<div class="border-r-4 border-slate-300 dark:border-slate-600 w-0 ml-3"></div>
+	<div class="border-r-4 border-neutral w-0 ml-3"></div>
 	<div class="flex flex-col flex-grow mb-4 lg:mb-8">
 		<div class="flex flex-row">
 			<div class="w-fit h-fit flex flex-col items-center -translate-x-1/2 bg-base-100 !pb-3">
@@ -22,15 +22,13 @@
 			<div class="w-full">
 				<div class="flex flex-row justify-between w-full">
 					<h3 class="!mt-0 !mb-4">
-						<span
-							class={`border-b-4 ${entry.colorClass && `${entry.colorClass[0]} ${entry.colorClass[1]}`}`}
-						>
+						<span class="border-b-4 border-primary">
 							{entry.title}
 						</span>
 					</h3>
                     <div class="mt-2">
                         {#if entry.dates[1] == null}
-                            <span class="bg-emerald-300 text-black dark:bg-emerald-600 dark:text-white p-1 px-2 rounded-sm">Active</span>
+                            <span class="bg-primary text-primary-content p-1 px-2 rounded-sm text-sm">Active</span>
                         {/if}
                     </div>
 				</div>
