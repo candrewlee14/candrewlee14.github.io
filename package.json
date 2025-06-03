@@ -29,7 +29,7 @@
   "dependencies": {
     "@sveltejs/adapter-static": "^3.0.1",
     "@tailwindcss/typography": "^0.5.10",
-    "caniuse-lite": "^1.0.30001687",
+    "caniuse-lite": "^1.0.30001720",
     "daisyui": "^4.7.2",
     "dayjs": "^1.11.10",
     "feather-icons": "^4.29.1",
