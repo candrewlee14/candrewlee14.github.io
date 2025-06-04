@@ -1,0 +1,41 @@
+name: Generate a build and rsync it to the served directory
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SITE_URL: https://candrewlee.com
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Rsync
+    container:
+      image: gitea/runner-images:ubuntu-latest
+      volumes:
+        - /Users/andrewlee/Developer/Services/services/web/website_build/:/var/www/
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install all dependencies
+        run: bun install
+
+      - name: Build
+        run: |
+          bun run build # The build command of your project
+          cd build
+          touch .nojekyll # We do this because svelte has special underscore directories
+
+      - name: Install rsync
+        run: sudo apt-get update && sudo apt-get install -y rsync
+
+      - name: Rsync build/ to /var/www/
+        run: |
+          sudo rsync -avz --delete build/ /var/www/
